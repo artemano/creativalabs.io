@@ -68,8 +68,9 @@
       return '<li><span class="tick" aria-hidden="true">&gt;</span><span>' + i + "</span></li>";
     }).join("") + "</ul>";
   }
-  function metrics(variant) {
-    return '<div class="metrics metrics--' + (variant || "full") + '">' + SITE.indicators.map(function (m) {
+  // list: arreglo de indicadores (site.companyIndicators o people[id].indicators)
+  function metrics(list, variant) {
+    return '<div class="metrics metrics--' + (variant || "full") + '">' + list.map(function (m) {
       return '<div class="metric"><p class="metric__v">' + esc(m.value) + '</p><p class="metric__l">' + t(m.label) + "</p></div>";
     }).join("") + "</div>";
   }
@@ -280,7 +281,7 @@
     return '<section class="sec sec--paper sec--bb"' + idAttr(s) + '><div class="wrap ps ps--' + (s.size || "md") + '">' +
       '<img class="ps__img" src="' + asset(p.photo) + '" alt="' + esc(t(p.photoAlt)) + '">' +
       '<div class="ps__copy">' + eyebrow(s.eyebrow) + '<h2 class="h2 h2--mb8">' + p.name + '</h2><p class="role">' + (s.role || t(p.role)) + '</p><p class="serif-18 ps__bio">' + s.bio + "</p>" +
-      (s.showIndicators ? metrics("compact") : "") + a(s.link, "link-strong") + "</div></div></section>";
+      (s.indicators === "person" ? metrics(p.indicators, "compact") : "") + a(s.link, "link-strong") + "</div></div></section>";
   };
 
   function cover(size) {
@@ -291,6 +292,13 @@
       '<p class="cover__title">' + esc(t(b.title)) + '</p><div class="cover__rule"></div><p class="cover__sub">' + esc(t(b.subtitle)) + "</p></div>" +
       (size === "lg" ? '<p class="cover__author">' + esc(b.author) + "</p>" : "") + "</div>";
   }
+
+  R.experience = function (s) {
+    var list = s.indicators === "company" ? SITE.companyIndicators : person(s.indicators).indicators;
+    return '<section class="sec sec--paper sec--bb"' + idAttr(s) + '><div class="wrap exp">' +
+      '<div class="exp__a">' + eyebrow(s.eyebrow) + '<h2 class="h2 h2--mb16">' + s.title + '</h2><p class="serif-19">' + s.text + "</p></div>" +
+      '<div class="exp__b">' + metrics(list, "full") + a(s.link, "link-strong") + "</div></div></section>";
+  };
 
   R.book = function (s) {
     var copy = '<div class="book__copy">' + eyebrow(s.eyebrow) + '<h2 class="h2 h2--mb20">' + t(SITE.book.title) + "</h2>" +
@@ -353,7 +361,7 @@
     return '<section class="sec sec--paper sec--bb"' + idAttr(s) + '><div class="wrap">' +
       '<div class="split split--end mb48"><div class="split__a split__a--520">' + eyebrow(s.eyebrow) + '<h2 class="h2">' + s.title + '</h2></div><p class="split__b split__b--360 serif-18 muted">' + s.text + "</p></div>" +
       '<div class="team"><figure class="team__card"><img src="' + asset(p.photo) + '" alt="' + esc(t(p.photoAlt)) + '"><figcaption><p class="team__name">' + p.name + '</p><p class="role role--15">' + t(p.role) + '</p><p class="team__bio">' + s.bio + '</p></figcaption><ul class="edu">' + edu + "</ul></figure>" +
-      '<div class="team__main">' + metrics("full") + '<h3 class="tl-h">' + s.timeline.title + '</h3><p class="tl-sub">' + s.timeline.subtitle + '</p><ol class="timeline">' + tl + "</ol>" +
+      '<div class="team__main">' + metrics(p.indicators, "full") + '<h3 class="tl-h">' + s.timeline.title + '</h3><p class="tl-sub">' + s.timeline.subtitle + '</p><ol class="timeline">' + tl + "</ol>" +
       '<div class="sectors"><span class="sectors__l">' + s.sectors.label + "</span>" + s.sectors.items.map(function (x) { return '<span class="sector">' + x + "</span>"; }).join("") + "</div></div></div></div></section>";
   };
 

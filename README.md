@@ -8,7 +8,7 @@ Todo el texto, los datos y la metadata del sitio viven en archivos JSON. El HTML
 
 | Archivo | Contenido |
 |---|---|
-| `data/site.json` | Marca, correo de contacto, empresa, **indicadores** (una sola lista para todas las páginas), personas, datos del libro, rutas, título y descripción de cada página, pie de página y bloque de cierre |
+| `data/site.json` | Marca, correo de contacto, empresa, **indicadores**: `companyIndicators` (los de la empresa, en el inicio) y `people.rafael-pino.indicators` (los de Rafael, en TELAR y Equipo), personas, datos del libro, rutas, título y descripción de cada página, pie de página y bloque de cierre |
 | `data/es/home.json`, `data/en/home.json` | Inicio: servicios (cuatro frentes), modalidades, banda TELAR, libro, equipo |
 | `data/es/telar.json`, `data/en/telar.json` | Página del método TELAR |
 | `data/es/equipo.json`, `data/en/equipo.json` | Equipo y trayectoria |
@@ -20,7 +20,7 @@ Todo el texto, los datos y la metadata del sitio viven en archivos JSON. El HTML
 ## Cómo editar
 
 - **Cambiar un texto o una cifra:** edite el JSON correspondiente y suba el cambio. No hace falta compilar nada.
-- **Cambiar un indicador** (por ejemplo "+60 proyectos"): edite `indicators` en `data/site.json`. Se actualiza en el inicio y en las dos páginas de equipo a la vez.
+- **Cambiar un indicador:** los de la empresa están en `companyIndicators` y se ven en el inicio; los de Rafael están en `people.rafael-pino.indicators` y se ven en TELAR y en Equipo. Cada lista se edita una sola vez para ambos idiomas.
 - **Cambiar títulos o descripciones de página, rutas o la URL base:** edite `data/site.json` y ejecute `node scripts/build.mjs` para regenerar los `index.html` (llevan la metadata en el `<head>` para buscadores y redes sociales).
 
 ### Convenciones de enlaces en los JSON

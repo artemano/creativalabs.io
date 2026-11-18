@@ -203,15 +203,13 @@
       ]
     },
     {
-      "type": "personShort",
-      "id": "equipo",
-      "person": "rafael-pino",
-      "size": "md",
-      "showIndicators": true,
-      "eyebrow": "Team",
-      "bio": "More than twenty-five years building, scaling and transforming engineering organizations: from a software factory grown from 3 to more than 165 people, to AI agent adoption at a digital insurer.",
+      "type": "experience",
+      "id": "experiencia",
+      "title": "Experience",
+      "text": "More than 50 years of combined experience designing architectures and building, scaling and transforming organizations with solutions that actually work.",
+      "indicators": "company",
       "link": {
-        "label": "See the full track record →",
+        "label": "Meet the team →",
         "href": "@equipo"
       }
     },

@@ -203,15 +203,13 @@
       ]
     },
     {
-      "type": "personShort",
-      "id": "equipo",
-      "person": "rafael-pino",
-      "size": "md",
-      "showIndicators": true,
-      "eyebrow": "Equipo",
-      "bio": "Más de veinticinco años formando, escalando y transformando organizaciones de ingeniería: de una fábrica de software de 3 a más de 165 personas, a la adopción de agentes de IA en una aseguradora digital.",
+      "type": "experience",
+      "id": "experiencia",
+      "title": "Experiencia",
+      "text": "Más de 50 años de experiencia conjunta diseñando arquitecturas, formando, escalando y transformando organizaciones con soluciones que sí funcionan.",
+      "indicators": "company",
       "link": {
-        "label": "Ver la trayectoria completa →",
+        "label": "Conocer al equipo →",
         "href": "@equipo"
       }
     },

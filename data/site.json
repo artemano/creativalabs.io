@@ -23,6 +23,29 @@
   "defaultLanguage": "es",
   "ogImage": "assets/img/og.jpg",
   "themeColor": "#16181F",
+  "companyIndicators": [
+    {
+      "value": "+60",
+      "label": {
+        "es": "Proyectos",
+        "en": "Projects"
+      }
+    },
+    {
+      "value": "+250",
+      "label": {
+        "es": "Empleados en organizaciones lideradas",
+        "en": "Employees in organizations led"
+      }
+    },
+    {
+      "value": "+5",
+      "label": {
+        "es": "Empresas cofundadas por los miembros clave del equipo",
+        "en": "Companies co-founded by key team members"
+      }
+    }
+  ],
   "pages": {
     "home": {
       "es": {
@@ -75,43 +98,6 @@
       "contact": "Contact"
     }
   },
-  "indicators": [
-    {
-      "value": "3 → 165+",
-      "label": {
-        "es": "Crecimiento de una fábrica de software",
-        "en": "Growth of a software factory"
-      }
-    },
-    {
-      "value": "240+",
-      "label": {
-        "es": "Ingenieros liderados en una organización",
-        "en": "Engineers led in one organization"
-      }
-    },
-    {
-      "value": "3",
-      "label": {
-        "es": "Empresas cofundadas",
-        "en": "Companies co-founded"
-      }
-    },
-    {
-      "value": "+26",
-      "label": {
-        "es": "Años de experiencia",
-        "en": "Years of experience"
-      }
-    },
-    {
-      "value": "+60",
-      "label": {
-        "es": "Proyectos",
-        "en": "Projects"
-      }
-    }
-  ],
   "people": {
     "rafael-pino": {
       "name": "Rafael Pino",
@@ -123,7 +109,44 @@
       "role": {
         "es": "Fundador · Creador de TELAR",
         "en": "Founder · Creator of TELAR"
-      }
+      },
+      "indicators": [
+        {
+          "value": "3 → 165+",
+          "label": {
+            "es": "Crecimiento de una fábrica de software",
+            "en": "Growth of a software factory"
+          }
+        },
+        {
+          "value": "240+",
+          "label": {
+            "es": "Ingenieros liderados en una organización",
+            "en": "Engineers led in one organization"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "es": "Empresas cofundadas",
+            "en": "Companies co-founded"
+          }
+        },
+        {
+          "value": "+26",
+          "label": {
+            "es": "Años de experiencia",
+            "en": "Years of experience"
+          }
+        },
+        {
+          "value": "+60",
+          "label": {
+            "es": "Proyectos",
+            "en": "Projects"
+          }
+        }
+      ]
     }
   },
   "book": {
