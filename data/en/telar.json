@@ -1,0 +1,282 @@
+{
+  "sections": [
+    {
+      "type": "header",
+      "nav": [
+        { "label": "The method", "href": "#metodo" },
+        { "label": "Adoption", "href": "#servicios" },
+        { "label": "Other services", "href": "@home#servicios" },
+        { "label": "Team", "href": "@equipo" },
+        { "label": "Reference guide", "href": "#guia" }
+      ]
+    },
+    { "type": "weave" },
+    {
+      "type": "hero", "id": "inicio", "variant": "telar",
+      "image": "assets/img/hero-telar.jpg", "imagePosition": "100% 40%",
+      "alt": "Jacquard loom with its chain of punched cards weaving an indigo cloth with a circuit pattern",
+      "eyebrow": "TELAR method · Software engineering with AI agents",
+      "title": "Method and governance for building software with AI agents.",
+      "lead": "CreativaLabs.io helps organizations that build products in-house or for their clients adopt artificial intelligence across their development lifecycle, with traceability from business intent to operations and evidence behind every decision.",
+      "actions": [
+        { "label": "Assess your team’s maturity", "href": "#madurez", "style": "primary" },
+        { "label": "Request a conversation", "href": "mail:", "style": "light" }
+      ],
+      "caption": "The Jacquard loom (1801): the chain of cards decides the pattern; the machine weaves it."
+    },
+    {
+      "type": "principle",
+      "quote": { "text": "“The Analytical Engine weaves algebraical patterns just as the Jacquard loom weaves flowers and leaves.”", "by": "Ada Lovelace, 1843" },
+      "eyebrow": "The principle",
+      "title": "The same principle, two centuries later.",
+      "text": "In 1801 the pattern stopped living in the machine and moved to a card anyone could review and change. The same is happening to code today: the specification defines the software and the agent builds it.",
+      "card": {
+        "image": "assets/img/tarjetas.jpg", "imagePosition": "45% 60%",
+        "alt": "Chain of punched cards from a Jacquard loom, laced with twine, on a wooden table",
+        "tag": "1801 · THE PATTERN",
+        "caption": "The punched card defined the cloth. The loom executed it."
+      },
+      "spec": {
+        "tag": "TODAY · THE SPECIFICATION",
+        "id": "SPEC-F-012", "title": "Order return",
+        "fields": [
+          { "k": "intent", "ref": "INT-004", "v": "Return within 24 h" },
+          { "k": "domain", "ref": "DOM-002", "v": "Orders · After-sales" },
+          { "k": "decides", "v": "Product Owner" },
+          { "k": "verifies", "v": "Tech Lead · evidence gate" },
+          { "k": "status", "v": "approved · v3", "accent": true }
+        ],
+        "criteriaLabel": "acceptance criterion",
+        "criteria": [
+          { "kw": "given", "text": "an order delivered 30 days ago or less" },
+          { "kw": "when", "text": "the customer requests a return" },
+          { "kw": "then", "text": "a pickup order is issued and notified" }
+        ],
+        "trace": [ { "ref": "TASK-031", "text": "agent" }, { "ref": "PR-118" }, { "ref": "TEST-212" }, { "ref": "REL-9" } ],
+        "caption": "The specification defines the software. The agent builds it; people decide and verify."
+      }
+    },
+    {
+      "type": "context",
+      "eyebrow": "The context",
+      "title": "The bottleneck in software development has moved.",
+      "paragraphs": [
+        "For decades, writing code was the most expensive part of development. Today an AI agent produces in minutes what a team used to produce in weeks. The hard work has moved to two places: defining precisely what is needed, and verifying that what was built meets that need.",
+        "Recent research agrees that artificial intelligence amplifies the capabilities an organization already has. Where discipline, specifications and controls exist, it accelerates delivery. Where they do not, it accelerates technical debt and the loss of understanding of the systems.",
+        "That is why adopting agents is not a tooling decision but a governance one: who decides, who verifies, and on what evidence."
+      ],
+      "bars": {
+        "aria": "Comparison diagram. Before: cheap intent, writing code as the bottleneck and verification at human pace. Today: intent and verification are the bottlenecks and agent generation takes minutes.",
+        "rows": [
+          { "label": "Before", "segments": [
+            { "weight": 14, "tone": "light", "title": "Intent", "sub": "cheap" },
+            { "weight": 70, "tone": "indigo", "title": "Writing code", "sub": "The bottleneck: weeks, teams" },
+            { "weight": 16, "tone": "light", "title": "Verification", "sub": "at human pace" }
+          ] },
+          { "label": "Today", "segments": [
+            { "weight": 42, "tone": "rust", "title": "Intent", "sub": "New bottleneck: precision and decisions" },
+            { "weight": 14, "tone": "light", "title": "Generation", "sub": "minutes, agents" },
+            { "weight": 44, "tone": "rust", "title": "Verification", "sub": "The other bottleneck: evidence" }
+          ] }
+        ],
+        "note": "+ governing the agent environment (harness): rules, templates and verifiers",
+        "caption": "Illustrative, not to scale. Both bars measure the same: effort does not disappear, it moves from writing code to sharpening intent and verifying with evidence. Developed in the guide, §I.1."
+      }
+    },
+    {
+      "type": "audiences",
+      "eyebrow": "Who we serve",
+      "title": "Two kinds of organization, one method.",
+      "cards": [
+        {
+          "tone": "indigo", "image": "assets/img/lupa.jpg", "imagePosition": "55% 50%",
+          "alt": "Indigo cloth with a circuit pattern inspected with a brass magnifying glass on a workshop table",
+          "kicker": "Organizations that build products in-house",
+          "title": "Software your organization can explain, audit and evolve",
+          "recognizeLabel": "You will recognize this situation if…",
+          "bullets": [
+            "AI agents are already in use, but each team works its own way, without common rules.",
+            "Fewer and fewer people can explain why the system does what it does.",
+            "Business decisions end up in conversations nobody reads again."
+          ],
+          "getLabel": "What you get",
+          "get": "Every change traced to a business need, clear accountability between those who decide and those who verify, and teams that strengthen their technical judgment instead of losing it.",
+          "action": { "label": "Assess your team’s maturity", "href": "#madurez", "style": "primary" }
+        },
+        {
+          "tone": "dark", "image": "assets/img/nave-textil.jpg", "imagePosition": "40% 60%",
+          "alt": "Textile mill with a row of Jacquard looms, each weaving cloth with a different pattern",
+          "kicker": "Organizations that build software products for their clients",
+          "title": "Sell governed outcomes, not development hours",
+          "recognizeLabel": "You will recognize this situation if…",
+          "bullets": [
+            "Your clients ask for lower rates because AI has made development cheaper.",
+            "Your margin depends on hours that are worth less every day.",
+            "Every project is built as if it were the first, even when it resembles ten others."
+          ],
+          "getLabel": "What you get",
+          "get": "New pricing units, a catalog of specification assets reusable across clients and traceability your client can audit. And a rule the method respects: <b>the domain stays with the client</b>; the client decides the business map and your team builds it.",
+          "action": { "label": "Read how it applies to your service", "href": "#guia", "style": "light-sm" }
+        }
+      ]
+    },
+    {
+      "type": "method", "id": "metodo",
+      "eyebrow": "The method",
+      "title": "TELAR: the specification as the source of truth.",
+      "paragraphs": [
+        "The Jacquard loom separated the pattern from the machine. TELAR (Spanish for “loom”) applies that principle to software: the specification plays the role of the card, the agent that of the loom, and people retain decisions and verification.",
+        "The method establishes a traceable chain linking business intent to every artifact in the lifecycle, all the way to production telemetry."
+      ],
+      "loops": {
+        "aria": "Nested loops: the business why loop wraps the execution loops where agents work; people govern them from outside, through the harness",
+        "people": ["People on the loop", "Govern through the harness"],
+        "why": ["Why loop (business)", "Idea → working software → learning"],
+        "how": ["How loops (execution)", "Spec → tasks → code → verification"],
+        "agents": "Agents",
+        "caption": "The cycle is not a waterfall: people design and improve the harness that governs execution, instead of inspecting every artifact the agents produce by hand."
+      },
+      "chain": {
+        "aria": "Chain of intent: INT, REQ, SPEC, TASK, PR, TEST, REL and telemetry, grouped into why and what, how, and evidence",
+        "stageWord": "stage",
+        "nodes": [
+          { "code": "INT", "label": "Intent", "stage": "1", "tone": "rust" },
+          { "code": "REQ", "label": "Requirement", "stage": "1 · 2", "tone": "rust" },
+          { "code": "SPEC", "label": "Specification", "stage": "2", "tone": "indigo" },
+          { "code": "TASK", "label": "Agent task", "stage": "3", "tone": "indigo" },
+          { "code": "PR", "label": "Reviewed change", "stage": "4", "tone": "indigo" },
+          { "code": "TEST", "label": "Verification", "stage": "5", "tone": "deep" },
+          { "code": "REL", "label": "Release", "stage": "6", "tone": "deep" },
+          { "code": "Telemetry", "label": "In production", "stage": "6", "tone": "deep" }
+        ],
+        "groups": [
+          { "label": "Why and what", "from": 0, "to": 1, "tone": "rust" },
+          { "label": "How", "from": 2, "to": 4, "tone": "indigo" },
+          { "label": "Evidence", "from": 5, "to": 7, "tone": "deep" }
+        ],
+        "caption": "The chain of intent: each artifact links to the previous one and to whoever approved it."
+      },
+      "lifecycle": {
+        "title": "A seven-stage lifecycle",
+        "text": "The intent chain is what remains; the stages are how it is produced. Each stage leaves one or more links of the chain —its number appears above each link— with its controls and its owners. Agents execute; people decide and verify with evidence.",
+        "zero": { "title": "0 · Legacy uplift", "text": "— existing systems only: recover the knowledge in the code before specifying." },
+        "aria": "The seven lifecycle stages",
+        "stages": [
+          { "n": 1, "tone": "rust", "title": "Intent and discovery", "text": "Turn a vague need into a verifiable intent with a measurable outcome.", "tags": ["INT", "REQ", "DOM"] },
+          { "n": 2, "tone": "rust", "title": "Specification and design", "text": "The source of truth: what the system must do and how it is built within the rules.", "tags": ["REQ", "SPEC", "ADR"] },
+          { "n": 3, "tone": "indigo", "title": "Planning and decomposition", "text": "Break the specification into small tasks, with the context an agent needs.", "tags": ["TASK"] },
+          { "n": 4, "tone": "indigo", "title": "Agentic construction", "text": "Agents build code, tests and infrastructure inside the harness.", "tags": ["PR"] },
+          { "n": 5, "tone": "rust", "title": "Verification and intent review", "text": "Does the code meet the spec? Does the spec still reflect what was wanted?", "tags": ["TEST", "GATE"] },
+          { "n": 6, "tone": "indigo", "title": "Deployment and operation", "text": "To production with observability designed from the spec: was the metric achieved?", "tags": ["REL", "TEL"] },
+          { "n": 7, "tone": "indigo", "title": "Specification evolution", "text": "Specs stay alive and in sync: the asset that accumulates.", "tags": ["DRIFT"] }
+        ],
+        "returns": [
+          { "from": 5, "to": 2, "tone": "rust", "label": "Loop from 5 to 2.", "text": "If what was built does not match the specification, the specification is corrected first, then the code." },
+          { "from": 7, "to": 2, "tone": "indigo", "label": "Loop from 7 to 2.", "text": "Every new change starts from the current specifications, not from scratch." }
+        ],
+        "harness": { "title": "Harness", "text": "The environment that governs every stage: constitution, rules, templates, checkers and gates. It improves with every cycle." },
+        "legend": [
+          { "tone": "rust", "text": "Stages where human judgment is the bottleneck" },
+          { "tone": "indigo", "text": "Stages where agents execute under control" },
+          { "text": "Developed in the reference guide, Part II." }
+        ]
+      },
+      "pillars": [
+        { "term": "Domain", "text": "The domain is discovered and bounded with domain-driven design (DDD). Techniques such as Event Storming help explore it and reach a big-picture design." },
+        { "term": "Specification", "text": "Specifications anchored to the domain, versioned and owned, that outlive the task that produced them." },
+        { "term": "Execution", "text": "Agents work inside a controlled environment (a harness): rules, templates, verifiers and scoped permissions." },
+        { "term": "Verification", "text": "Evidence-based controls at every stage. Deciding and verifying are human responsibilities that are never delegated to an agent." },
+        { "term": "Evolution", "text": "Systems change without losing traceability, and agent autonomy expands only on evidence." }
+      ]
+    },
+    {
+      "type": "adoption", "id": "servicios",
+      "image": "assets/img/enhebrado.jpg", "imagePosition": "60% 50%",
+      "alt": "A craftsman’s hands threading the warp of a Jacquard loom, next to the pattern draft and the punched cards",
+      "eyebrow": "Services",
+      "title": "A gradual, measurable and reversible adoption process.",
+      "text": "Not every area of the portfolio requires the same level of maturity. The work starts from each area’s current situation and defines the level it should reach.",
+      "intro": "Three services contracted in sequence. Each delivers a useful result on its own and opens the door to the next.",
+      "services": [
+        {
+          "label": "Service 1", "badge": "Entry point", "accent": "rust",
+          "title": "Assessment and roadmap",
+          "items": ["1. Maturity assessment", "2. Gap and needs analysis", "3. Action plan"],
+          "resultLabel": "Outcome",
+          "result": "The current level of each area, backed by evidence; gaps prioritized by risk and value; and a phased plan with a baseline, rollback signals and a stop criterion.",
+          "action": { "label": "Request the assessment", "href": "mail:Maturity assessment", "style": "primary" }
+        },
+        {
+          "label": "Service 2", "accent": "indigo",
+          "title": "Adoption package",
+          "items": ["Adoption by area or domain"],
+          "resultLabel": "Outcome",
+          "result": "The model running in a pilot area: agent environment (harness), accountability matrix, controls, templates and a case from your own domain.",
+          "action": { "label": "Discuss a pilot", "href": "mail:Adoption package", "style": "ghost" }
+        },
+        {
+          "label": "Service 3", "accent": "purple",
+          "title": "Ongoing support and evolution",
+          "items": ["Ongoing support and evolution"],
+          "resultLabel": "Outcome",
+          "result": "Extension of the model to other areas and continuous evolution of the harness and its controls. Agent autonomy expands only on evidence.",
+          "action": { "label": "Learn about ongoing support", "href": "mail:Ongoing support and evolution", "style": "purple" }
+        }
+      ],
+      "crosslink": {
+        "text": "TELAR is one of the four fronts through which we support software lifecycle modernization. The other three are architecture and complex systems, training and technical leadership, and engineering team design.",
+        "link": { "label": "See all services →", "href": "@home#servicios" }
+      }
+    },
+    {
+      "type": "maturity", "id": "madurez",
+      "eyebrow": "Free self-assessment",
+      "title": "Find out your team’s maturity level in ten minutes.",
+      "text": "Fourteen questions about verifiable practices. The result shows the current level of an area of your portfolio, the criteria still pending and the recommended order to close them.",
+      "action": { "label": "Start the self-assessment", "href": "#madurez", "style": "primary" },
+      "aria": "Five-level maturity staircase, from Ad hoc to Optimized; level 2, Anchored, is the institutional minimum",
+      "levels": [
+        { "name": "Ad hoc", "height": 20 },
+        { "name": "Assisted", "height": 38 },
+        { "name": "Anchored", "height": 56, "style": "min" },
+        { "name": "Governed", "height": 76, "style": "high" },
+        { "name": "Optimized", "height": 96, "style": "high" }
+      ],
+      "caption": "The model’s five levels. Level 2 is the recommended institutional minimum; level 4 is optional depending on the area."
+    },
+    {
+      "type": "personShort", "id": "equipo", "person": "rafael-pino", "size": "sm",
+      "eyebrow": "Who is behind TELAR",
+      "role": "Founder of CreativaLabs.io · Creator of TELAR",
+      "bio": "The method draws on more than twenty-five years building and scaling engineering organizations. Its direct forerunner is eTask (2009): a methodology governance platform built on SPEM and UMA and on model-driven development. The same idea, fifteen years before agents.",
+      "link": { "label": "Meet the team and the track record →", "href": "@equipo" }
+    },
+    {
+      "type": "book", "id": "guia", "coverSize": "lg",
+      "eyebrow": "Open reference guide",
+      "paragraphs": [
+        "The complete TELAR model: lifecycle, traceability, accountability, agent environment, maturity, adoption and economics. Published under a CC BY 4.0 license, free to read, cite and adapt.",
+        { "text": "The method is public. Our work is to put it in place in your organization.", "muted": true }
+      ],
+      "actions": [
+        { "label": "Read the guide", "href": "#guia", "style": "indigo" },
+        { "label": "Get the PDF and templates", "href": "#guia", "style": "outline" }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "items": [
+        { "q": "Some say spec-driven development is dead, or just waterfall again. Why adopt it?", "a": "The debate raises fair points, but it argues about a practice. The underlying need is different: modernizing a software lifecycle designed for a time when writing code was the expensive part, with changes across technology, people, tools and organization. In TELAR the specification is not frozen up front: it evolves with what each delivery teaches and is verified so it does not drift." },
+        { "q": "Do we need to change our current tools?", "a": "No. The method is tool-independent: it defines categories and selection criteria. Recommendations are tailored to each organization." },
+        { "q": "Does it apply to existing systems?", "a": "Yes. The model includes a specific stage for systems in operation, which are handled lightly while specification coverage grows with use." },
+        { "q": "Must every area reach the highest level?", "a": "No. The right level depends on each area’s risk and value. The gap analysis sets the target for each one." },
+        { "q": "What happens if the pilot does not deliver the expected results?", "a": "Every phase has a baseline, rollback signals and a stop criterion agreed before starting. Stopping in time is part of the method." },
+        { "q": "Do you provide services in English?", "a": "Yes. We serve organizations in Latin America and the United States, in Spanish and English." }
+      ]
+    },
+    { "type": "weave" },
+    { "type": "closing", "actions": [ { "label": "Assess your team’s maturity", "href": "#madurez", "style": "light" } ] },
+    { "type": "footer" }
+  ]
+}

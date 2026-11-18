@@ -1,0 +1,87 @@
+{
+  "brand": { "name": "CreativaLabs", "tld": ".io", "full": "CreativaLabs.io" },
+  "baseUrl": "https://artemano.github.io/creativalabs.io/",
+  "contact": { "email": "hablemos@creativalabs.io" },
+  "company": {
+    "legal": "Creativa IT S.A.S.",
+    "country": { "es": "Colombia", "en": "Colombia" },
+    "since": 2008
+  },
+  "languages": ["es", "en"],
+  "defaultLanguage": "es",
+  "ogImage": "assets/img/og.jpg",
+  "themeColor": "#16181F",
+
+  "pages": {
+    "home": {
+      "es": { "path": "", "title": "CreativaLabs.io — Modernización del ciclo de vida de software", "description": "Acompañamos la modernización del ciclo de vida de software en cuatro frentes: tecnología, personas, herramientas y organización." },
+      "en": { "path": "en/", "title": "CreativaLabs.io — Software lifecycle modernization", "description": "We support software lifecycle modernization across four fronts: technology, people, tools and organization." }
+    },
+    "telar": {
+      "es": { "path": "telar/", "title": "Método TELAR — Ingeniería de software con agentes de IA · CreativaLabs.io", "description": "Método y gobierno para construir software con agentes de IA, con trazabilidad desde la intención de negocio hasta la operación." },
+      "en": { "path": "en/telar/", "title": "TELAR method — Software engineering with AI agents · CreativaLabs.io", "description": "Method and governance for building software with AI agents, with traceability from business intent to operations." }
+    },
+    "equipo": {
+      "es": { "path": "equipo/", "title": "Equipo — CreativaLabs.io", "description": "La experiencia detrás de CreativaLabs.io: más de veinticinco años formando, escalando y transformando organizaciones de ingeniería." },
+      "en": { "path": "en/team/", "title": "Team — CreativaLabs.io", "description": "The experience behind CreativaLabs.io: more than twenty-five years building, scaling and transforming engineering organizations." }
+    }
+  },
+
+  "ui": {
+    "es": { "switchLabel": "English", "switchAria": "Ver en inglés", "navAria": "Principal", "contact": "Contacto" },
+    "en": { "switchLabel": "Español", "switchAria": "Ver en español", "navAria": "Main", "contact": "Contact" }
+  },
+
+  "indicators": [
+    { "value": "3 → 165+", "label": { "es": "Crecimiento de una fábrica de software", "en": "Growth of a software factory" } },
+    { "value": "240+", "label": { "es": "Ingenieros liderados en una organización", "en": "Engineers led in one organization" } },
+    { "value": "3", "label": { "es": "Empresas cofundadas", "en": "Companies co-founded" } },
+    { "value": "+26", "label": { "es": "Años de experiencia", "en": "Years of experience" } },
+    { "value": "+60", "label": { "es": "Proyectos", "en": "Projects" } }
+  ],
+
+  "people": {
+    "rafael-pino": {
+      "name": "Rafael Pino",
+      "photo": "assets/img/rafael-pino.jpg",
+      "photoAlt": { "es": "Rafael Pino, fundador de CreativaLabs.io", "en": "Rafael Pino, founder of CreativaLabs.io" },
+      "role": { "es": "Fundador · Creador de TELAR", "en": "Founder · Creator of TELAR" }
+    }
+  },
+
+  "book": {
+    "cover": "assets/img/portada-telar.jpg",
+    "author": "Rafael Pino",
+    "license": "CC BY 4.0",
+    "title": { "es": "La segunda industrialización del software", "en": "The Second Industrialization of Software" },
+    "subtitle": { "es": "Cómo construir con agentes sin perder el gobierno", "en": "How to build with agents without losing governance" },
+    "coverAlt": {
+      "es": "Portada del libro La segunda industrialización del software, con la cadena de tarjetas perforadas de un telar de Jacquard",
+      "en": "Cover of the book The Second Industrialization of Software, with the punched-card chain of a Jacquard loom"
+    }
+  },
+
+  "footer": {
+    "es": {
+      "text": "Creativa Labs es una marca de Creativa IT S.A.S. · Colombia · desde 2008",
+      "links": [
+        { "label": "Política de tratamiento de datos", "href": "#" },
+        { "label": "Guía bajo CC BY 4.0", "href": "@telar#guia" },
+        { "label": "LinkedIn", "href": "#" }
+      ]
+    },
+    "en": {
+      "text": "Creativa Labs is a brand of Creativa IT S.A.S. · Colombia · since 2008",
+      "links": [
+        { "label": "Data processing policy", "href": "#" },
+        { "label": "Guide under CC BY 4.0", "href": "@telar#guia" },
+        { "label": "LinkedIn", "href": "#" }
+      ]
+    }
+  },
+
+  "closing": {
+    "es": { "title": "Conversemos sobre la situación de su organización.", "text": "Escríbanos y coordinaremos una primera reunión, sin costo, para entender su contexto." },
+    "en": { "title": "Let us discuss your organization’s situation.", "text": "Write to us and we will arrange an initial meeting, at no cost, to understand your context." }
+  }
+}

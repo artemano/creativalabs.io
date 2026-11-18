@@ -1,0 +1,101 @@
+{
+  "sections": [
+    {
+      "type": "header",
+      "nav": [
+        { "label": "Servicios", "href": "#servicios" },
+        { "label": "TELAR", "href": "@telar" },
+        { "label": "Libro", "href": "#libro" },
+        { "label": "Equipo", "href": "@equipo" }
+      ]
+    },
+    { "type": "weave" },
+    {
+      "type": "hero", "id": "inicio", "variant": "home",
+      "image": "assets/img/nave-textil.jpg", "alt": "", "imagePosition": "70% 50%",
+      "eyebrow": "Modernización del ciclo de vida de software",
+      "title": "Modernizamos la forma en que su organización construye software.",
+      "lead": "La inteligencia artificial cambió lo que cuesta escribir código, pero no el ciclo de vida con el que las organizaciones deciden, construyen y verifican. Acompañamos esa modernización en cuatro frentes: tecnología, personas, herramientas y organización.",
+      "actions": [
+        { "label": "Ver los servicios", "href": "#servicios", "style": "primary" },
+        { "label": "Solicitar una conversación", "href": "mail:", "style": "light" }
+      ]
+    },
+    {
+      "type": "fronts", "id": "servicios",
+      "eyebrow": "Servicios",
+      "title": "Cuatro frentes, una misma transformación.",
+      "text": "Cada frente puede contratarse por separado. Juntos cubren lo que cambia cuando una organización empieza a construir con agentes de IA.",
+      "items": [
+        {
+          "kicker": "01 · Tecnología",
+          "title": "Arquitectura y sistemas complejos",
+          "text": "Decisiones de arquitectura que resisten el cambio y sistemas que se entienden antes de construirse.",
+          "items": ["Asesoría en arquitectura, integración y evolución de plataformas", "Concepción, especificación y diseño de sistemas complejos", "Talleres de diseño guiado por el dominio y Event Storming"],
+          "action": { "label": "Consultar →", "href": "mail:Arquitectura y sistemas complejos", "style": "ghost" }
+        },
+        {
+          "kicker": "02 · Personas",
+          "title": "Formación y liderazgo técnico",
+          "text": "Los roles cambian cuando los agentes ejecutan; el criterio humano se vuelve lo valioso.",
+          "items": ["Formación por rol: Tech Lead, Ingeniero AI-nativo, Product Owner y QA", "Desarrollo de líderes técnicos y gerentes de ingeniería", "Coaching de liderazgo para equipos de tecnología"],
+          "action": { "label": "Consultar →", "href": "mail:Formación y liderazgo técnico", "style": "ghost" }
+        },
+        {
+          "kicker": "03 · Herramientas y proceso",
+          "title": "Adopción de agentes con TELAR",
+          "text": "Un ciclo de vida gobernado para construir software con agentes de IA, adoptado por fases y con evidencia.",
+          "items": ["Diagnóstico de madurez y plan de acción", "Paquete de adopción por área o dominio", "Acompañamiento y evolución del entorno de agentes"],
+          "action": { "label": "Conocer el método →", "href": "@telar", "style": "ghost" }
+        },
+        {
+          "kicker": "04 · Organización",
+          "title": "Optimización y diseño de equipos de construcción de software",
+          "text": "Estructuras, responsabilidades y controles a la medida de la nueva forma de construir.",
+          "items": ["Diseño de equipos de ingeniería y planes de carrera", "Matriz de responsabilidades y gobierno del ciclo de vida", "Modelo de madurez por área del portafolio"],
+          "action": { "label": "Consultar →", "href": "mail:Optimización y diseño de equipos de construcción de software", "style": "ghost" }
+        }
+      ]
+    },
+    {
+      "type": "modes", "id": "modalidades",
+      "eyebrow": "Modalidades de colaboración",
+      "title": "Cuatro formas de trabajar juntos.",
+      "text": "Cualquier frente se puede contratar en la modalidad que mejor se ajuste a su momento: desde un diagnóstico de pocas semanas hasta una dirección tecnológica continua.",
+      "items": [
+        { "tag": "2 a 4 semanas", "title": "Evaluación estratégica", "text": "Revisión a fondo de las prácticas de ingeniería y de la preparación para adoptar IA, con una hoja de ruta de transformación.", "action": { "label": "Solicitar una evaluación →", "href": "mail:Evaluación estratégica" } },
+        { "tag": "Alcance definido", "title": "Por proyecto", "text": "Encargos de alcance cerrado —desarrollo de un MVP con el método SPIRAL, diseño de arquitectura o integración de IA— con entregables y plazos claros.", "action": { "label": "Proponer un proyecto →", "href": "mail:Por proyecto" } },
+        { "tag": "3 a 12 meses", "title": "Acompañamiento de implementación", "text": "Trabajo conjunto para incorporar flujos de trabajo con agentes, implantar TELAR e impulsar el cambio organizacional.", "action": { "label": "Conversar sobre un acompañamiento →", "href": "mail:Acompañamiento de implementación" } },
+        { "tag": "Dedicación parcial", "title": "CTO a tiempo parcial", "text": "Dirección tecnológica para startups y empresas en expansión: orientación estratégica, decisiones de arquitectura y coaching de equipos.", "action": { "label": "Consultar disponibilidad →", "href": "mail:CTO a tiempo parcial" } }
+      ]
+    },
+    {
+      "type": "band",
+      "eyebrow": "El método detrás de los cuatro frentes",
+      "title": "TELAR conecta tecnología, personas, herramientas y organización.",
+      "text": "Cualquier frente empieza por el mismo lugar: un diagnóstico de madurez que muestra dónde está cada área de su portafolio, qué brechas pesan más y por dónde conviene empezar. A partir de ahí, cada servicio aplica el mismo método.",
+      "actions": [
+        { "label": "Solicitar el diagnóstico", "href": "mail:Diagnóstico de madurez", "style": "primary" },
+        { "label": "Conocer el método TELAR", "href": "@telar", "style": "light" }
+      ]
+    },
+    {
+      "type": "book", "id": "libro", "coverFirst": true, "coverSize": "sm", "borderBottom": true,
+      "eyebrow": "Libro y guía de referencia abierta",
+      "paragraphs": ["El método completo, publicado bajo licencia CC BY 4.0 para leer, citar y adaptar libremente. El método es público; nuestro trabajo es instalarlo en su organización."],
+      "actions": [
+        { "label": "Leer la guía", "href": "@telar#guia", "style": "indigo" },
+        { "label": "Recibir el PDF", "href": "@telar#guia", "style": "outline" }
+      ]
+    },
+    {
+      "type": "personShort", "id": "equipo", "person": "rafael-pino", "size": "md", "showIndicators": true,
+      "eyebrow": "Equipo",
+      "bio": "Más de veinticinco años formando, escalando y transformando organizaciones de ingeniería: de una fábrica de software de 3 a más de 165 personas, a la adopción de agentes de IA en una aseguradora digital.",
+      "link": { "label": "Ver la trayectoria completa →", "href": "@equipo" }
+    },
+    { "type": "weave" },
+    { "type": "closing" },
+    { "type": "footer" }
+  ]
+}

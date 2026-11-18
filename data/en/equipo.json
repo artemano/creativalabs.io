@@ -1,0 +1,46 @@
+{
+  "sections": [
+    {
+      "type": "header",
+      "nav": [
+        { "label": "Services", "href": "@home#servicios" },
+        { "label": "TELAR method", "href": "@telar" },
+        { "label": "Book", "href": "@home#libro" },
+        { "label": "Team", "href": "#equipo" }
+      ]
+    },
+    { "type": "weave" },
+    {
+      "type": "team", "id": "equipo", "person": "rafael-pino",
+      "eyebrow": "Team",
+      "title": "The experience behind CreativaLabs.io.",
+      "text": "More than twenty-five years building, scaling and transforming engineering organizations in consulting, digital product and nearshore services, across Latin America and the United States.",
+      "bio": "Builder and architect of large-scale enterprise solutions, SDLC expert and certified coach in engineering leadership.<br>Author of <em>The Second Industrialization of Software</em>, the TELAR method and the SPIRAL method for building MVPs rapidly with AI.",
+      "education": [
+        { "title": "Systems Engineering", "place": "Universidad Nacional de Colombia" },
+        { "title": "Enterprise Software Architecture", "place": "Pontificia Universidad Javeriana" },
+        { "title": "Certified coach and facilitator", "place": "Altamente" },
+        { "title": "Scrum Master and Product Owner", "place": "Scrum Alliance" }
+      ],
+      "timeline": {
+        "title": "Track record",
+        "subtitle": "From the software factory to engineering with AI agents.",
+        "items": [
+          { "year": "2025", "accent": true, "org": "Grupo R5 · InsurTech", "role": "Technology director", "text": "Spec-driven development and AI agents on an insurance platform." },
+          { "year": "2023", "org": "DoubleVPartners", "role": "Technology director", "text": "50 engineers on cloud-native solutions; first adoption of AI assistants." },
+          { "year": "2022", "org": "Ubanku", "role": "CTO and co-founder", "text": "Neobank for young people’s financial inclusion; event-driven microservices architecture and a pre-seed round of about USD 1 million." },
+          { "year": "2021", "org": "Asesoftware", "role": "Engineering manager", "text": "More than 70 engineers; built the product development area." },
+          { "year": "2016", "org": "Togroow", "role": "CTO and co-founder", "text": "Multi-tenant B2B SaaS platform with e-commerce, payments and a marketplace." },
+          { "year": "2015", "org": "Digitalware", "role": "VP of Innovation and Development", "text": "240-person organization across four product lines; agile transformation." },
+          { "year": "2014", "org": "Globant", "role": "Technical director", "text": "30-person nearshore teams for Disney Parks and TripAdvisor." },
+          { "year": "2009", "featured": true, "badge": "Direct forerunner of TELAR", "org": "eTask, now Hydra Cloud", "role": "CTO and co-founder", "text": "Methodology governance platform built on the SPEM and UMA standards: processes as reusable assets and model-driven development (MDD/MDA). A 65-person organization. Fifteen years before agents, the same idea that underpins TELAR today: intent and process govern construction." },
+          { "year": "2002", "accent": true, "org": "Heinsohn", "role": "Software factory and presales director", "text": "Software factory grown from 3 to more than 165 engineers; about USD 12 million in deals." },
+          { "year": "1997", "org": "Unisys", "role": "Lead architect", "text": "Architecture of personal, business and branch banking for Banco Santander." }
+        ]
+      },
+      "sectors": { "label": "Sectors", "items": ["Insurance", "Banking", "FinTech", "Healthcare", "Government", "Media"] }
+    },
+    { "type": "closing" },
+    { "type": "footer" }
+  ]
+}
