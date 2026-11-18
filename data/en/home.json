@@ -3,26 +3,53 @@
     {
       "type": "header",
       "nav": [
-        { "label": "Services", "href": "#servicios" },
-        { "label": "TELAR", "href": "@telar" },
-        { "label": "Book", "href": "#libro" },
-        { "label": "Team", "href": "@equipo" }
+        {
+          "label": "Services",
+          "href": "#servicios"
+        },
+        {
+          "label": "TELAR",
+          "href": "@telar"
+        },
+        {
+          "label": "Book",
+          "href": "#libro"
+        },
+        {
+          "label": "Team",
+          "href": "@equipo"
+        }
       ]
     },
-    { "type": "weave" },
     {
-      "type": "hero", "id": "inicio", "variant": "home",
-      "image": "assets/img/nave-textil.jpg", "alt": "", "imagePosition": "70% 50%",
-      "eyebrow": "Software lifecycle modernization",
-      "title": "We modernize the way your organization builds software.",
-      "lead": "Artificial intelligence changed what it costs to write code, but not the lifecycle organizations use to decide, build and verify. We support that modernization across four fronts: technology, people, tools and organization.",
+      "type": "weave"
+    },
+    {
+      "type": "hero",
+      "id": "inicio",
+      "variant": "home",
+      "image": "assets/img/nave-textil.jpg",
+      "alt": "",
+      "imagePosition": "70% 50%",
+      "eyebrow": "Software engineering consulting",
+      "title": "We prepare your engineering organization to build software with AI.",
+      "lead": "AI changed what it costs to write code. Everything else does not change on its own: architecture, people, process and team structure. We support that transformation across four fronts that can be engaged separately or as a single program.",
       "actions": [
-        { "label": "See the services", "href": "#servicios", "style": "primary" },
-        { "label": "Request a conversation", "href": "mail:", "style": "light" }
+        {
+          "label": "See the services",
+          "href": "#servicios",
+          "style": "primary"
+        },
+        {
+          "label": "Request a conversation",
+          "href": "mail:",
+          "style": "light"
+        }
       ]
     },
     {
-      "type": "fronts", "id": "servicios",
+      "type": "fronts",
+      "id": "servicios",
       "eyebrow": "Services",
       "title": "Four fronts, one transformation.",
       "text": "Each front can be engaged on its own. Together they cover what changes when an organization starts building with AI agents.",
@@ -31,42 +58,107 @@
           "kicker": "01 · Technology",
           "title": "Architecture and complex systems",
           "text": "Architecture decisions that withstand change, and systems that are understood before they are built.",
-          "items": ["Advisory on architecture, integration and platform evolution", "Conception, specification and design of complex systems", "Domain-driven design and Event Storming workshops"],
-          "action": { "label": "Enquire →", "href": "mail:Architecture and complex systems", "style": "ghost" }
+          "items": [
+            "Advisory on architecture, integration and platform evolution",
+            "Conception, specification and design of complex systems",
+            "Domain-driven design and Event Storming workshops"
+          ],
+          "action": {
+            "label": "Enquire →",
+            "href": "mail:Architecture and complex systems",
+            "style": "ghost"
+          }
         },
         {
           "kicker": "02 · People",
           "title": "Training and technical leadership",
           "text": "Roles change when agents execute; human judgment becomes what is valuable.",
-          "items": ["Role-based training: Tech Lead, AI-native Engineer, Product Owner and QA", "Development of technical leaders and engineering managers", "Leadership coaching for technology teams"],
-          "action": { "label": "Enquire →", "href": "mail:Training and technical leadership", "style": "ghost" }
+          "items": [
+            "Role-based training: Tech Lead, AI-native Engineer, Product Owner and QA",
+            "Development of technical leaders and engineering managers",
+            "Leadership coaching for technology teams"
+          ],
+          "action": {
+            "label": "Enquire →",
+            "href": "mail:Training and technical leadership",
+            "style": "ghost"
+          }
         },
         {
           "kicker": "03 · Tools and process",
-          "title": "Agent adoption with TELAR",
+          "title": "SDLC modernization with TELAR",
           "text": "A governed lifecycle for building software with AI agents, adopted in phases and backed by evidence.",
-          "items": ["Maturity assessment and action plan", "Adoption package by area or domain", "Ongoing support and evolution of the agent environment"],
-          "action": { "label": "Explore the method →", "href": "@telar", "style": "ghost" }
+          "items": [
+            "Maturity assessment and action plan",
+            "Adoption package by area or domain",
+            "Ongoing support and evolution of the agent environment"
+          ],
+          "action": {
+            "label": "Explore the method →",
+            "href": "@telar",
+            "style": "ghost"
+          }
         },
         {
           "kicker": "04 · Organization",
           "title": "Optimization and design of software delivery teams",
           "text": "Structures, accountabilities and controls tailored to the new way of building.",
-          "items": ["Engineering team design and career paths", "Accountability matrix and lifecycle governance", "Maturity model by portfolio area"],
-          "action": { "label": "Enquire →", "href": "mail:Optimization and design of software delivery teams", "style": "ghost" }
+          "items": [
+            "Engineering team design and career paths",
+            "Accountability matrix and lifecycle governance",
+            "Maturity model by portfolio area"
+          ],
+          "action": {
+            "label": "Enquire →",
+            "href": "mail:Optimization and design of software delivery teams",
+            "style": "ghost"
+          }
         }
       ]
     },
     {
-      "type": "modes", "id": "modalidades",
+      "type": "modes",
+      "id": "modalidades",
       "eyebrow": "Engagement models",
       "title": "Four ways to work together.",
       "text": "Any front can be engaged in the model that best fits your moment: from an assessment of a few weeks to ongoing technology leadership.",
       "items": [
-        { "tag": "2 to 4 weeks", "title": "Strategic assessment", "text": "An in-depth review of engineering practices and AI readiness, with a transformation roadmap.", "action": { "label": "Request an assessment →", "href": "mail:Strategic assessment" } },
-        { "tag": "Defined scope", "title": "Project-based", "text": "Fixed-scope engagements —an MVP built with the SPIRAL method, an architecture design or an AI integration— with clear deliverables and timelines.", "action": { "label": "Propose a project →", "href": "mail:Project-based engagement" } },
-        { "tag": "3 to 12 months", "title": "Implementation support", "text": "Working side by side to introduce agent workflows, put TELAR in place and drive organizational change.", "action": { "label": "Discuss implementation support →", "href": "mail:Implementation support" } },
-        { "tag": "Part-time", "title": "Fractional CTO", "text": "Technology leadership for startups and scaling companies: strategic guidance, architecture decisions and team coaching.", "action": { "label": "Check availability →", "href": "mail:Fractional CTO" } }
+        {
+          "tag": "2 to 4 weeks",
+          "title": "Strategic assessment",
+          "text": "An in-depth review of engineering practices and AI readiness, with a transformation roadmap.",
+          "action": {
+            "label": "Request an assessment →",
+            "href": "mail:Strategic assessment"
+          }
+        },
+        {
+          "tag": "Defined scope",
+          "title": "Project-based",
+          "text": "Fixed-scope engagements —an MVP built with the SPIRAL method, an architecture design or an AI integration— with clear deliverables and timelines.",
+          "action": {
+            "label": "Propose a project →",
+            "href": "mail:Project-based engagement"
+          }
+        },
+        {
+          "tag": "3 to 12 months",
+          "title": "Implementation support",
+          "text": "Working side by side to introduce agent workflows, put TELAR in place and drive organizational change.",
+          "action": {
+            "label": "Discuss implementation support →",
+            "href": "mail:Implementation support"
+          }
+        },
+        {
+          "tag": "Part-time",
+          "title": "Fractional CTO",
+          "text": "Technology leadership for startups and scaling companies: strategic guidance, architecture decisions and team coaching.",
+          "action": {
+            "label": "Check availability →",
+            "href": "mail:Fractional CTO"
+          }
+        }
       ]
     },
     {
@@ -75,27 +167,62 @@
       "title": "TELAR connects technology, people, tools and organization.",
       "text": "Every front starts in the same place: a maturity assessment that shows where each area of your portfolio stands, which gaps matter most and where to begin. From there, every service applies the same method.",
       "actions": [
-        { "label": "Request the assessment", "href": "mail:Maturity assessment", "style": "primary" },
-        { "label": "Explore the TELAR method", "href": "@telar", "style": "light" }
+        {
+          "label": "Request the assessment",
+          "href": "mail:Maturity assessment",
+          "style": "primary"
+        },
+        {
+          "label": "Explore the TELAR method",
+          "href": "@telar",
+          "style": "light"
+        }
       ]
     },
     {
-      "type": "book", "id": "libro", "coverFirst": true, "coverSize": "sm", "borderBottom": true,
+      "type": "book",
+      "id": "libro",
+      "coverFirst": true,
+      "coverSize": "sm",
+      "borderBottom": true,
       "eyebrow": "Book and open reference guide",
-      "paragraphs": ["The complete method, published under a CC BY 4.0 license, free to read, cite and adapt. The method is public; our work is to put it in place in your organization."],
+      "paragraphs": [
+        "The complete method, published under a CC BY 4.0 license, free to read, cite and adapt. The method is public; our work is to put it in place in your organization."
+      ],
       "actions": [
-        { "label": "Read the guide", "href": "@telar#guia", "style": "indigo" },
-        { "label": "Get the PDF", "href": "@telar#guia", "style": "outline" }
+        {
+          "label": "Read the guide",
+          "href": "@telar#guia",
+          "style": "indigo"
+        },
+        {
+          "label": "Get the PDF",
+          "href": "@telar#guia",
+          "style": "outline"
+        }
       ]
     },
     {
-      "type": "personShort", "id": "equipo", "person": "rafael-pino", "size": "md", "showIndicators": true,
+      "type": "personShort",
+      "id": "equipo",
+      "person": "rafael-pino",
+      "size": "md",
+      "showIndicators": true,
       "eyebrow": "Team",
       "bio": "More than twenty-five years building, scaling and transforming engineering organizations: from a software factory grown from 3 to more than 165 people, to AI agent adoption at a digital insurer.",
-      "link": { "label": "See the full track record →", "href": "@equipo" }
+      "link": {
+        "label": "See the full track record →",
+        "href": "@equipo"
+      }
     },
-    { "type": "weave" },
-    { "type": "closing" },
-    { "type": "footer" }
+    {
+      "type": "weave"
+    },
+    {
+      "type": "closing"
+    },
+    {
+      "type": "footer"
+    }
   ]
 }
