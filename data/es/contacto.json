@@ -54,9 +54,11 @@
     "org": "Organización",
     "topic": "Tema de interés",
     "desc": "Descripción breve del desafío",
-    "consent": "Acepto la política de tratamiento de datos personales.",
-    "submit": "Enviar solicitud"
-   }
+    "consent": "Autorizo a Creativa IT S.A.S. a tratar mis datos personales para responder esta solicitud, conforme a la <a href=\"/politica-de-datos/\">Política de tratamiento de datos personales</a>.",
+    "submit": "Enviar solicitud",
+    "news": "Quiero recibir avisos de nuevas versiones del libro, de la guía práctica y de contenidos relacionados. Puedo darme de baja en cualquier momento."
+   },
+   "privacy": "Creativa IT S.A.S. (CreativaLabs), NIT 900357682, tratará sus datos para responder su solicitud y, si lo autoriza, enviarle novedades. Puede conocer, actualizar, rectificar o suprimir sus datos y revocar la autorización escribiendo a hablemos@creativalabs.io. Consulte la <a href=\"/politica-de-datos/\">Política de tratamiento de datos personales</a>."
   },
   {
    "type": "weave"

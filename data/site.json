@@ -130,6 +130,13 @@
     "title": "Contacto | CreativaLabs",
     "description": "Cuéntenos qué quiere mejorar o qué decisión necesita tomar. Enfocaremos una primera conversación de 25 minutos."
    }
+  },
+  "politica": {
+   "es": {
+    "path": "politica-de-datos/",
+    "title": "Política de tratamiento de datos personales | CreativaLabs",
+    "description": "Cómo Creativa IT S.A.S. (CreativaLabs) trata los datos personales: finalidades, derechos de los titulares y procedimiento para consultas y reclamos."
+   }
   }
  },
  "ui": {
@@ -255,7 +262,7 @@
     },
     {
      "label": "Política de tratamiento de datos",
-     "href": "#"
+     "href": "@politica"
     }
    ]
   },

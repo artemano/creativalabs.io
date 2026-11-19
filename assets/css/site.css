@@ -424,6 +424,20 @@ h1,.h2,.h3{margin:0;font-family:var(--cond);font-weight:800}
 .form button{align-self:flex-start;border:0;cursor:pointer}
 .form-off .btn{margin-top:0}
 
+/* v2: página legal */
+.legal{font-family:var(--serif);font-size:18px;line-height:1.65}
+.legal h2{margin:48px 0 16px;font-family:var(--cond);font-weight:800;font-size:32px;line-height:1.1}
+.legal p,.legal ul,.legal ol{margin:0 0 16px}
+.legal li{margin-bottom:8px}
+.legal__lead{font-size:20px}
+.legal table{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:15px;line-height:1.45;margin:0 0 16px}
+.legal th,.legal td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+.legal thead th{border-bottom:2px solid var(--ink);font-weight:700}
+.legal tbody th{font-weight:600;width:38%}
+.legal__tbl{overflow-x:auto}
+.legal__ver{margin-top:40px !important;font-family:var(--sans);font-size:14px;color:var(--muted)}
+.form__privacy{font-size:13px;line-height:1.5;color:var(--muted)}
+
 /* v2: pie */
 .site-footer__in{align-items:flex-start}
 .site-footer__nav{display:flex;flex-wrap:wrap;gap:10px 22px;font-weight:600}

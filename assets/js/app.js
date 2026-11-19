@@ -376,6 +376,10 @@
 
   /* ---------- tipos de sección del sitio fusionado (v2) ---------- */
 
+  R.legal = function (s) {
+    return '<section class="sec sec--paper"' + idAttr(s) + '><div class="wrap wrap--narrow legal">' + s.html + "</div></section>";
+  };
+
   // Textura de tela índigo con red, foco de luz y destellos (hero del inicio)
   var TX_PATHS = ["765,85 925,85 925,165 1085,165 1085,45 1285,45",
     "685,605 845,605 845,525 1005,525 1005,645 1205,645 1205,565 1365,565",
@@ -523,9 +527,10 @@
       '<div class="form__row"><label for="f-desc">' + s.labels.desc + '</label><textarea id="f-desc" name="descripcion" rows="5" required></textarea></div>' +
       '<input type="hidden" name="origen" value="' + esc(document.referrer) + '"><input type="hidden" name="idioma" value="' + LANG + '">' +
       '<div class="form__row form__check"><input id="f-ok" name="consentimiento" type="checkbox" required><label for="f-ok">' + s.labels.consent + "</label></div>" +
+      (s.labels.news ? '<div class="form__row form__check"><input id="f-news" name="novedades" type="checkbox"><label for="f-news">' + s.labels.news + "</label></div>" : "") +
       (f.turnstileSiteKey ? '<div class="cf-turnstile" data-sitekey="' + esc(f.turnstileSiteKey) + '"></div>' : "") +
       '<p class="form__msg" role="status" aria-live="polite"></p>' +
-      '<button class="btn btn--primary" type="submit">' + s.labels.submit + "</button></form>" + mail + "</div></section>";
+      '<button class="btn btn--primary" type="submit">' + s.labels.submit + "</button>" + (s.privacy ? '<p class="form__privacy">' + s.privacy + "</p>" : "") + "</form>" + mail + "</div></section>";
   };
 
   function bindForm() {
