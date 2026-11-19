@@ -1,675 +1,649 @@
 {
-  "sections": [
+ "sections": [
+  {
+   "type": "header"
+  },
+  {
+   "type": "weave"
+  },
+  {
+   "type": "hero",
+   "id": "inicio",
+   "variant": "telar",
+   "image": "assets/img/hero-telar.jpg",
+   "imagePosition": "100% 40%",
+   "alt": "Telar de Jacquard con su cadena de tarjetas perforadas tejiendo una tela índigo con un patrón de circuitos",
+   "eyebrow": "TELAR · El método de CreativaLabs para la ingeniería habilitada por IA",
+   "title": "Coordine los cambios cuando varios equipos construyen con IA.",
+   "lead": "TELAR ayuda a equipos y agentes a evolucionar sistemas compartidos con contexto común, contratos con dueño y trazabilidad desde la intención de negocio hasta la operación.",
+   "actions": [
     {
-      "type": "header",
-      "nav": [
-        {
-          "label": "El método",
-          "href": "#metodo"
-        },
-        {
-          "label": "Adopción",
-          "href": "#servicios"
-        },
-        {
-          "label": "Otros servicios",
-          "href": "@home#servicios"
-        },
-        {
-          "label": "Equipo",
-          "href": "@equipo"
-        },
-        {
-          "label": "Guía de referencia",
-          "href": "#guia"
-        }
-      ]
+     "label": "Evaluar un piloto TELAR",
+     "href": "/contacto/?tema=telar",
+     "style": "primary"
     },
     {
-      "type": "weave"
-    },
-    {
-      "type": "hero",
-      "id": "inicio",
-      "variant": "telar",
-      "image": "assets/img/hero-telar.jpg",
-      "imagePosition": "100% 40%",
-      "alt": "Telar de Jacquard con su cadena de tarjetas perforadas tejiendo una tela índigo con un patrón de circuitos",
-      "eyebrow": "Método TELAR · Ingeniería de software con agentes de IA",
-      "title": "Método y gobierno para construir software con agentes de IA.",
-      "lead": "CreativaLabs.io acompaña a organizaciones que desarrollan producto internamente o lo construyen para sus clientes en la adopción de la inteligencia artificial en su ciclo de desarrollo, con trazabilidad desde la intención de negocio hasta la operación y con evidencia en cada decisión.",
-      "actions": [
-        {
-          "label": "Evaluar la madurez de su equipo",
-          "href": "#madurez",
-          "style": "primary"
-        },
-        {
-          "label": "Solicitar una conversación",
-          "href": "mail:",
-          "style": "light"
-        }
-      ],
-      "caption": "El telar de Jacquard (1801): la cadena de tarjetas decide el patrón; la máquina lo teje."
-    },
-    {
-      "type": "principle",
-      "quote": {
-        "text": "«La Máquina Analítica teje patrones algebraicos, del mismo modo que el telar de Jacquard teje flores y hojas».",
-        "by": "Ada Lovelace, 1843"
-      },
-      "eyebrow": "El principio",
-      "title": "El mismo principio, dos siglos después.",
-      "text": "En 1801 el patrón dejó de vivir en la máquina y pasó a una tarjeta que cualquiera podía revisar y cambiar. Hoy ocurre lo mismo con el código: la especificación define el software y el agente lo construye.",
-      "card": {
-        "image": "assets/img/tarjetas.jpg",
-        "imagePosition": "45% 60%",
-        "alt": "Cadena de tarjetas perforadas de un telar de Jacquard, unidas con cordel, sobre una mesa de madera",
-        "tag": "1801 · EL PATRÓN",
-        "caption": "La tarjeta perforada definía la tela. El telar la ejecutaba."
-      },
-      "spec": {
-        "tag": "HOY · LA ESPECIFICACIÓN",
-        "id": "SPEC-F-012",
-        "title": "Devolución de un pedido",
-        "fields": [
-          {
-            "k": "intención",
-            "ref": "INT-004",
-            "v": "Devolver en menos de 24 h"
-          },
-          {
-            "k": "dominio",
-            "ref": "DOM-002",
-            "v": "Pedidos · Posventa"
-          },
-          {
-            "k": "decide",
-            "v": "Product Owner"
-          },
-          {
-            "k": "verifica",
-            "v": "Tech Lead · gate con evidencia"
-          },
-          {
-            "k": "estado",
-            "v": "aprobada · v3",
-            "accent": true
-          }
-        ],
-        "criteriaLabel": "criterio de aceptación",
-        "criteria": [
-          {
-            "kw": "dado",
-            "text": "un pedido entregado hace 30 días o menos"
-          },
-          {
-            "kw": "cuando",
-            "text": "el cliente solicita la devolución"
-          },
-          {
-            "kw": "entonces",
-            "text": "se emite la orden de recogida y se notifica"
-          }
-        ],
-        "trace": [
-          {
-            "ref": "TASK-031",
-            "text": "agente"
-          },
-          {
-            "ref": "PR-118"
-          },
-          {
-            "ref": "TEST-212"
-          },
-          {
-            "ref": "REL-9"
-          }
-        ],
-        "caption": "La especificación define el software. El agente lo construye; las personas deciden y verifican."
-      }
-    },
-    {
-      "type": "context",
-      "eyebrow": "El contexto",
-      "title": "El cuello de botella del desarrollo de software cambió de lugar.",
-      "paragraphs": [
-        "Durante décadas, escribir código fue la actividad más costosa del desarrollo. Hoy un agente de IA produce en minutos lo que un equipo producía en semanas. El trabajo difícil se trasladó a dos lugares: definir con precisión qué se necesita y verificar que lo construido corresponde a esa necesidad.",
-        "Los estudios recientes coinciden en que la inteligencia artificial amplifica las capacidades que una organización ya tiene. Donde existen disciplina, especificaciones y controles, acelera la entrega. Donde no existen, acelera la deuda técnica y la pérdida de comprensión sobre los sistemas.",
-        "Por eso la adopción de agentes no es una decisión de herramientas, sino de gobierno: quién decide, quién verifica y con qué evidencia."
-      ],
-      "bars": {
-        "aria": "Diagrama comparativo. Antes: intención barata, escritura de código como cuello de botella y verificación al ritmo humano. Hoy: la intención y la verificación son los cuellos de botella y la generación por agentes toma minutos.",
-        "rows": [
-          {
-            "label": "Antes",
-            "segments": [
-              {
-                "weight": 14,
-                "tone": "light",
-                "title": "Intención",
-                "sub": "barata"
-              },
-              {
-                "weight": 70,
-                "tone": "indigo",
-                "title": "Escritura de código",
-                "sub": "El cuello de botella: semanas, equipos"
-              },
-              {
-                "weight": 16,
-                "tone": "light",
-                "title": "Verificación",
-                "sub": "al ritmo humano"
-              }
-            ]
-          },
-          {
-            "label": "Hoy",
-            "segments": [
-              {
-                "weight": 42,
-                "tone": "rust",
-                "title": "Intención",
-                "sub": "Nuevo cuello de botella: precisión y decisiones"
-              },
-              {
-                "weight": 14,
-                "tone": "light",
-                "title": "Generación",
-                "sub": "minutos, agentes"
-              },
-              {
-                "weight": 44,
-                "tone": "rust",
-                "title": "Verificación",
-                "sub": "El otro cuello de botella: evidencia"
-              }
-            ]
-          }
-        ],
-        "note": "+ el gobierno del entorno de agentes (harness): reglas, plantillas y verificadores",
-        "caption": "Ilustrativo, sin escala. Las dos barras miden lo mismo: el esfuerzo no desaparece, se traslada de escribir código a precisar la intención y verificar con evidencia. Desarrollado en la guía, §I.1."
-      }
-    },
-    {
-      "type": "audiences",
-      "eyebrow": "A quién servimos",
-      "title": "Dos tipos de organización, un mismo método.",
-      "cards": [
-        {
-          "tone": "indigo",
-          "image": "assets/img/lupa.jpg",
-          "imagePosition": "55% 50%",
-          "alt": "Tela índigo con patrón de circuitos revisada con una lupa de latón sobre una mesa de taller",
-          "kicker": "Organizaciones que desarrollan producto internamente",
-          "title": "Software que su organización puede explicar, auditar y evolucionar",
-          "recognizeLabel": "Usted reconocerá esta situación si…",
-          "bullets": [
-            "Los agentes de IA ya se usan, pero cada equipo lo hace a su manera y sin reglas comunes.",
-            "Cada vez menos personas pueden explicar por qué el sistema hace lo que hace.",
-            "Las decisiones de negocio quedan en conversaciones que nadie vuelve a leer."
-          ],
-          "getLabel": "Lo que obtiene",
-          "get": "Cada cambio trazado hasta una necesidad de negocio, responsabilidades claras entre quien decide y quien verifica, y equipos que fortalecen su criterio técnico en lugar de perderlo.",
-          "action": {
-            "label": "Evaluar la madurez de su equipo",
-            "href": "#madurez",
-            "style": "primary"
-          }
-        },
-        {
-          "tone": "dark",
-          "image": "assets/img/nave-textil.jpg",
-          "imagePosition": "40% 60%",
-          "alt": "Nave textil con una hilera de telares de Jacquard, cada uno tejiendo una tela de patrón distinto",
-          "kicker": "Organizaciones que construyen productos de software para sus clientes",
-          "title": "Venda resultados gobernados, no horas de desarrollo",
-          "recognizeLabel": "Usted reconocerá esta situación si…",
-          "bullets": [
-            "Sus clientes piden reducir la tarifa porque la IA abarató el desarrollo.",
-            "El margen depende de horas que cada vez valen menos.",
-            "Cada proyecto se construye como si fuera el primero, aunque se parezca a otros diez."
-          ],
-          "getLabel": "Lo que obtiene",
-          "get": "Nuevas unidades de precio, un catálogo de activos de especificación reutilizables entre clientes y una trazabilidad que su cliente puede auditar. Y una regla que el método respeta: <b>el dominio sigue siendo del cliente</b>; él decide el mapa del negocio y su equipo lo construye.",
-          "action": {
-            "label": "Leer cómo aplica a su servicio",
-            "href": "#guia",
-            "style": "light-sm"
-          }
-        }
-      ]
-    },
-    {
-      "type": "method",
-      "id": "metodo",
-      "eyebrow": "El método",
-      "title": "TELAR: la especificación como fuente de verdad.",
-      "paragraphs": [
-        "El telar de Jacquard separó el patrón de la máquina. TELAR aplica ese principio al software: la especificación cumple el papel de la tarjeta, el agente el del telar, y las personas conservan las decisiones y la verificación.",
-        "El método articula una cadena trazable que conecta la intención de negocio con cada artefacto del ciclo de vida, hasta la telemetría en operación."
-      ],
-      "loops": {
-        "aria": "Loops anidados: el loop del porqué del negocio envuelve los loops de ejecución, donde trabajan los agentes; las personas los gobiernan desde fuera, a través del harness",
-        "people": [
-          "Personas sobre el loop",
-          "Gobiernan a través del harness"
-        ],
-        "why": [
-          "Loop del porqué (negocio)",
-          "Idea → software funcionando → aprendizaje"
-        ],
-        "how": [
-          "Loops del cómo (ejecución)",
-          "Spec → tareas → código → verificación"
-        ],
-        "agents": "Agentes",
-        "caption": "El ciclo no es una cascada: las personas diseñan y mejoran el harness que gobierna la ejecución, en lugar de inspeccionar a mano cada artefacto que producen los agentes."
-      },
-      "chain": {
-        "aria": "Cadena de intención: INT, REQ, SPEC, TASK, PR, TEST, REL y telemetría, agrupadas en por qué y qué, cómo, y evidencia",
-        "stageWord": "etapa",
-        "nodes": [
-          {
-            "code": "INT",
-            "label": "Intención",
-            "stage": "1",
-            "tone": "rust"
-          },
-          {
-            "code": "REQ",
-            "label": "Requisito",
-            "stage": "1 · 2",
-            "tone": "rust"
-          },
-          {
-            "code": "SPEC",
-            "label": "Especificación",
-            "stage": "2",
-            "tone": "indigo"
-          },
-          {
-            "code": "TASK",
-            "label": "Tarea del agente",
-            "stage": "3",
-            "tone": "indigo"
-          },
-          {
-            "code": "PR",
-            "label": "Cambio revisado",
-            "stage": "4",
-            "tone": "indigo"
-          },
-          {
-            "code": "TEST",
-            "label": "Verificación",
-            "stage": "5",
-            "tone": "deep"
-          },
-          {
-            "code": "REL",
-            "label": "Entrega",
-            "stage": "6",
-            "tone": "deep"
-          },
-          {
-            "code": "Telemetría",
-            "label": "En operación",
-            "stage": "6",
-            "tone": "deep"
-          }
-        ],
-        "groups": [
-          {
-            "label": "Por qué y qué",
-            "from": 0,
-            "to": 1,
-            "tone": "rust"
-          },
-          {
-            "label": "Cómo",
-            "from": 2,
-            "to": 4,
-            "tone": "indigo"
-          },
-          {
-            "label": "Evidencia",
-            "from": 5,
-            "to": 7,
-            "tone": "deep"
-          }
-        ],
-        "caption": "La cadena de intención: cada artefacto se enlaza con el anterior y con quien lo aprobó."
-      },
-      "lifecycle": {
-        "title": "Un ciclo de vida de siete etapas",
-        "text": "La cadena de intención es lo que queda; las etapas son cómo se produce. Cada etapa deja uno o más eslabones de la cadena —su número aparece sobre cada eslabón— con sus controles y sus responsables. Los agentes ejecutan; las personas deciden y verifican con evidencia.",
-        "zero": {
-          "title": "0 · Elevación del legado",
-          "text": "— solo en sistemas existentes: recuperar el conocimiento del código antes de especificar."
-        },
-        "aria": "Las siete etapas del ciclo de vida",
-        "stages": [
-          {
-            "n": 1,
-            "tone": "rust",
-            "title": "Intención y descubrimiento",
-            "text": "Convertir una necesidad difusa en una intención verificable, con su resultado medible.",
-            "tags": [
-              "INT",
-              "REQ",
-              "DOM"
-            ]
-          },
-          {
-            "n": 2,
-            "tone": "rust",
-            "title": "Especificación y diseño",
-            "text": "La fuente de verdad: qué debe hacer el sistema y cómo se construye dentro de las reglas.",
-            "tags": [
-              "REQ",
-              "SPEC",
-              "ADR"
-            ]
-          },
-          {
-            "n": 3,
-            "tone": "indigo",
-            "title": "Planificación y descomposición",
-            "text": "Partir la especificación en tareas pequeñas, con el contexto que un agente necesita.",
-            "tags": [
-              "TASK"
-            ]
-          },
-          {
-            "n": 4,
-            "tone": "indigo",
-            "title": "Construcción agéntica",
-            "text": "Los agentes construyen código, pruebas e infraestructura dentro del harness.",
-            "tags": [
-              "PR"
-            ]
-          },
-          {
-            "n": 5,
-            "tone": "rust",
-            "title": "Verificación y revisión de intención",
-            "text": "¿El código cumple la spec? ¿La spec sigue reflejando lo que se quería?",
-            "tags": [
-              "TEST",
-              "GATE"
-            ]
-          },
-          {
-            "n": 6,
-            "tone": "indigo",
-            "title": "Despliegue y operación",
-            "text": "A producción con observabilidad diseñada desde la spec: ¿se logró la métrica?",
-            "tags": [
-              "REL",
-              "TEL"
-            ]
-          },
-          {
-            "n": 7,
-            "tone": "indigo",
-            "title": "Evolución de las especificaciones",
-            "text": "Las specs se mantienen vivas y sincronizadas: el activo que se acumula.",
-            "tags": [
-              "DRIFT"
-            ]
-          }
-        ],
-        "returns": [
-          {
-            "from": 5,
-            "to": 2,
-            "tone": "rust",
-            "label": "Retorno de 5 a 2.",
-            "text": "Si lo construido no coincide con lo especificado, se corrige primero la especificación y después el código."
-          },
-          {
-            "from": 7,
-            "to": 2,
-            "tone": "indigo",
-            "label": "Retorno de 7 a 2.",
-            "text": "Cada cambio nuevo parte de las especificaciones vigentes, no de cero."
-          }
-        ],
-        "harness": {
-          "title": "Harness",
-          "text": "El entorno que gobierna todas las etapas: constitución, reglas, plantillas, verificadores y gates. Mejora con cada ciclo."
-        },
-        "legend": [
-          {
-            "tone": "rust",
-            "text": "Etapas donde el criterio humano es el cuello de botella"
-          },
-          {
-            "tone": "indigo",
-            "text": "Etapas donde los agentes ejecutan bajo control"
-          },
-          {
-            "text": "Desarrollado en la guía de referencia, Parte II."
-          }
-        ]
-      },
-      "pillars": [
-        {
-          "term": "Dominio",
-          "text": "El dominio se descubre y se delimita con diseño guiado por el dominio (DDD). Técnicas como Event Storming permiten explorarlo y llegar a un diseño de conjunto."
-        },
-        {
-          "term": "Especificación",
-          "text": "Especificaciones ancladas al dominio, versionadas y con responsable, que sobreviven a la tarea que las originó."
-        },
-        {
-          "term": "Ejecución",
-          "text": "Los agentes trabajan dentro de un entorno controlado (harness): reglas, plantillas, verificadores y permisos acotados."
-        },
-        {
-          "term": "Verificación",
-          "text": "Controles con evidencia en cada etapa. Decidir y verificar son responsabilidades humanas que no se delegan a un agente."
-        },
-        {
-          "term": "Evolución",
-          "text": "Los sistemas cambian sin perder la trazabilidad, y la autonomía de los agentes se amplía solo con evidencia."
-        }
-      ]
-    },
-    {
-      "type": "adoption",
-      "id": "servicios",
-      "image": "assets/img/enhebrado.jpg",
-      "imagePosition": "60% 50%",
-      "alt": "Manos de un artesano enhebrando los hilos de la urdimbre de un telar de Jacquard, junto al plano del patrón y las tarjetas perforadas",
-      "eyebrow": "Servicios",
-      "title": "Un proceso de adopción gradual, medible y reversible.",
-      "text": "No todas las áreas del portafolio requieren el mismo nivel de madurez. El trabajo parte de la situación actual de cada una y define el nivel que le conviene alcanzar.",
-      "intro": "Tres servicios que se contratan en secuencia. Cada uno entrega un resultado útil por sí mismo y abre la puerta al siguiente.",
-      "services": [
-        {
-          "label": "Servicio 1",
-          "badge": "Puerta de entrada",
-          "accent": "rust",
-          "title": "Diagnóstico y hoja de ruta",
-          "items": [
-            "1. Diagnóstico de madurez",
-            "2. Análisis de brechas y necesidades",
-            "3. Plan de acción"
-          ],
-          "resultLabel": "Resultado",
-          "result": "Nivel actual de cada área con evidencia, brechas priorizadas según riesgo y valor, y un plan por fases con línea base, señales de retroceso y criterio de parada.",
-          "action": {
-            "label": "Solicitar el diagnóstico",
-            "href": "mail:Diagnóstico de madurez",
-            "style": "primary"
-          }
-        },
-        {
-          "label": "Servicio 2",
-          "accent": "indigo",
-          "title": "Paquete de adopción",
-          "items": [
-            "Adopción por área o dominio"
-          ],
-          "resultLabel": "Resultado",
-          "result": "El modelo operando en un área piloto: entorno de agentes (harness), matriz de responsabilidades, controles, plantillas y un caso de su propio dominio.",
-          "action": {
-            "label": "Conversar sobre un piloto",
-            "href": "mail:Paquete de adopción",
-            "style": "ghost"
-          }
-        },
-        {
-          "label": "Servicio 3",
-          "accent": "purple",
-          "title": "Acompañamiento y evolución",
-          "items": [
-            "Acompañamiento y evolución"
-          ],
-          "resultLabel": "Resultado",
-          "result": "Extensión del modelo a otras áreas y evolución continua del harness y de sus controles. La autonomía de los agentes se amplía solo con evidencia.",
-          "action": {
-            "label": "Conocer el acompañamiento",
-            "href": "mail:Acompañamiento y evolución",
-            "style": "purple"
-          }
-        }
-      ],
-      "crosslink": {
-        "text": "TELAR es uno de los cuatro frentes con los que acompañamos la modernización del ciclo de vida de software. Los otros tres son arquitectura y sistemas complejos, formación y liderazgo técnico, y diseño de equipos de ingeniería.",
-        "link": {
-          "label": "Ver todos los servicios →",
-          "href": "@home#servicios"
-        }
-      }
-    },
-    {
-      "type": "maturity",
-      "id": "madurez",
-      "eyebrow": "Autoevaluación gratuita",
-      "title": "Conozca el nivel de madurez de su equipo en diez minutos.",
-      "text": "Catorce preguntas sobre prácticas verificables. El resultado indica el nivel actual de un área de su portafolio, los criterios pendientes y el orden recomendado para cerrarlos.",
-      "action": {
-        "label": "Iniciar la autoevaluación",
-        "href": "#madurez",
-        "style": "primary"
-      },
-      "aria": "Escalera de cinco niveles de madurez, de Ad-hoc a Optimizado; el nivel 2, Anclado, es el mínimo institucional",
-      "levels": [
-        {
-          "name": "Ad-hoc",
-          "height": 20
-        },
-        {
-          "name": "Asistido",
-          "height": 38
-        },
-        {
-          "name": "Anclado",
-          "height": 56,
-          "style": "min"
-        },
-        {
-          "name": "Gobernado",
-          "height": 76,
-          "style": "high"
-        },
-        {
-          "name": "Optimizado",
-          "height": 96,
-          "style": "high"
-        }
-      ],
-      "caption": "Los cinco niveles del modelo. El nivel 2 es el mínimo institucional recomendado; el 4 es opcional según el área."
-    },
-    {
-      "type": "personShort",
-      "id": "equipo",
-      "person": "rafael-pino",
-      "size": "sm",
-      "eyebrow": "Quién está detrás de TELAR",
-      "role": "Fundador de CreativaLabs.io · Creador de TELAR",
-      "bio": "El método recoge más de veinticinco años formando y escalando organizaciones de ingeniería. Su antecedente directo es eTask (2009): una plataforma de gobernanza metodológica basada en SPEM y UMA y en el desarrollo dirigido por modelos. La misma idea, quince años antes de los agentes.",
-      "link": {
-        "label": "Conocer el equipo y la trayectoria →",
-        "href": "@equipo"
-      },
-      "indicators": "person"
-    },
-    {
-      "type": "book",
-      "id": "guia",
-      "coverSize": "lg",
-      "eyebrow": "Guía de referencia abierta",
-      "paragraphs": [
-        "El modelo completo del método TELAR: ciclo de vida, trazabilidad, responsabilidades, entorno de agentes, madurez, adopción y economía. Publicada bajo licencia CC BY 4.0, para leer, citar y adaptar libremente.",
-        {
-          "text": "El método es público. Nuestro trabajo es instalarlo en su organización.",
-          "muted": true
-        }
-      ],
-      "actions": [
-        {
-          "label": "Leer la guía",
-          "href": "#guia",
-          "style": "indigo"
-        },
-        {
-          "label": "Recibir el PDF y las plantillas",
-          "href": "#guia",
-          "style": "outline"
-        }
-      ]
-    },
-    {
-      "type": "faq",
-      "title": "Preguntas frecuentes",
-      "items": [
-        {
-          "q": "Se dice que el desarrollo guiado por especificaciones está muerto o que es la cascada otra vez. ¿Por qué adoptarlo?",
-          "a": "El debate tiene argumentos atendibles, pero discute una práctica. La necesidad de fondo es otra: modernizar un ciclo de vida de software diseñado para cuando escribir código era lo caro, con cambios en tecnología, personas, herramientas y organización. En TELAR la especificación no se congela al inicio: evoluciona con lo que enseña cada entrega y se verifica para que no se desactualice."
-        },
-        {
-          "q": "¿Es necesario cambiar las herramientas actuales?",
-          "a": "No. El método es independiente de las herramientas: define categorías y criterios de elección. Las recomendaciones se ajustan a las características de cada organización."
-        },
-        {
-          "q": "¿Aplica a sistemas existentes?",
-          "a": "Sí. El modelo contempla una etapa específica para sistemas en operación, que se intervienen de forma ligera mientras la cobertura de especificaciones crece con el uso."
-        },
-        {
-          "q": "¿Todas las áreas deben alcanzar el nivel más alto?",
-          "a": "No. El nivel adecuado depende del riesgo y del valor de cada área. El análisis de brechas define el objetivo de cada una."
-        },
-        {
-          "q": "¿Qué ocurre si el piloto no da los resultados esperados?",
-          "a": "Cada fase cuenta con línea base, señales de retroceso y un criterio de parada acordados antes de iniciar. Detenerse a tiempo forma parte del método."
-        },
-        {
-          "q": "¿Prestan servicios en inglés?",
-          "a": "Sí. Atendemos organizaciones en Latinoamérica y Estados Unidos, en español e inglés."
-        }
-      ]
-    },
-    {
-      "type": "weave"
-    },
-    {
-      "type": "closing",
-      "actions": [
-        {
-          "label": "Evaluar la madurez de su equipo",
-          "href": "#madurez",
-          "style": "light"
-        }
-      ]
-    },
-    {
-      "type": "footer"
+     "label": "Leer el libro abierto",
+     "href": "#guia",
+     "style": "light"
     }
-  ]
+   ],
+   "caption": "El telar de Jacquard (1801): la cadena de tarjetas decide el patrón; la máquina lo teje."
+  },
+  {
+   "type": "prose",
+   "id": "cuando",
+   "bg": "paper",
+   "split": true,
+   "wide": true,
+   "eyebrow": "Cuándo tiene sentido",
+   "title": "Varios equipos, sistemas compartidos",
+   "paragraphs": [
+    "Cuando varios equipos cambian servicios compartidos, una modificación correcta para un equipo puede generar retrabajo o incidentes para otro. TELAR ayuda a detectar esas dependencias antes de construir y a verificar que las decisiones se respeten al entregar."
+   ],
+   "link": {
+    "label": "Ver todos los servicios",
+    "href": "@servicios"
+   }
+  },
+  {
+   "type": "collision",
+   "id": "por-que-ahora",
+   "eyebrow": "Por qué ahora",
+   "title": "La IA eliminó la lentitud que coordinaba a sus equipos.",
+   "text": "Escribir código ya no es lo caro. Lo difícil ahora crece con el tamaño de la organización: que muchas personas y sus agentes cambien los mismos sistemas sin que el conjunto se rompa.",
+   "columns": [
+    {
+     "label": "ANTES",
+     "text": "Escribir código tomaba semanas. En ese tiempo los equipos conversaban, se revisaban y alguien se enteraba de todo. La lentitud coordinaba sin que nadie la diseñara."
+    },
+    {
+     "label": "HOY",
+     "text": "Un agente produce en horas lo que tomaba semanas: más cambios en paralelo sobre los mismos componentes, y cada agente sabe solo lo que se le dio. La revisión humana no alcanza ese ritmo."
+    }
+   ],
+   "graphs": [
+    {
+     "changes": 4,
+     "crossings": 6,
+     "aria": "Cuatro cambios simultáneos conectados por seis cruces posibles"
+    },
+    {
+     "changes": 8,
+     "crossings": 28,
+     "aria": "Ocho cambios simultáneos conectados por veintiocho cruces posibles"
+    }
+   ],
+   "changesWord": "cambios",
+   "crossingsWord": "cruces posibles",
+   "figTitle": "Más cambios, muchos más cruces",
+   "figText": "Cada par de cambios simultáneos sobre componentes compartidos es un posible cruce. Al duplicar los cambios, los cruces posibles se multiplican por más de cuatro: cambios correctos por separado que, juntos, rompen el sistema.",
+   "closingLine": "La IA no crea estas causas: las multiplica. Por eso adoptarla no es una decisión de herramientas, sino de <b>gobierno</b>: quién decide, quién verifica y con qué evidencia."
+  },
+  {
+   "type": "cards",
+   "id": "principios",
+   "bg": "cream",
+   "variant": "indigo",
+   "columns": "3",
+   "eyebrow": "Tres causas, tres principios",
+   "title": "Hacer explícita la coordinación",
+   "text": "Cada principio de TELAR responde a una causa de fondo del problema.",
+   "items": [
+    {
+     "kicker": "Causa: contexto fragmentado",
+     "title": "1 · Contexto compartido",
+     "text": "Reglas, lenguaje del negocio y conocimiento de lo que ya existe, organizados por capas —organización, dominio y equipo— para personas y agentes por igual.",
+     "effect": "Nadie construye a ciegas, ni repite lo que otro equipo ya hizo."
+    },
+    {
+     "kicker": "Causa: dependencias implícitas",
+     "title": "2 · Contratos con dueño",
+     "text": "Las formas de interactuar entre componentes, sistemas y servicios se especifican, tienen un responsable y se verifican en cada cambio.",
+     "effect": "Un equipo no puede romper a otro sin enterarse."
+    },
+    {
+     "kicker": "Causa: decisiones sin rastro",
+     "title": "3 · Trazabilidad de punta a punta",
+     "text": "Una cadena de artefactos enlaza cada cambio con la necesidad que lo originó, la especificación que lo define y quien lo aprobó.",
+     "effect": "Todo lo que hace un agente se puede explicar y auditar."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "id": "practica",
+   "bg": "paper",
+   "split": true,
+   "wide": true,
+   "eyebrow": "Práctica central",
+   "title": "Antes de construir, dos preguntas con evidencia",
+   "bullets": [
+    "<b>¿Ya existe algo así?</b> Se consulta lo construido en todos los proyectos de la organización. Reutilizar lo que existe, por su contrato, antes que generar una variante.",
+    "<b>¿Qué depende de lo que voy a cambiar?</b> Se recorre todo lo que depende del cambio, también en otros sistemas y equipos. La respuesta queda registrada en la especificación."
+   ],
+   "note": "<b>Agnóstico de la tecnología.</b> TELAR define categorías de herramientas y criterios para elegirlas, no productos. Se aplica con sus lenguajes, plataformas, nubes y asistentes de IA actuales."
+  },
+  {
+   "type": "principle",
+   "quote": {
+    "text": "«La Máquina Analítica teje patrones algebraicos, del mismo modo que el telar de Jacquard teje flores y hojas».",
+    "by": "Ada Lovelace, 1843"
+   },
+   "eyebrow": "El principio",
+   "title": "El mismo principio, dos siglos después.",
+   "text": "En 1801 el patrón dejó de vivir en la máquina y pasó a una tarjeta que cualquiera podía revisar y cambiar. Hoy ocurre lo mismo con el código: la especificación define el software y el agente lo construye.",
+   "card": {
+    "image": "assets/img/tarjetas.jpg",
+    "imagePosition": "45% 60%",
+    "alt": "Cadena de tarjetas perforadas de un telar de Jacquard, unidas con cordel, sobre una mesa de madera",
+    "tag": "1801 · EL PATRÓN",
+    "caption": "La tarjeta perforada definía la tela. El telar la ejecutaba."
+   },
+   "spec": {
+    "tag": "HOY · LA ESPECIFICACIÓN",
+    "id": "SPEC-F-012",
+    "title": "Devolución de un pedido",
+    "fields": [
+     {
+      "k": "intención",
+      "ref": "INT-004",
+      "v": "Devolver en menos de 24 h"
+     },
+     {
+      "k": "dominio",
+      "ref": "DOM-002",
+      "v": "Pedidos · Posventa"
+     },
+     {
+      "k": "decide",
+      "v": "Product Owner"
+     },
+     {
+      "k": "verifica",
+      "v": "Tech Lead · gate con evidencia"
+     },
+     {
+      "k": "estado",
+      "v": "aprobada · v3",
+      "accent": true
+     }
+    ],
+    "criteriaLabel": "criterio de aceptación",
+    "criteria": [
+     {
+      "kw": "dado",
+      "text": "un pedido entregado hace 30 días o menos"
+     },
+     {
+      "kw": "cuando",
+      "text": "el cliente solicita la devolución"
+     },
+     {
+      "kw": "entonces",
+      "text": "se emite la orden de recogida y se notifica"
+     }
+    ],
+    "trace": [
+     {
+      "ref": "TASK-031",
+      "text": "agente"
+     },
+     {
+      "ref": "PR-118"
+     },
+     {
+      "ref": "TEST-212"
+     },
+     {
+      "ref": "REL-9"
+     }
+    ],
+    "caption": "La especificación define el software. El agente lo construye; las personas deciden y verifican."
+   }
+  },
+  {
+   "type": "method",
+   "id": "metodo",
+   "eyebrow": "El método",
+   "title": "TELAR: la especificación como fuente de verdad.",
+   "paragraphs": [
+    "El telar de Jacquard separó el patrón de la máquina. TELAR aplica ese principio al software: la especificación cumple el papel de la tarjeta, el agente el del telar, y las personas conservan las decisiones y la verificación.",
+    "El método articula una cadena trazable que conecta la intención de negocio con cada artefacto del ciclo de vida, hasta la telemetría en operación."
+   ],
+   "loops": {
+    "aria": "Loops anidados: el loop del porqué del negocio envuelve los loops de ejecución, donde trabajan los agentes; las personas los gobiernan desde fuera, a través del harness",
+    "people": [
+     "Personas sobre el loop",
+     "Gobiernan a través del harness"
+    ],
+    "why": [
+     "Loop del porqué (negocio)",
+     "Idea → software funcionando → aprendizaje"
+    ],
+    "how": [
+     "Loops del cómo (ejecución)",
+     "Spec → tareas → código → verificación"
+    ],
+    "agents": "Agentes",
+    "caption": "El ciclo no es una cascada: las personas diseñan y mejoran el harness que gobierna la ejecución, en lugar de inspeccionar a mano cada artefacto que producen los agentes."
+   },
+   "chain": {
+    "aria": "Cadena de intención: INT, REQ, SPEC, TASK, PR, TEST, REL y telemetría, agrupadas en por qué y qué, cómo, y evidencia",
+    "stageWord": "etapa",
+    "nodes": [
+     {
+      "code": "INT",
+      "label": "Intención",
+      "stage": "1",
+      "tone": "rust"
+     },
+     {
+      "code": "REQ",
+      "label": "Requisito",
+      "stage": "1 · 2",
+      "tone": "rust"
+     },
+     {
+      "code": "SPEC",
+      "label": "Especificación",
+      "stage": "2",
+      "tone": "indigo"
+     },
+     {
+      "code": "TASK",
+      "label": "Tarea del agente",
+      "stage": "3",
+      "tone": "indigo"
+     },
+     {
+      "code": "PR",
+      "label": "Cambio revisado",
+      "stage": "4",
+      "tone": "indigo"
+     },
+     {
+      "code": "TEST",
+      "label": "Verificación",
+      "stage": "5",
+      "tone": "deep"
+     },
+     {
+      "code": "REL",
+      "label": "Entrega",
+      "stage": "6",
+      "tone": "deep"
+     },
+     {
+      "code": "Telemetría",
+      "label": "En operación",
+      "stage": "6",
+      "tone": "deep"
+     }
+    ],
+    "groups": [
+     {
+      "label": "Por qué y qué",
+      "from": 0,
+      "to": 1,
+      "tone": "rust"
+     },
+     {
+      "label": "Cómo",
+      "from": 2,
+      "to": 4,
+      "tone": "indigo"
+     },
+     {
+      "label": "Evidencia",
+      "from": 5,
+      "to": 7,
+      "tone": "deep"
+     }
+    ],
+    "caption": "La cadena de intención: cada artefacto se enlaza con el anterior y con quien lo aprobó."
+   },
+   "lifecycle": {
+    "title": "Un ciclo de vida de siete etapas",
+    "text": "La cadena de intención es lo que queda; las etapas son cómo se produce. Cada etapa deja uno o más eslabones de la cadena —su número aparece sobre cada eslabón— con sus controles y sus responsables. Los agentes ejecutan; las personas deciden y verifican con evidencia.",
+    "zero": {
+     "title": "0 · Elevación del legado",
+     "text": "— solo en sistemas existentes: recuperar el conocimiento del código antes de especificar."
+    },
+    "aria": "Las siete etapas del ciclo de vida",
+    "stages": [
+     {
+      "n": 1,
+      "tone": "rust",
+      "title": "Intención y descubrimiento",
+      "text": "Convertir una necesidad difusa en una intención verificable, con su resultado medible.",
+      "tags": [
+       "INT",
+       "REQ",
+       "DOM"
+      ]
+     },
+     {
+      "n": 2,
+      "tone": "rust",
+      "title": "Especificación y diseño",
+      "text": "La fuente de verdad: qué debe hacer el sistema y cómo se construye dentro de las reglas.",
+      "tags": [
+       "REQ",
+       "SPEC",
+       "ADR"
+      ]
+     },
+     {
+      "n": 3,
+      "tone": "indigo",
+      "title": "Planificación y descomposición",
+      "text": "Partir la especificación en tareas pequeñas, con el contexto que un agente necesita.",
+      "tags": [
+       "TASK"
+      ]
+     },
+     {
+      "n": 4,
+      "tone": "indigo",
+      "title": "Construcción agéntica",
+      "text": "Los agentes construyen código, pruebas e infraestructura dentro del harness.",
+      "tags": [
+       "PR"
+      ]
+     },
+     {
+      "n": 5,
+      "tone": "rust",
+      "title": "Verificación y revisión de intención",
+      "text": "¿El código cumple la spec? ¿La spec sigue reflejando lo que se quería?",
+      "tags": [
+       "TEST",
+       "GATE"
+      ]
+     },
+     {
+      "n": 6,
+      "tone": "indigo",
+      "title": "Despliegue y operación",
+      "text": "A producción con observabilidad diseñada desde la spec: ¿se logró la métrica?",
+      "tags": [
+       "REL",
+       "TEL"
+      ]
+     },
+     {
+      "n": 7,
+      "tone": "indigo",
+      "title": "Evolución de las especificaciones",
+      "text": "Las specs se mantienen vivas y sincronizadas: el activo que se acumula.",
+      "tags": [
+       "DRIFT"
+      ]
+     }
+    ],
+    "returns": [
+     {
+      "from": 5,
+      "to": 2,
+      "tone": "rust",
+      "label": "Retorno de 5 a 2.",
+      "text": "Si lo construido no coincide con lo especificado, se corrige primero la especificación y después el código."
+     },
+     {
+      "from": 7,
+      "to": 2,
+      "tone": "indigo",
+      "label": "Retorno de 7 a 2.",
+      "text": "Cada cambio nuevo parte de las especificaciones vigentes, no de cero."
+     }
+    ],
+    "harness": {
+     "title": "Harness",
+     "text": "El entorno que gobierna todas las etapas: constitución, reglas, plantillas, verificadores y gates. Mejora con cada ciclo."
+    },
+    "legend": [
+     {
+      "tone": "rust",
+      "text": "Etapas donde el criterio humano es el cuello de botella"
+     },
+     {
+      "tone": "indigo",
+      "text": "Etapas donde los agentes ejecutan bajo control"
+     },
+     {
+      "text": "Desarrollado en la guía de referencia, Parte II."
+     }
+    ]
+   },
+   "pillars": [
+    {
+     "term": "Dominio",
+     "text": "El dominio se descubre y se delimita con diseño guiado por el dominio (DDD). Técnicas como Event Storming permiten explorarlo y llegar a un diseño de conjunto."
+    },
+    {
+     "term": "Especificación",
+     "text": "Especificaciones ancladas al dominio, versionadas y con responsable, que sobreviven a la tarea que las originó."
+    },
+    {
+     "term": "Ejecución",
+     "text": "Los agentes trabajan dentro de un entorno controlado (harness): reglas, plantillas, verificadores y permisos acotados."
+    },
+    {
+     "term": "Verificación",
+     "text": "Controles con evidencia en cada etapa. Decidir y verificar son responsabilidades humanas que no se delegan a un agente."
+    },
+    {
+     "term": "Evolución",
+     "text": "Los sistemas cambian sin perder la trazabilidad, y la autonomía de los agentes se amplía solo con evidencia."
+    }
+   ]
+  },
+  {
+   "type": "audiences",
+   "eyebrow": "A quién servimos",
+   "title": "Dos tipos de organización, un mismo método.",
+   "cards": [
+    {
+     "tone": "indigo",
+     "image": "assets/img/lupa.jpg",
+     "imagePosition": "55% 50%",
+     "alt": "Tela índigo con patrón de circuitos revisada con una lupa de latón sobre una mesa de taller",
+     "kicker": "Organizaciones que desarrollan producto internamente",
+     "title": "Software que su organización puede explicar, auditar y evolucionar",
+     "recognizeLabel": "Usted reconocerá esta situación si…",
+     "bullets": [
+      "Los agentes de IA ya se usan, pero cada equipo lo hace a su manera y sin reglas comunes.",
+      "Cada vez menos personas pueden explicar por qué el sistema hace lo que hace.",
+      "Las decisiones de negocio quedan en conversaciones que nadie vuelve a leer."
+     ],
+     "getLabel": "Lo que obtiene",
+     "get": "Cada cambio trazado hasta una necesidad de negocio, responsabilidades claras entre quien decide y quien verifica, y equipos que fortalecen su criterio técnico en lugar de perderlo.",
+     "action": {
+      "label": "Evaluar la madurez de su equipo",
+      "href": "#madurez",
+      "style": "primary"
+     }
+    },
+    {
+     "tone": "dark",
+     "image": "assets/img/nave-textil.jpg",
+     "imagePosition": "40% 60%",
+     "alt": "Nave textil con una hilera de telares de Jacquard, cada uno tejiendo una tela de patrón distinto",
+     "kicker": "Organizaciones que construyen productos de software para sus clientes",
+     "title": "Venda resultados gobernados, no horas de desarrollo",
+     "recognizeLabel": "Usted reconocerá esta situación si…",
+     "bullets": [
+      "Sus clientes piden reducir la tarifa porque la IA abarató el desarrollo.",
+      "El margen depende de horas que cada vez valen menos.",
+      "Cada proyecto se construye como si fuera el primero, aunque se parezca a otros diez."
+     ],
+     "getLabel": "Lo que obtiene",
+     "get": "Nuevas unidades de precio, un catálogo de activos de especificación reutilizables entre clientes y una trazabilidad que su cliente puede auditar. Y una regla que el método respeta: <b>el dominio sigue siendo del cliente</b>; él decide el mapa del negocio y su equipo lo construye.",
+     "action": {
+      "label": "Leer cómo aplica a su servicio",
+      "href": "#guia",
+      "style": "light-sm"
+     }
+    }
+   ]
+  },
+  {
+   "type": "cards",
+   "id": "adopcion",
+   "bg": "cream",
+   "variant": "front",
+   "columns": "3",
+   "eyebrow": "Cómo se adopta",
+   "title": "Gradual, medible y reversible",
+   "text": "Empezamos con un diagnóstico, elegimos un dominio y probamos el método en un caso real. El piloto incorpora formación por rol, plantillas y controles. La evidencia del piloto permite decidir si conviene ajustar el método o ampliarlo a otros equipos.",
+   "items": [
+    {
+     "kicker": "Paso 1",
+     "featured": true,
+     "title": "Diagnóstico",
+     "text": "Línea base del dominio, causas prioritarias y el nivel de madurez que le conviene alcanzar.",
+     "link": {
+      "label": "Ver el diagnóstico",
+      "href": "@diagnostico"
+     }
+    },
+    {
+     "kicker": "Paso 2",
+     "title": "Piloto",
+     "text": "TELAR aplicado a un caso real, con formación por rol, plantillas, controles y un criterio de parada acordado antes de empezar."
+    },
+    {
+     "kicker": "Paso 3",
+     "title": "Escala",
+     "text": "Con la evidencia del piloto se decide si ajustar el método o ampliarlo a otros equipos y dominios."
+    }
+   ]
+  },
+  {
+   "type": "maturity",
+   "id": "madurez",
+   "eyebrow": "Madurez",
+   "title": "Conozca el nivel de madurez de su equipo en diez minutos.",
+   "text": "Catorce preguntas sobre prácticas verificables. El resultado indica el nivel actual de un área de su portafolio, los criterios pendientes y el orden recomendado para cerrarlos.",
+   "aria": "Escalera de cinco niveles de madurez, de Ad-hoc a Optimizado; el nivel 2, Anclado, es el mínimo institucional",
+   "levels": [
+    {
+     "name": "Ad-hoc",
+     "height": 20
+    },
+    {
+     "name": "Asistido",
+     "height": 38
+    },
+    {
+     "name": "Anclado",
+     "height": 56,
+     "style": "min"
+    },
+    {
+     "name": "Gobernado",
+     "height": 76,
+     "style": "high"
+    },
+    {
+     "name": "Optimizado",
+     "height": 96,
+     "style": "high"
+    }
+   ],
+   "caption": "Los cinco niveles del modelo. El nivel 2 es el mínimo institucional recomendado; el 4 es opcional según el área."
+  },
+  {
+   "type": "personShort",
+   "id": "equipo",
+   "person": "rafael-pino",
+   "size": "sm",
+   "eyebrow": "Quién está detrás de TELAR",
+   "role": "Fundador de CreativaLabs.io · Creador de TELAR",
+   "bio": "El método recoge más de veinticinco años formando y escalando organizaciones de ingeniería. Su antecedente directo es eTask (2009): una plataforma de gobernanza metodológica basada en SPEM y UMA y en el desarrollo dirigido por modelos. La misma idea, quince años antes de los agentes.",
+   "link": {
+    "label": "Conocer el equipo y la trayectoria →",
+    "href": "@equipo"
+   },
+   "indicators": "person"
+  },
+  {
+   "type": "book",
+   "id": "guia",
+   "coverSize": "lg",
+   "eyebrow": "Libro abierto",
+   "paragraphs": [
+    "El modelo completo del método TELAR: ciclo de vida, trazabilidad, responsabilidades, entorno de agentes, madurez, adopción y economía. Se publicará bajo licencia CC BY 4.0, para leer, citar y adaptar libremente.",
+    {
+     "text": "Mientras tanto, el brochure resume el problema, el método y cómo se adopta.",
+     "muted": true
+    }
+   ],
+   "actions": [
+    {
+     "label": "Descargar el brochure (PDF)",
+     "href": "/assets/docs/TELAR-brochure-CreativaLabs.pdf",
+     "style": "indigo"
+    }
+   ]
+  },
+  {
+   "type": "faq",
+   "title": "Preguntas frecuentes",
+   "items": [
+    {
+     "q": "Se dice que el desarrollo guiado por especificaciones está muerto o que es la cascada otra vez. ¿Por qué adoptarlo?",
+     "a": "El debate tiene argumentos atendibles, pero discute una práctica. La necesidad de fondo es otra: modernizar un ciclo de vida de software diseñado para cuando escribir código era lo caro, con cambios en tecnología, personas, herramientas y organización. En TELAR la especificación no se congela al inicio: evoluciona con lo que enseña cada entrega y se verifica para que no se desactualice."
+    },
+    {
+     "q": "¿Es necesario cambiar las herramientas actuales?",
+     "a": "No. El método es independiente de las herramientas: define categorías y criterios de elección. Las recomendaciones se ajustan a las características de cada organización."
+    },
+    {
+     "q": "¿Aplica a sistemas existentes?",
+     "a": "Sí. El modelo contempla una etapa específica para sistemas en operación, que se intervienen de forma ligera mientras la cobertura de especificaciones crece con el uso."
+    },
+    {
+     "q": "¿Todas las áreas deben alcanzar el nivel más alto?",
+     "a": "No. El nivel adecuado depende del riesgo y del valor de cada área. El análisis de brechas define el objetivo de cada una."
+    },
+    {
+     "q": "¿Qué ocurre si el piloto no da los resultados esperados?",
+     "a": "Cada fase cuenta con línea base, señales de retroceso y un criterio de parada acordados antes de iniciar. Detenerse a tiempo forma parte del método."
+    },
+    {
+     "q": "¿Prestan servicios en inglés?",
+     "a": "Sí. Atendemos organizaciones en Latinoamérica y Estados Unidos, en español e inglés."
+    },
+    {
+     "q": "¿Y si todavía no tengo el producto?",
+     "a": "Entonces el punto de partida es SPIRAL: delimitar, construir y validar un prototipo o MVP en ciclos cortos. Si el producto debe escalar, lo definido en SPIRAL es insumo directo para TELAR. <a href=\"/spiral/\">Conocer SPIRAL</a>."
+    }
+   ]
+  },
+  {
+   "type": "weave"
+  },
+  {
+   "type": "closing",
+   "title": "Identifiquemos un dominio para el piloto",
+   "text": "Cuéntenos dónde los cambios entre equipos le están costando más. En una primera conversación elegimos el dominio y el alcance del piloto.",
+   "actions": [
+    {
+     "label": "Evaluar un piloto TELAR",
+     "href": "/contacto/?tema=telar",
+     "style": "primary"
+    },
+    {
+     "label": "hablemos@creativalabs.io",
+     "href": "mail:Piloto TELAR",
+     "style": "light"
+    }
+   ]
+  },
+  {
+   "type": "footer"
+  }
+ ]
 }

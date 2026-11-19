@@ -1,0 +1,96 @@
+{
+ "sections": [
+  {
+   "type": "header"
+  },
+  {
+   "type": "weave"
+  },
+  {
+   "type": "pagehead",
+   "eyebrow": "Diagnóstico estratégico",
+   "title": "Decida dónde intervenir primero",
+   "lead": "Identifique qué está encareciendo o retrasando la entrega de software en un dominio, producto o plataforma. En dos a cuatro semanas, CreativaLabs le ayuda a priorizar una intervención y definir cómo evaluar su efecto.",
+   "actions": [
+    {
+     "label": "Conversar sobre mi diagnóstico",
+     "href": "/contacto/?tema=diagnostico",
+     "style": "primary"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "id": "revision",
+   "bg": "paper",
+   "split": true,
+   "wide": true,
+   "eyebrow": "Qué revisamos",
+   "title": "Del pedido del negocio al cambio en producción",
+   "paragraphs": [
+    "Seguimos el recorrido desde que el negocio plantea una necesidad hasta que el cambio está en producción. Entrevistamos a sus responsables, revisamos datos disponibles y localizamos puntos de espera, decisiones pendientes, dependencias y retrabajo."
+   ]
+  },
+  {
+   "type": "cards",
+   "id": "entregables",
+   "bg": "cream",
+   "variant": "indigo",
+   "columns": "3",
+   "eyebrow": "Qué recibe",
+   "title": "Tres entregables para decidir",
+   "items": [
+    {
+     "kicker": "Resultado 1",
+     "title": "Diagnóstico del dominio",
+     "text": "Causas prioritarias, evidencia disponible y riesgos de mantener la situación actual."
+    },
+    {
+     "kicker": "Resultado 2",
+     "title": "Línea base",
+     "text": "Indicadores pertinentes al problema, como tiempo de entrega, costo, retrabajo o incidentes."
+    },
+    {
+     "kicker": "Resultado 3",
+     "title": "Hoja de ruta",
+     "text": "Acciones priorizadas, responsables que deben participar y criterios para evaluar el primer cambio."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "id": "como-empezamos",
+   "bg": "paper",
+   "split": true,
+   "wide": true,
+   "eyebrow": "Cómo empezamos",
+   "title": "Un alcance acotado y a precio fijo",
+   "paragraphs": [
+    "Acordamos un dominio, un patrocinador, un responsable operativo y el acceso a las personas y los datos disponibles. CreativaLabs presenta una propuesta a precio fijo con calendario, entregables y participación esperada del equipo."
+   ]
+  },
+  {
+   "type": "closing",
+   "title": "Delimitemos su diagnóstico",
+   "text": "Cuéntenos qué dominio le preocupa y qué decisión necesita tomar. En una primera conversación definimos el alcance.",
+   "actions": [
+    {
+     "label": "Delimitar el diagnóstico",
+     "href": "/contacto/?tema=diagnostico",
+     "style": "primary"
+    },
+    {
+     "label": "hablemos@creativalabs.io",
+     "href": "mail:Diagnóstico estratégico",
+     "style": "light"
+    }
+   ]
+  },
+  {
+   "type": "weave"
+  },
+  {
+   "type": "footer"
+  }
+ ]
+}

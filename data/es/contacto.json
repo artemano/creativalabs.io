@@ -1,0 +1,68 @@
+{
+ "sections": [
+  {
+   "type": "header"
+  },
+  {
+   "type": "weave"
+  },
+  {
+   "type": "pagehead",
+   "eyebrow": "Contacto",
+   "title": "Conversemos sobre su próximo desafío tecnológico",
+   "lead": "Cuéntenos qué quiere mejorar o qué decisión necesita tomar. Usaremos esa información para enfocar una primera conversación de 25 minutos."
+  },
+  {
+   "type": "contactForm",
+   "id": "formulario",
+   "altText": "También puede escribirnos a",
+   "offTitle": "Escríbanos",
+   "offText": "Mientras habilitamos el formulario, escríbanos a nuestro correo con su nombre, su organización y una descripción breve de lo que quiere mejorar. Le responderemos para acordar el siguiente paso.",
+   "topics": [
+    {
+     "value": "diagnostico",
+     "label": "Diagnóstico estratégico"
+    },
+    {
+     "value": "arquitectura",
+     "label": "Arquitectura empresarial"
+    },
+    {
+     "value": "telar",
+     "label": "TELAR"
+    },
+    {
+     "value": "spiral",
+     "label": "SPIRAL"
+    },
+    {
+     "value": "cto",
+     "label": "CTO fraccional"
+    },
+    {
+     "value": "taller",
+     "label": "Taller aplicado"
+    },
+    {
+     "value": "otro",
+     "label": "Otro"
+    }
+   ],
+   "labels": {
+    "name": "Nombre",
+    "email": "Correo de trabajo",
+    "org": "Organización",
+    "topic": "Tema de interés",
+    "desc": "Descripción breve del desafío",
+    "consent": "Acepto la política de tratamiento de datos personales.",
+    "submit": "Enviar solicitud"
+   }
+  },
+  {
+   "type": "weave"
+  },
+  {
+   "type": "footer"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "sections": [
+  {
+   "type": "header"
+  },
+  {
+   "type": "weave"
+  },
+  {
+   "type": "pagehead",
+   "eyebrow": "Recursos",
+   "title": "Ideas y herramientas para líderes de tecnología",
+   "lead": "Explore cómo tomar decisiones de arquitectura, coordinar el trabajo entre equipos y aprovechar la IA en el desarrollo de software con calidad y control."
+  },
+  {
+   "type": "cards",
+   "id": "recursos",
+   "bg": "cream",
+   "variant": "front",
+   "columns": "auto",
+   "items": [
+    {
+     "kicker": "PDF · 6 páginas",
+     "title": "Brochure de TELAR",
+     "text": "El problema, el método, cómo funciona y cómo se adopta, en seis páginas.",
+     "status": "Disponible",
+     "link": {
+      "label": "Descargar el PDF",
+      "href": "/assets/docs/TELAR-brochure-CreativaLabs.pdf"
+     }
+    },
+    {
+     "kicker": "Libro abierto · CC BY 4.0",
+     "title": "La segunda industrialización del software",
+     "text": "El modelo completo para construir con agentes sin perder el gobierno: qué cambia, por qué y cómo se organiza el ciclo de vida.",
+     "status": "Próximamente: lectura en línea y PDF imprimible"
+    }
+   ]
+  },
+  {
+   "type": "closing"
+  },
+  {
+   "type": "weave"
+  },
+  {
+   "type": "footer"
+  }
+ ]
+}

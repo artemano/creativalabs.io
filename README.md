@@ -53,6 +53,15 @@ python3 -m http.server 8000
 - Si cambia el dominio, actualice `baseUrl` en `data/site.json` y ejecute `node scripts/build.mjs` antes del push.
 - Prueba local con el mismo comportamiento de Cloudflare: `npx wrangler dev`.
 
+
+## Sitio fusionado (v2, 19 nov 2026)
+
+- Diez páginas en español: inicio, servicios, diagnóstico, arquitectura empresarial, TELAR, SPIRAL, CTO fraccional, acerca de (`equipo/`), recursos y contacto. El inglés queda pendiente: `site.json → languages` solo tiene `es` y los JSON de `data/en/` se conservan para la siguiente entrega.
+- Menú y botón principal comunes en `site.json → nav` y `cta`; pie en `footer.es` (los enlaces con `href: "#"` no se muestran).
+- Tipos de sección nuevos en `app.js`: `heroWeave` (inicio con tela, foco de luz y destellos), `pagehead`, `prose`, `cards`, `collision` (por qué ahora, en TELAR) y `contactForm`.
+- Formulario: `site.json → form.enabled` está en `false` hasta publicar la política de tratamiento de datos; mientras tanto la página de contacto ofrece el correo. El envío va a `form.endpoint` (`/api/contacto`, función del Worker por construir) y admite `?tema=` para preseleccionar el tema.
+- Brochure de TELAR en `assets/docs/`.
+
 ## Pendientes conocidos
 
 - Enlaces sin destino aún (`"href": "#"`): política de tratamiento de datos, LinkedIn, lectura de la guía, PDF y autoevaluación.

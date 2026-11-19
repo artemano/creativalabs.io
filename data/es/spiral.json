@@ -1,0 +1,128 @@
+{
+ "sections": [
+  {
+   "type": "header"
+  },
+  {
+   "type": "weave"
+  },
+  {
+   "type": "pagehead",
+   "eyebrow": "SPIRAL",
+   "title": "Pase de una idea a un prototipo que pueda poner a prueba",
+   "lead": "Facilitamos el trabajo de responsables de producto y equipos, incluidos perfiles sin formación técnica, para delimitar, construir y validar un prototipo o MVP con IA en ciclos cortos.",
+   "actions": [
+    {
+     "label": "Conversar sobre mi MVP",
+     "href": "/contacto/?tema=spiral",
+     "style": "primary"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "id": "como",
+   "bg": "paper",
+   "split": true,
+   "wide": true,
+   "eyebrow": "Cómo trabajamos",
+   "title": "Primero entender, después construir",
+   "paragraphs": [
+    "Empezamos con talleres de <b>EventStorming y Envisioning</b> para entender el proceso, delimitar el producto y elegir qué hipótesis debe probar el primer prototipo. Después guiamos ciclos de construcción, validación y ajuste con la metodología SPIRAL."
+   ]
+  },
+  {
+   "type": "cards",
+   "id": "pasos",
+   "bg": "cream",
+   "variant": "indigo",
+   "columns": "3",
+   "numbered": true,
+   "eyebrow": "El método",
+   "title": "Los seis pasos de SPIRAL",
+   "items": [
+    {
+     "kicker": "S",
+     "title": "Systemic Scoping",
+     "text": "Entender y descomponer el sistema."
+    },
+    {
+     "kicker": "P",
+     "title": "Promptable Planning",
+     "text": "Definir responsabilidades, entradas y salidas por componente, y construir los prompts base."
+    },
+    {
+     "kicker": "I",
+     "title": "Incremental Implementation",
+     "text": "Construir por ciclos con apoyo de IA."
+    },
+    {
+     "kicker": "R",
+     "title": "Result-based Validation",
+     "text": "Validar los resultados, sean de la IA o de las personas."
+    },
+    {
+     "kicker": "A",
+     "title": "Adaptive Evolution",
+     "text": "Aprender del ciclo y ajustar."
+    },
+    {
+     "kicker": "L",
+     "title": "Looping Intelligence",
+     "text": "Iterar y profundizar con más precisión."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "id": "roles",
+   "bg": "paper",
+   "split": true,
+   "wide": true,
+   "eyebrow": "Quién hace qué",
+   "title": "Facilitación, no tercerización",
+   "paragraphs": [
+    "En la modalidad inicial, CreativaLabs dirige los talleres y facilita la aplicación del método. El equipo del cliente construye y valida con nuestro acompañamiento. Cuando el cliente necesita que CreativaLabs construya y entregue el prototipo o MVP, el alcance se acuerda por proyecto."
+   ]
+  },
+  {
+   "type": "prose",
+   "id": "escala",
+   "bg": "cream",
+   "split": true,
+   "wide": true,
+   "eyebrow": "De prototipo a escala",
+   "title": "De 0 a 1 con SPIRAL, de 1 a N con TELAR",
+   "paragraphs": [
+    "SPIRAL ayuda a pasar <b>de 0 a 1</b>. Si el producto debe escalar, el alcance, las responsabilidades y las interfaces de sus componentes sirven como insumos para TELAR, que ayuda a coordinar el trabajo <b>de 1 a N</b>."
+   ],
+   "link": {
+    "label": "Conocer TELAR",
+    "href": "@telar"
+   }
+  },
+  {
+   "type": "closing",
+   "title": "Delimitemos la primera prueba de producto",
+   "text": "Cuéntenos su idea y qué necesita comprobar. En una primera conversación definimos el alcance del prototipo.",
+   "actions": [
+    {
+     "label": "Delimitar la primera prueba",
+     "href": "/contacto/?tema=spiral",
+     "style": "primary"
+    },
+    {
+     "label": "hablemos@creativalabs.io",
+     "href": "mail:SPIRAL",
+     "style": "light"
+    }
+   ]
+  },
+  {
+   "type": "weave"
+  },
+  {
+   "type": "footer"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "sections": [
+  {
+   "type": "header"
+  },
+  {
+   "type": "weave"
+  },
+  {
+   "type": "pagehead",
+   "eyebrow": "CTO fraccional",
+   "title": "Incorpore liderazgo tecnológico sénior con un mandato claro",
+   "lead": "CreativaLabs acompaña decisiones de arquitectura, priorización y gobierno técnico. Si su organización necesita dirección temporal para una iniciativa, acordamos qué resultado debe lograrse y qué autoridad hace falta para dirigir el trabajo.",
+   "actions": [
+    {
+     "label": "Conversar sobre el mandato",
+     "href": "/contacto/?tema=cto",
+     "style": "primary"
+    }
+   ]
+  },
+  {
+   "type": "cards",
+   "id": "mandatos",
+   "bg": "cream",
+   "variant": "front",
+   "columns": "2",
+   "eyebrow": "Dos formas de contratar",
+   "title": "Usted decide el alcance del mandato",
+   "items": [
+    {
+     "kicker": "Mandato 1",
+     "title": "Asesoría ejecutiva",
+     "text": "Define lineamientos, revisa decisiones y da seguimiento al avance. El equipo del cliente dirige la ejecución."
+    },
+    {
+     "kicker": "Mandato 2",
+     "title": "Dirección técnica temporal",
+     "text": "Dirige el trabajo acordado y responde por los resultados definidos en el mandato. El contrato precisa las decisiones delegadas, los recursos, los criterios de aceptación y la vía de escalamiento."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "id": "cuando",
+   "bg": "paper",
+   "split": true,
+   "wide": true,
+   "eyebrow": "Cuándo puede servirle",
+   "title": "Criterio sénior cuando más se necesita",
+   "paragraphs": [
+    "Cuando necesita ordenar prioridades tecnológicas, tomar decisiones complejas de arquitectura o dar dirección a una iniciativa durante un periodo definido.",
+    "Rafael Pino ha dirigido la tecnología de compañías de software y de un grupo asegurador, y llevó una fábrica de software de 3 a más de 165 personas."
+   ],
+   "link": {
+    "label": "Conocer a CreativaLabs",
+    "href": "@equipo"
+   }
+  },
+  {
+   "type": "closing",
+   "title": "Definamos el alcance del acompañamiento",
+   "text": "Cuéntenos qué decisiones necesita orientar o qué iniciativa necesita dirección.",
+   "actions": [
+    {
+     "label": "Definir el alcance",
+     "href": "/contacto/?tema=cto",
+     "style": "primary"
+    },
+    {
+     "label": "hablemos@creativalabs.io",
+     "href": "mail:CTO fraccional",
+     "style": "light"
+    }
+   ]
+  },
+  {
+   "type": "weave"
+  },
+  {
+   "type": "footer"
+  }
+ ]
+}
