@@ -1,0 +1,14 @@
+# Archivos del repo que no se publican en Cloudflare
+.git
+.github
+.nojekyll
+.assetsignore
+node_modules
+scripts
+README.md
+wrangler.jsonc
+package.json
+package-lock.json
+CNAME
+.wrangler
+.gitignore

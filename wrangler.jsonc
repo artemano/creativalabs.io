@@ -1,0 +1,15 @@
+// Despliegue en Cloudflare Workers como sitio estático (sin código de servidor por ahora).
+// La función del formulario se agregará aquí más adelante ("main" + binding D1).
+{
+  "name": "creativalabs",
+  "compatibility_date": "2026-11-19",
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  "routes": [
+    { "pattern": "creativalabs.io", "custom_domain": true },
+    { "pattern": "www.creativalabs.io", "custom_domain": true }
+  ]
+}

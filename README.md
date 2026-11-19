@@ -1,6 +1,6 @@
 # CreativaLabs.io — sitio web
 
-Sitio estático publicado en GitHub Pages: https://artemano.github.io/creativalabs.io/
+Sitio estático publicado en Cloudflare Workers (assets estáticos): https://creativalabs.io/
 
 ## Dónde está cada cosa
 
@@ -45,9 +45,13 @@ python3 -m http.server 8000
 
 (Abrir el HTML con doble clic no funciona: el navegador bloquea la lectura de los JSON desde `file://`.)
 
-## Dominio propio
+## Publicación (Cloudflare)
 
-Para servir el sitio en `creativalabs.io`: cree un archivo `CNAME` con `creativalabs.io`, configure el DNS del dominio según la guía de GitHub Pages, cambie `baseUrl` en `data/site.json` a `https://creativalabs.io/` y ejecute `node scripts/build.mjs`.
+- `wrangler.jsonc` publica la raíz del repo como sitio estático en el Worker `creativalabs`, con los dominios `creativalabs.io` y `www.creativalabs.io`. Las páginas no encontradas sirven `404.html`.
+- `.assetsignore` excluye lo que no debe publicarse (`scripts/`, `README.md`, configuración).
+- Cloudflare despliega en cada push a `main` (Workers & Pages → Import a repository; sin comando de build; deploy: `npx wrangler deploy`).
+- Si cambia el dominio, actualice `baseUrl` en `data/site.json` y ejecute `node scripts/build.mjs` antes del push.
+- Prueba local con el mismo comportamiento de Cloudflare: `npx wrangler dev`.
 
 ## Pendientes conocidos
 
