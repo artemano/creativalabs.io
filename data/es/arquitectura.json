@@ -17,7 +17,28 @@
      "href": "/contacto/?tema=arquitectura",
      "style": "primary"
     }
-   ]
+   ],
+   "aside": {
+    "label": "CUATRO FRENTES",
+    "items": [
+     {
+      "title": "Adquisición y construcción",
+      "text": "Reutilizar, comprar, construir o asociarse."
+     },
+     {
+      "title": "Migración a nube",
+      "text": "Qué mover, qué modernizar y en qué orden."
+     },
+     {
+      "title": "Gobierno de arquitectura",
+      "text": "Decisiones que se sostienen en el tiempo."
+     },
+     {
+      "title": "Dominio y fronteras",
+      "text": "Event Storming y diseño guiado por el dominio."
+     }
+    ]
+   }
   },
   {
    "type": "cards",

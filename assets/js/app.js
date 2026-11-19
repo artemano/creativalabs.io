@@ -447,12 +447,19 @@
     }).join("");
     return '<section class="hero2 on-dark"' + idAttr(s) + ">" + texture() +
       '<div class="hero2__in"><div class="hero2__copy">' + eyebrow(s.eyebrow) + "<h1>" + s.title + '</h1><p class="lead">' + s.lead + "</p>" + btns(s.actions) + "</div>" +
-      '<div class="hero2__panel"><p class="hero2__lbl">' + s.pillarsLabel + '</p><ul class="pills">' + pills + "</ul></div></div></section>" + weave();
+      pillsPanel(s.pillarsLabel, s.pillars) + "</div></section>" + weave();
   };
 
+  function pillsPanel(label, items, numbered) {
+    return '<div class="hero2__panel"><p class="hero2__lbl">' + label + '</p><ul class="pills">' + items.map(function (p, i) {
+      return '<li class="pill"><span class="pill__n">' + (p.n || (numbered === false ? "" : "0" + (i + 1))) + '</span><span><span class="pill__t">' + p.title + "</span>" + (p.text ? '<span class="pill__d">' + p.text + "</span>" : "") + "</span></li>";
+    }).join("") + "</ul></div>";
+  }
+
   R.pagehead = function (s) {
-    return '<section class="phead on-dark"' + idAttr(s) + '><div class="phead__in">' + eyebrow(s.eyebrow) + "<h1>" + s.title + "</h1>" +
-      (s.lead ? '<p class="lead">' + s.lead + "</p>" : "") + btns(s.actions) + "</div></section>";
+    return '<section class="phead hero2 on-dark"' + idAttr(s) + ">" + texture() + '<div class="hero2__in phead__in"><div class="hero2__copy">' + eyebrow(s.eyebrow) + "<h1>" + s.title + "</h1>" +
+      (s.lead ? '<p class="lead">' + s.lead + "</p>" : "") + btns(s.actions) + "</div>" +
+      (s.aside ? pillsPanel(s.aside.label, s.aside.items, s.aside.numbered) : "") + "</div></section>";
   };
 
   // Bloque de texto: título, párrafos, viñetas, enlace o botones

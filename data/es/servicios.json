@@ -17,7 +17,32 @@
      "href": "@contacto",
      "style": "primary"
     }
-   ]
+   ],
+   "aside": {
+    "label": "CINCO FORMAS DE EMPEZAR",
+    "items": [
+     {
+      "title": "Diagnóstico estratégico",
+      "text": "Puerta de entrada: decida dónde intervenir."
+     },
+     {
+      "title": "Arquitectura empresarial",
+      "text": "Capacidades, inversiones y plataformas."
+     },
+     {
+      "title": "TELAR",
+      "text": "Coordinar equipos y agentes de IA."
+     },
+     {
+      "title": "SPIRAL",
+      "text": "Prototipos y MVP en ciclos cortos."
+     },
+     {
+      "title": "CTO fraccional",
+      "text": "Liderazgo técnico con mandato claro."
+     }
+    ]
+   }
   },
   {
    "type": "cards",

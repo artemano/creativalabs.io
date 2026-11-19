@@ -17,7 +17,28 @@
      "href": "/contacto/?tema=diagnostico",
      "style": "primary"
     }
-   ]
+   ],
+   "aside": {
+    "label": "EN CIFRAS",
+    "numbered": false,
+    "items": [
+     {
+      "n": "2–4",
+      "title": "Semanas",
+      "text": "Sobre un dominio, producto o plataforma."
+     },
+     {
+      "n": "3",
+      "title": "Entregables",
+      "text": "Diagnóstico, línea base y hoja de ruta."
+     },
+     {
+      "n": "1",
+      "title": "Propuesta a precio fijo",
+      "text": "Con calendario y participación esperada."
+     }
+    ]
+   }
   },
   {
    "type": "prose",

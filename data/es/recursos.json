@@ -10,7 +10,20 @@
    "type": "pagehead",
    "eyebrow": "Recursos",
    "title": "Ideas y herramientas para líderes de tecnología",
-   "lead": "Explore cómo tomar decisiones de arquitectura, coordinar el trabajo entre equipos y aprovechar la IA en el desarrollo de software con calidad y control."
+   "lead": "Explore cómo tomar decisiones de arquitectura, coordinar el trabajo entre equipos y aprovechar la IA en el desarrollo de software con calidad y control.",
+   "aside": {
+    "label": "DISPONIBLE HOY",
+    "items": [
+     {
+      "title": "Brochure de TELAR",
+      "text": "Seis páginas en PDF."
+     },
+     {
+      "title": "La segunda industrialización del software",
+      "text": "Libro abierto, próximamente."
+     }
+    ]
+   }
   },
   {
    "type": "cards",

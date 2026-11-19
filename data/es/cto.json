@@ -17,7 +17,20 @@
      "href": "/contacto/?tema=cto",
      "style": "primary"
     }
-   ]
+   ],
+   "aside": {
+    "label": "DOS MANDATOS",
+    "items": [
+     {
+      "title": "Asesoría ejecutiva",
+      "text": "Lineamientos, revisión de decisiones y seguimiento."
+     },
+     {
+      "title": "Dirección técnica temporal",
+      "text": "Dirige la iniciativa y responde por resultados."
+     }
+    ]
+   }
   },
   {
    "type": "cards",

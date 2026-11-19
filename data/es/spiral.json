@@ -17,7 +17,37 @@
      "href": "/contacto/?tema=spiral",
      "style": "primary"
     }
-   ]
+   ],
+   "aside": {
+    "label": "LOS SEIS PASOS",
+    "numbered": false,
+    "items": [
+     {
+      "n": "S",
+      "title": "Systemic Scoping"
+     },
+     {
+      "n": "P",
+      "title": "Promptable Planning"
+     },
+     {
+      "n": "I",
+      "title": "Incremental Implementation"
+     },
+     {
+      "n": "R",
+      "title": "Result-based Validation"
+     },
+     {
+      "n": "A",
+      "title": "Adaptive Evolution"
+     },
+     {
+      "n": "L",
+      "title": "Looping Intelligence"
+     }
+    ]
+   }
   },
   {
    "type": "prose",

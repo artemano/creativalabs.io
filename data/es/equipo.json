@@ -10,7 +10,25 @@
    "type": "pagehead",
    "eyebrow": "Acerca de CreativaLabs",
    "title": "Consultoría boutique con experiencia en dirección e ingeniería",
-   "lead": "CreativaLabs fue fundada por Rafael Pino, CTO y arquitecto empresarial con más de 26 años formando y escalando organizaciones de ingeniería. La firma ayuda a convertir decisiones de negocio en cambios que los equipos puedan ejecutar y sostener."
+   "lead": "CreativaLabs fue fundada por Rafael Pino, CTO y arquitecto empresarial con más de 26 años formando y escalando organizaciones de ingeniería. La firma ayuda a convertir decisiones de negocio en cambios que los equipos puedan ejecutar y sostener.",
+   "aside": {
+    "label": "LA FIRMA EN CIFRAS",
+    "numbered": false,
+    "items": [
+     {
+      "n": "+60",
+      "title": "Proyectos"
+     },
+     {
+      "n": "+600",
+      "title": "Empleados en organizaciones lideradas"
+     },
+     {
+      "n": "+5",
+      "title": "Empresas cofundadas por los miembros clave del equipo"
+     }
+    ]
+   }
   },
   {
    "type": "experience",

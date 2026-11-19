@@ -10,7 +10,24 @@
    "type": "pagehead",
    "eyebrow": "Contacto",
    "title": "Conversemos sobre su próximo desafío tecnológico",
-   "lead": "Cuéntenos qué quiere mejorar o qué decisión necesita tomar. Usaremos esa información para enfocar una primera conversación de 25 minutos."
+   "lead": "Cuéntenos qué quiere mejorar o qué decisión necesita tomar. Usaremos esa información para enfocar una primera conversación de 25 minutos.",
+   "aside": {
+    "label": "QUÉ ESPERAR",
+    "items": [
+     {
+      "title": "Primera conversación de 25 minutos",
+      "text": "Sin costo, para entender el problema."
+     },
+     {
+      "title": "Quién debe participar",
+      "text": "Identificamos a las personas clave."
+     },
+     {
+      "title": "Si tiene sentido, un alcance",
+      "text": "Una propuesta acotada para decidir."
+     }
+    ]
+   }
   },
   {
    "type": "contactForm",

@@ -10,7 +10,25 @@
    "type": "pagehead",
    "eyebrow": "Datos personales",
    "title": "Política de tratamiento de datos personales",
-   "lead": "Cómo Creativa IT S.A.S. (CreativaLabs) recoge, usa y protege sus datos, y cómo puede ejercer sus derechos."
+   "lead": "Cómo Creativa IT S.A.S. (CreativaLabs) recoge, usa y protege sus datos, y cómo puede ejercer sus derechos.",
+   "aside": {
+    "label": "EN RESUMEN",
+    "numbered": false,
+    "items": [
+     {
+      "n": "10",
+      "title": "Días hábiles para consultas"
+     },
+     {
+      "n": "15",
+      "title": "Días hábiles para reclamos"
+     },
+     {
+      "n": "0",
+      "title": "Datos vendidos o cedidos a terceros"
+     }
+    ]
+   }
   },
   {
    "type": "legal",
