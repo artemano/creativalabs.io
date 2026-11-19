@@ -47,7 +47,7 @@ python3 -m http.server 8000
 
 ## Publicación (Cloudflare)
 
-- `wrangler.jsonc` publica la raíz del repo como sitio estático en el Worker `creativalabs`, con los dominios `creativalabs.io` y `www.creativalabs.io`. Las páginas no encontradas sirven `404.html`.
+- `wrangler.jsonc` publica la raíz del repo como sitio estático en el Worker `creativalabs-io`, con los dominios `creativalabs.io` y `www.creativalabs.io`. Las páginas no encontradas sirven `404.html`.
 - `.assetsignore` excluye lo que no debe publicarse (`scripts/`, `README.md`, configuración).
 - Cloudflare despliega en cada push a `main` (Workers & Pages → Import a repository; sin comando de build; deploy: `npx wrangler deploy`).
 - Si cambia el dominio, actualice `baseUrl` en `data/site.json` y ejecute `node scripts/build.mjs` antes del push.
