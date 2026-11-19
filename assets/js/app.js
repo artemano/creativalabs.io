@@ -168,7 +168,7 @@
     nav += '<a class="nav__link nav__lang" href="' + esc(href("@alt")) + '" aria-label="' + esc(ui.switchAria) + '" lang="' + (LANG === "es" ? "en" : "es") + '">' + esc(ui.switchLabel) + "</a>";
     nav += '<a class="nav__link nav__cta" href="' + esc(href("mail:")) + '">' + esc(ui.contact) + "</a>";
     return '<header class="site-header"><div class="site-header__in">' +
-      '<a class="logo" href="' + esc(pagePath("home")) + '"><img class="logo__sym" src="' + asset("assets/img/simbolo-claro.svg") + '" alt="" width="34" height="34">' + esc(SITE.brand.name) + "<span>" + esc(SITE.brand.tld) + "</span></a>" +
+      '<a class="logo" href="' + esc(pagePath("home")) + '">' + esc(SITE.brand.name) + "<span>" + esc(SITE.brand.tld) + "</span></a>" +
       '<nav class="nav" aria-label="' + esc(ui.navAria) + '">' + nav + "</nav></div></header>";
   };
 
