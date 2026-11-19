@@ -65,7 +65,7 @@ for (const page of Object.keys(site.pages)) {
   }
 }
 
-// 404: GitHub Pages lo sirve para cualquier ruta inexistente; redirige al inicio.
+// 404: Cloudflare lo sirve para cualquier ruta inexistente (not_found_handling); redirige al inicio.
 writeFileSync(join(ROOT, "404.html"), `<!doctype html>
 <html lang="es"><head><meta charset="utf-8"><title>${esc(site.brand.full)}</title>
 <meta http-equiv="refresh" content="0; url=${site.baseUrl}"></head>

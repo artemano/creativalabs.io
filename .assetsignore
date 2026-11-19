@@ -1,7 +1,6 @@
 # Archivos del repo que no se publican en Cloudflare
 .git
 .github
-.nojekyll
 .assetsignore
 node_modules
 scripts
