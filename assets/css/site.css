@@ -385,6 +385,11 @@ h1,.h2,.h3{margin:0;font-family:var(--cond);font-weight:800}
 .cards--auto{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .cards--3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 .cards--2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.cards--pairs{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cards--pairs .card--featured{grid-column:1/-1}
+@media (max-width:760px){.cards--pairs{grid-template-columns:1fr}}
+.card__i{display:block;color:var(--indigo);line-height:0;margin-bottom:4px}
+.card--featured .card__i{color:var(--rust)}
 .card{min-width:0;background:var(--paper);border-top:4px solid var(--ink);padding:28px;display:flex;flex-direction:column;gap:12px}
 .card--plain{background:transparent;border-top:2px solid var(--ink);padding:18px 0 0}
 .card--indigo{border-top-color:var(--indigo)}
