@@ -8,9 +8,9 @@
     },
     {
       "type": "pagehead",
-      "eyebrow": "SPIRAL · Método y herramienta",
+      "eyebrow": "SPIRAL · Método",
       "title": "Pase de una idea a un prototipo que pueda poner a prueba",
-      "lead": "SPIRAL es un método, apoyado por una herramienta, con el que facilitamos el trabajo de responsables de producto y equipos, incluidos perfiles sin formación técnica, para delimitar, construir y validar un prototipo o MVP con IA en ciclos cortos.",
+      "lead": "SPIRAL es un método con el que facilitamos el trabajo de responsables de producto y equipos, incluidos perfiles sin formación técnica, para delimitar, construir y validar un prototipo o MVP con IA en ciclos cortos.",
       "actions": [
         {
           "label": "Conversar sobre mi MVP",
@@ -75,34 +75,34 @@
       "title": "Los seis pasos de SPIRAL",
       "items": [
         {
-          "kicker": "S",
           "title": "Systemic Scoping",
-          "text": "Entender y descomponer el sistema."
+          "text": "Entender y descomponer el sistema.",
+          "letter": "S"
         },
         {
-          "kicker": "P",
           "title": "Promptable Planning",
-          "text": "Definir responsabilidades, entradas y salidas por componente, y construir los prompts base."
+          "text": "Definir responsabilidades, entradas y salidas por componente, y construir los prompts base.",
+          "letter": "P"
         },
         {
-          "kicker": "I",
           "title": "Incremental Implementation",
-          "text": "Construir por ciclos con apoyo de IA."
+          "text": "Construir por ciclos con apoyo de IA.",
+          "letter": "I"
         },
         {
-          "kicker": "R",
           "title": "Result-based Validation",
-          "text": "Validar los resultados, sean de la IA o de las personas."
+          "text": "Validar los resultados, sean de la IA o de las personas.",
+          "letter": "R"
         },
         {
-          "kicker": "A",
           "title": "Adaptive Evolution",
-          "text": "Aprender del ciclo y ajustar."
+          "text": "Aprender del ciclo y ajustar.",
+          "letter": "A"
         },
         {
-          "kicker": "L",
           "title": "Looping Intelligence",
-          "text": "Iterar y profundizar con más precisión."
+          "text": "Iterar y profundizar con más precisión.",
+          "letter": "L"
         }
       ]
     },

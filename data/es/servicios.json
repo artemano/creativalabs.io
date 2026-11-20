@@ -35,7 +35,7 @@
           },
           {
             "title": "SPIRAL",
-            "text": "Método y herramienta para prototipos y MVP."
+            "text": "Método para prototipos y MVP."
           },
           {
             "title": "CTO fraccional",
@@ -83,9 +83,9 @@
           "icon": "telar"
         },
         {
-          "kicker": "Método y herramienta · SPIRAL",
+          "kicker": "Método · SPIRAL",
           "title": "Facilitación de prototipos y MVP con SPIRAL",
-          "text": "Convierta una idea en un prototipo o MVP que su equipo pueda poner a prueba, con un método y una herramienta que facilitan cada paso.",
+          "text": "Convierta una idea en un prototipo o MVP que su equipo pueda poner a prueba, con un método que facilita cada paso.",
           "link": {
             "label": "Explorar SPIRAL",
             "href": "@spiral"

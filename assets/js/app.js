@@ -497,7 +497,9 @@
   R.cards = function (s) {
     var v = s.variant || "front";
     var items = s.items.map(function (c, i) {
-      var top = icon(c.icon) + (s.numbered ? '<p class="card__n">' + (i + 1 < 10 ? "0" : "") + (i + 1) + "</p>" : "") +
+      var num = s.numbered ? '<p class="card__n">' + (i + 1 < 10 ? "0" : "") + (i + 1) + "</p>" : "";
+      if (c.letter) num = '<div class="card__nrow">' + num + '<p class="card__n card__letter" aria-hidden="true">' + c.letter + "</p></div>";
+      var top = icon(c.icon) + num +
         (c.kicker ? '<p class="card__k">' + c.kicker + "</p>" : "") + (c.badge ? '<span class="badge card__badge">' + c.badge + "</span>" : "");
       return '<div class="card card--' + v + (c.featured ? " card--featured" : "") + '">' + top +
         (c.title ? '<h3 class="card__t">' + c.title + "</h3>" : "") +

@@ -396,6 +396,7 @@ h1,.h2,.h3{margin:0;font-family:var(--cond);font-weight:800}
 .card--featured{border-top-color:var(--rust);background:var(--paper)}
 .sec--paper .card--front,.sec--paper .card--indigo{background:var(--cream)}
 .card__n{font-family:var(--cond);font-weight:800;font-size:40px;line-height:1;color:var(--indigo)}
+.card__nrow{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
 .card__k{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--rust)}
 .card__badge{align-self:flex-start}
 .card__t{margin:0;font-family:var(--cond);font-weight:800;font-size:28px;line-height:1.08}
