@@ -1,172 +1,173 @@
 {
- "sections": [
-  {
-   "type": "header"
-  },
-  {
-   "type": "weave"
-  },
-  {
-   "type": "pagehead",
-   "eyebrow": "Acerca de CreativaLabs",
-   "title": "Consultoría boutique con experiencia en dirección e ingeniería",
-   "lead": "CreativaLabs fue fundada por Rafael Pino, CTO y arquitecto empresarial con más de 26 años formando y escalando organizaciones de ingeniería. La firma ayuda a convertir decisiones de negocio en cambios que los equipos puedan ejecutar y sostener.",
-   "aside": {
-    "label": "LA FIRMA EN CIFRAS",
-    "numbered": false,
-    "items": [
-     {
-      "n": "+60",
-      "title": "Proyectos"
-     },
-     {
-      "n": "+600",
-      "title": "Empleados en organizaciones lideradas"
-     },
-     {
-      "n": "+5",
-      "title": "Empresas cofundadas por los miembros clave del equipo"
-     }
-    ]
-   }
-  },
-  {
-   "type": "experience",
-   "id": "como-trabajamos",
-   "eyebrow": "Cómo trabajamos",
-   "title": "El consultor principal participa directamente",
-   "text": "Convocamos especialistas sénior cuando el alcance lo requiere. Trabajamos con responsables de negocio, producto e ingeniería sobre decisiones y problemas reales. La formación aplicada y el liderazgo técnico ayudan a que las prácticas adoptadas se mantengan después de la intervención.",
-   "indicators": "company"
-  },
-  {
-   "type": "team",
-   "id": "equipo",
-   "person": "rafael-pino",
-   "eyebrow": "Fundador",
-   "title": "Rafael Pino",
-   "text": "Más de veinticinco años formando, escalando y transformando organizaciones de ingeniería en consultoría, producto digital y servicios nearshore, en Latinoamérica y Estados Unidos.",
-   "bio": "Constructor y arquitecto de soluciones empresariales de gran tamaño, experto en SDLC y coach certificado en liderazgo de ingeniería.<br>Autor de <em>La segunda industrialización del software</em>, del método TELAR y del método SPIRAL para construcción rápida de MVPs con IA.",
-   "education": [
+  "sections": [
     {
-     "title": "Ingeniería de Sistemas",
-     "place": "Universidad Nacional de Colombia"
+      "type": "header"
     },
     {
-     "title": "Arquitectura de Software Empresarial",
-     "place": "Pontificia Universidad Javeriana"
+      "type": "weave"
     },
     {
-     "title": "Coach y facilitador certificado",
-     "place": "Altamente"
+      "type": "pagehead",
+      "eyebrow": "Acerca de CreativaLabs",
+      "title": "Consultoría boutique con experiencia en dirección e ingeniería",
+      "lead": "CreativaLabs fue fundada por Rafael Pino, CTO y arquitecto empresarial con más de 26 años formando y escalando organizaciones de ingeniería. La firma ayuda a convertir decisiones de negocio en cambios que los equipos puedan ejecutar y sostener.",
+      "aside": {
+        "label": "LA FIRMA EN CIFRAS",
+        "numbered": false,
+        "items": [
+          {
+            "n": "+60",
+            "title": "Proyectos"
+          },
+          {
+            "n": "+600",
+            "title": "Empleados en organizaciones lideradas"
+          },
+          {
+            "n": "+5",
+            "title": "Empresas cofundadas por los miembros clave del equipo"
+          }
+        ]
+      }
     },
     {
-     "title": "Scrum Master y Product Owner",
-     "place": "Scrum Alliance"
+      "type": "experience",
+      "id": "como-trabajamos",
+      "eyebrow": "Cómo trabajamos",
+      "title": "El consultor principal participa directamente",
+      "text": "Convocamos especialistas sénior cuando el alcance lo requiere. Trabajamos con responsables de negocio, producto e ingeniería sobre decisiones y problemas reales. La formación aplicada y el liderazgo técnico ayudan a que las prácticas adoptadas se mantengan después de la intervención.",
+      "indicators": "company"
+    },
+    {
+      "type": "team",
+      "id": "equipo",
+      "person": "rafael-pino",
+      "eyebrow": "Fundador",
+      "title": "Rafael Pino",
+      "text": "Más de veinticinco años formando, escalando y transformando organizaciones de ingeniería en consultoría, producto digital y servicios nearshore, en Latinoamérica y Estados Unidos.",
+      "bio": "Constructor y arquitecto de soluciones empresariales de gran tamaño, experto en SDLC y coach certificado en liderazgo de ingeniería.<br>Autor de <em>La segunda industrialización del software</em>, del método TELAR y del método SPIRAL para construcción rápida de MVPs con IA.",
+      "education": [
+        {
+          "title": "Ingeniería de Sistemas",
+          "place": "Universidad Nacional de Colombia"
+        },
+        {
+          "title": "Arquitectura de Software Empresarial",
+          "place": "Pontificia Universidad Javeriana"
+        },
+        {
+          "title": "Coach y facilitador certificado",
+          "place": "Altamente"
+        },
+        {
+          "title": "Scrum Master y Product Owner",
+          "place": "Scrum Alliance"
+        }
+      ],
+      "timeline": {
+        "title": "Trayectoria",
+        "subtitle": "De la fábrica de software a la ingeniería con agentes de IA.",
+        "items": [
+          {
+            "year": "2025",
+            "accent": true,
+            "org": "Grupo R5 · InsurTech",
+            "role": "Director de tecnología",
+            "text": "Desarrollo guiado por especificaciones y agentes de IA en una plataforma de seguros."
+          },
+          {
+            "year": "2023",
+            "org": "DoubleVPartners",
+            "role": "Director de tecnología",
+            "text": "50 ingenieros en soluciones nativas de la nube; primera adopción de asistentes de IA."
+          },
+          {
+            "year": "2022",
+            "org": "Ubanku",
+            "role": "CTO y cofundador",
+            "text": "Neobanco para la inclusión financiera de jóvenes; arquitectura de microservicios orientada a eventos y ronda presemilla de cerca de USD 1 millón."
+          },
+          {
+            "year": "2021",
+            "org": "Asesoftware",
+            "role": "Gerente de ingeniería",
+            "text": "Más de 70 ingenieros; creación del área de desarrollo de producto."
+          },
+          {
+            "year": "2016",
+            "org": "Togroow",
+            "role": "CTO y cofundador",
+            "text": "Plataforma SaaS B2B multiinquilino con comercio electrónico, pagos y marketplace."
+          },
+          {
+            "year": "2015",
+            "org": "Digitalware",
+            "role": "VP de Innovación y Desarrollo",
+            "text": "Organización de 240 personas en cuatro líneas de producto; transformación ágil."
+          },
+          {
+            "year": "2014",
+            "org": "Globant",
+            "role": "Director técnico",
+            "text": "Equipos nearshore de 30 personas para Disney Parks y TripAdvisor."
+          },
+          {
+            "year": "2009",
+            "featured": true,
+            "badge": "Antecedente directo de TELAR",
+            "org": "eTask, hoy Hydra Cloud",
+            "role": "CTO y cofundador",
+            "text": "Plataforma de gobernanza metodológica basada en los estándares SPEM y UMA: los procesos como activos reutilizables y el desarrollo dirigido por modelos (MDD/MDA). Una organización de 65 personas. Quince años antes de los agentes, la misma idea que hoy sostiene TELAR: la intención y el proceso gobiernan la construcción."
+          },
+          {
+            "year": "2002",
+            "accent": true,
+            "org": "Heinsohn",
+            "role": "Director de fábrica de software y de preventa",
+            "text": "Fábrica de software de 3 a más de 165 ingenieros; cerca de USD 12 millones en negocios."
+          },
+          {
+            "year": "1997",
+            "org": "Unisys",
+            "role": "Arquitecto líder",
+            "text": "Arquitectura de banca personal, empresarial y de oficinas para Banco Santander."
+          }
+        ]
+      },
+      "sectors": {
+        "label": "Sectores",
+        "items": [
+          "Seguros",
+          "Banca",
+          "FinTech",
+          "Salud",
+          "Gobierno",
+          "Medios"
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "id": "evidencia",
+      "bg": "cream",
+      "wide": true,
+      "eyebrow": "Evidencia",
+      "title": "Casos verificables",
+      "paragraphs": [
+        "Los casos se incorporarán cuando haya autorización y evidencia suficiente. Cada caso explicará el desafío, qué hizo CreativaLabs, cómo se midió el trabajo y qué resultado se observó."
+      ],
+      "image": "assets/img/taller-sala.jpg",
+      "alt": "Rafael Pino facilita un taller de Event Storming junto a la pared de notas",
+      "caption": "Taller de Event Storming con un equipo de producto y tecnología.",
+      "imagePosition": "60% 40%"
+    },
+    {
+      "type": "closing",
+      "title": "Conversemos sobre su organización",
+      "text": "Cuéntenos qué quiere mejorar. En una primera conversación de 25 minutos vemos cómo podemos ayudarle."
+    },
+    {
+      "type": "footer"
     }
-   ],
-   "timeline": {
-    "title": "Trayectoria",
-    "subtitle": "De la fábrica de software a la ingeniería con agentes de IA.",
-    "items": [
-     {
-      "year": "2025",
-      "accent": true,
-      "org": "Grupo R5 · InsurTech",
-      "role": "Director de tecnología",
-      "text": "Desarrollo guiado por especificaciones y agentes de IA en una plataforma de seguros."
-     },
-     {
-      "year": "2023",
-      "org": "DoubleVPartners",
-      "role": "Director de tecnología",
-      "text": "50 ingenieros en soluciones nativas de la nube; primera adopción de asistentes de IA."
-     },
-     {
-      "year": "2022",
-      "org": "Ubanku",
-      "role": "CTO y cofundador",
-      "text": "Neobanco para la inclusión financiera de jóvenes; arquitectura de microservicios orientada a eventos y ronda presemilla de cerca de USD 1 millón."
-     },
-     {
-      "year": "2021",
-      "org": "Asesoftware",
-      "role": "Gerente de ingeniería",
-      "text": "Más de 70 ingenieros; creación del área de desarrollo de producto."
-     },
-     {
-      "year": "2016",
-      "org": "Togroow",
-      "role": "CTO y cofundador",
-      "text": "Plataforma SaaS B2B multiinquilino con comercio electrónico, pagos y marketplace."
-     },
-     {
-      "year": "2015",
-      "org": "Digitalware",
-      "role": "VP de Innovación y Desarrollo",
-      "text": "Organización de 240 personas en cuatro líneas de producto; transformación ágil."
-     },
-     {
-      "year": "2014",
-      "org": "Globant",
-      "role": "Director técnico",
-      "text": "Equipos nearshore de 30 personas para Disney Parks y TripAdvisor."
-     },
-     {
-      "year": "2009",
-      "featured": true,
-      "badge": "Antecedente directo de TELAR",
-      "org": "eTask, hoy Hydra Cloud",
-      "role": "CTO y cofundador",
-      "text": "Plataforma de gobernanza metodológica basada en los estándares SPEM y UMA: los procesos como activos reutilizables y el desarrollo dirigido por modelos (MDD/MDA). Una organización de 65 personas. Quince años antes de los agentes, la misma idea que hoy sostiene TELAR: la intención y el proceso gobiernan la construcción."
-     },
-     {
-      "year": "2002",
-      "accent": true,
-      "org": "Heinsohn",
-      "role": "Director de fábrica de software y de preventa",
-      "text": "Fábrica de software de 3 a más de 165 ingenieros; cerca de USD 12 millones en negocios."
-     },
-     {
-      "year": "1997",
-      "org": "Unisys",
-      "role": "Arquitecto líder",
-      "text": "Arquitectura de banca personal, empresarial y de oficinas para Banco Santander."
-     }
-    ]
-   },
-   "sectors": {
-    "label": "Sectores",
-    "items": [
-     "Seguros",
-     "Banca",
-     "FinTech",
-     "Salud",
-     "Gobierno",
-     "Medios"
-    ]
-   }
-  },
-  {
-   "type": "prose",
-   "id": "evidencia",
-   "bg": "cream",
-   "wide": true,
-   "eyebrow": "Evidencia",
-   "title": "Casos verificables",
-   "paragraphs": [
-    "Los casos se incorporarán cuando haya autorización y evidencia suficiente. Cada caso explicará el desafío, qué hizo CreativaLabs, cómo se midió el trabajo y qué resultado se observó."
-   ],
-   "image": "assets/img/taller-pared.jpg",
-   "alt": "Participantes de un taller de Event Storming frente a una pared de notas adhesivas",
-   "caption": "Talleres sobre problemas reales del cliente."
-  },
-  {
-   "type": "closing",
-   "title": "Conversemos sobre su organización",
-   "text": "Cuéntenos qué quiere mejorar. En una primera conversación de 25 minutos vemos cómo podemos ayudarle."
-  },
-  {
-   "type": "footer"
-  }
- ]
+  ]
 }

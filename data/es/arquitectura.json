@@ -1,108 +1,111 @@
 {
- "sections": [
-  {
-   "type": "header"
-  },
-  {
-   "type": "weave"
-  },
-  {
-   "type": "pagehead",
-   "eyebrow": "Arquitectura empresarial",
-   "title": "Decida qué capacidades necesita su negocio y cómo obtenerlas",
-   "lead": "Convierta decisiones de inversión, adquisición, construcción y modernización en una arquitectura que su organización pueda operar y evolucionar. CreativaLabs conecta la decisión de negocio con las implicaciones técnicas, económicas y operativas.",
-   "actions": [
+  "sections": [
     {
-     "label": "Revisar una decisión de arquitectura",
-     "href": "/contacto/?tema=arquitectura",
-     "style": "primary"
+      "type": "header"
+    },
+    {
+      "type": "weave"
+    },
+    {
+      "type": "pagehead",
+      "eyebrow": "Arquitectura empresarial",
+      "title": "Decida qué capacidades necesita su negocio y cómo obtenerlas",
+      "lead": "Convierta decisiones de inversión, adquisición, construcción y modernización en una arquitectura que su organización pueda operar y evolucionar. CreativaLabs conecta la decisión de negocio con las implicaciones técnicas, económicas y operativas.",
+      "actions": [
+        {
+          "label": "Revisar una decisión de arquitectura",
+          "href": "/contacto/?tema=arquitectura",
+          "style": "primary"
+        }
+      ],
+      "aside": {
+        "label": "CUATRO FRENTES",
+        "items": [
+          {
+            "title": "Adquisición y construcción",
+            "text": "Reutilizar, comprar, construir o asociarse."
+          },
+          {
+            "title": "Migración a nube",
+            "text": "Qué mover, qué modernizar y en qué orden."
+          },
+          {
+            "title": "Gobierno de arquitectura",
+            "text": "Decisiones que se sostienen en el tiempo."
+          },
+          {
+            "title": "Dominio y fronteras",
+            "text": "Event Storming y diseño guiado por el dominio."
+          }
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "id": "frentes",
+      "bg": "cream",
+      "variant": "front",
+      "columns": "2",
+      "items": [
+        {
+          "kicker": "Adquisición y construcción de capacidades",
+          "title": "¿Conviene reutilizar, comprar, construir o apoyarse en un socio?",
+          "text": "Identificamos qué capacidad necesita el negocio y comparamos alternativas por costo total, tiempo para ponerlas en uso, encaje con la arquitectura, dependencia del proveedor y capacidad interna para operarlas. El resultado puede ser una recomendación de inversión con criterios, supuestos y riesgos documentados."
+        },
+        {
+          "kicker": "Estrategia y dirección de migraciones a nube",
+          "title": "Defina qué mover, qué modernizar y en qué orden",
+          "text": "Evaluamos aplicaciones, datos y dependencias, y diseñamos la arquitectura objetivo para Azure, Oracle Cloud Infrastructure o AWS cuando corresponda. La hoja de ruta identifica etapas de migración y criterios de costos, seguridad y continuidad. Si se requiere ejecución técnica, se acuerdan el alcance y los especialistas que participarán."
+        },
+        {
+          "kicker": "Gobierno de arquitectura empresarial",
+          "title": "Haga que las decisiones de arquitectura se sostengan en el tiempo",
+          "text": "Definimos quién decide, qué estándares se aplican, cuándo se revisa un diseño y cómo se registran las decisiones y excepciones. El gobierno se ajusta al tamaño y al riesgo de la organización."
+        },
+        {
+          "kicker": "Dominio y fronteras del sistema",
+          "title": "Reparta el sistema entre equipos con criterio",
+          "text": "Cuando el problema está en cómo se reparte el sistema entre equipos, usamos talleres de diseño guiado por el dominio y Event Storming para delimitar dominios, contratos e integraciones antes de decidir la arquitectura."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "entregables",
+      "bg": "paper",
+      "split": true,
+      "wide": true,
+      "eyebrow": "Qué puede recibir",
+      "title": "Entregables según la decisión",
+      "paragraphs": [
+        "Según la decisión, el trabajo puede producir un mapa de capacidades y dependencias, una evaluación de alternativas, la arquitectura objetivo, una hoja de ruta de inversión o migración y un modelo de gobierno con responsabilidades claras."
+      ],
+      "image": "assets/img/arq-pared-eventos.jpg",
+      "alt": "Una persona escribe sobre una pared llena de notas ordenadas en filas por color",
+      "imagePosition": "55% 50%"
+    },
+    {
+      "type": "closing",
+      "title": "Conversemos sobre su iniciativa de arquitectura",
+      "text": "Cuéntenos qué decisión tiene por delante: una inversión, una migración o el gobierno de su arquitectura.",
+      "actions": [
+        {
+          "label": "Conversar sobre mi iniciativa",
+          "href": "/contacto/?tema=arquitectura",
+          "style": "primary"
+        },
+        {
+          "label": "hablemos@creativalabs.io",
+          "href": "mail:Arquitectura empresarial",
+          "style": "light"
+        }
+      ]
+    },
+    {
+      "type": "weave"
+    },
+    {
+      "type": "footer"
     }
-   ],
-   "aside": {
-    "label": "CUATRO FRENTES",
-    "items": [
-     {
-      "title": "Adquisición y construcción",
-      "text": "Reutilizar, comprar, construir o asociarse."
-     },
-     {
-      "title": "Migración a nube",
-      "text": "Qué mover, qué modernizar y en qué orden."
-     },
-     {
-      "title": "Gobierno de arquitectura",
-      "text": "Decisiones que se sostienen en el tiempo."
-     },
-     {
-      "title": "Dominio y fronteras",
-      "text": "Event Storming y diseño guiado por el dominio."
-     }
-    ]
-   }
-  },
-  {
-   "type": "cards",
-   "id": "frentes",
-   "bg": "cream",
-   "variant": "front",
-   "columns": "2",
-   "items": [
-    {
-     "kicker": "Adquisición y construcción de capacidades",
-     "title": "¿Conviene reutilizar, comprar, construir o apoyarse en un socio?",
-     "text": "Identificamos qué capacidad necesita el negocio y comparamos alternativas por costo total, tiempo para ponerlas en uso, encaje con la arquitectura, dependencia del proveedor y capacidad interna para operarlas. El resultado puede ser una recomendación de inversión con criterios, supuestos y riesgos documentados."
-    },
-    {
-     "kicker": "Estrategia y dirección de migraciones a nube",
-     "title": "Defina qué mover, qué modernizar y en qué orden",
-     "text": "Evaluamos aplicaciones, datos y dependencias, y diseñamos la arquitectura objetivo para Azure, Oracle Cloud Infrastructure o AWS cuando corresponda. La hoja de ruta identifica etapas de migración y criterios de costos, seguridad y continuidad. Si se requiere ejecución técnica, se acuerdan el alcance y los especialistas que participarán."
-    },
-    {
-     "kicker": "Gobierno de arquitectura empresarial",
-     "title": "Haga que las decisiones de arquitectura se sostengan en el tiempo",
-     "text": "Definimos quién decide, qué estándares se aplican, cuándo se revisa un diseño y cómo se registran las decisiones y excepciones. El gobierno se ajusta al tamaño y al riesgo de la organización."
-    },
-    {
-     "kicker": "Dominio y fronteras del sistema",
-     "title": "Reparta el sistema entre equipos con criterio",
-     "text": "Cuando el problema está en cómo se reparte el sistema entre equipos, usamos talleres de diseño guiado por el dominio y Event Storming para delimitar dominios, contratos e integraciones antes de decidir la arquitectura."
-    }
-   ]
-  },
-  {
-   "type": "prose",
-   "id": "entregables",
-   "bg": "paper",
-   "split": true,
-   "wide": true,
-   "eyebrow": "Qué puede recibir",
-   "title": "Entregables según la decisión",
-   "paragraphs": [
-    "Según la decisión, el trabajo puede producir un mapa de capacidades y dependencias, una evaluación de alternativas, la arquitectura objetivo, una hoja de ruta de inversión o migración y un modelo de gobierno con responsabilidades claras."
-   ]
-  },
-  {
-   "type": "closing",
-   "title": "Conversemos sobre su iniciativa de arquitectura",
-   "text": "Cuéntenos qué decisión tiene por delante: una inversión, una migración o el gobierno de su arquitectura.",
-   "actions": [
-    {
-     "label": "Conversar sobre mi iniciativa",
-     "href": "/contacto/?tema=arquitectura",
-     "style": "primary"
-    },
-    {
-     "label": "hablemos@creativalabs.io",
-     "href": "mail:Arquitectura empresarial",
-     "style": "light"
-    }
-   ]
-  },
-  {
-   "type": "weave"
-  },
-  {
-   "type": "footer"
-  }
- ]
+  ]
 }

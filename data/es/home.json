@@ -1,158 +1,158 @@
 {
- "sections": [
-  {
-   "type": "header"
-  },
-  {
-   "type": "weave"
-  },
-  {
-   "type": "heroWeave",
-   "id": "inicio",
-   "eyebrow": "Consultoría estratégica para empresas que desarrollan software",
-   "title": "Mejore cómo su organización construye y evoluciona software",
-   "lead": "Ayudamos a sus equipos a reducir costos, acortar el tiempo de entrega y resolver problemas de coordinación. Trabajamos sobre su arquitectura, sus decisiones de inversión y su forma de operar para incorporar IA con calidad y control.",
-   "actions": [
+  "sections": [
     {
-     "label": "Solicitar una conversación",
-     "href": "@contacto",
-     "style": "primary"
+      "type": "header"
     },
     {
-     "label": "Conocer el diagnóstico",
-     "href": "@diagnostico",
-     "style": "outline"
+      "type": "weave"
+    },
+    {
+      "type": "heroWeave",
+      "id": "inicio",
+      "eyebrow": "Consultoría estratégica para empresas que desarrollan software",
+      "title": "Mejore cómo su organización construye y evoluciona software",
+      "lead": "Ayudamos a sus equipos a reducir costos, acortar el tiempo de entrega y resolver problemas de coordinación. Trabajamos sobre su arquitectura, sus decisiones de inversión y su forma de operar para incorporar IA con calidad y control.",
+      "actions": [
+        {
+          "label": "Solicitar una conversación",
+          "href": "@contacto",
+          "style": "primary"
+        },
+        {
+          "label": "Conocer el diagnóstico",
+          "href": "@diagnostico",
+          "style": "outline"
+        }
+      ],
+      "pillarsLabel": "LO QUE BUSCAMOS CON USTED",
+      "pillars": [
+        {
+          "title": "Economía del software",
+          "text": "Menos costo por entrega y por cambio."
+        },
+        {
+          "title": "Velocidad de respuesta",
+          "text": "De la prioridad del negocio a producción, más corto."
+        },
+        {
+          "title": "Capacidad de evolución",
+          "text": "Sistemas compartidos que se pueden cambiar sin miedo."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "problema",
+      "bg": "paper",
+      "variant": "indigo",
+      "columns": "3",
+      "eyebrow": "El problema",
+      "title": "Cuando producir código es más rápido, coordinar los cambios importa más",
+      "text": "Un equipo puede avanzar con rapidez y aun así esperar semanas por una decisión, rehacer trabajo o descubrir tarde que un cambio afecta a otra unidad. Ayudamos a identificar qué está frenando el resultado y qué conviene cambiar primero.",
+      "items": [
+        {
+          "title": "Economía del software",
+          "text": "Identifique qué encarece cada entrega y dónde una inversión puede reducir el costo de operar y evolucionar sus sistemas."
+        },
+        {
+          "title": "Velocidad de respuesta",
+          "text": "Acorte el recorrido entre una prioridad del negocio y una capacidad disponible en producción."
+        },
+        {
+          "title": "Capacidad de evolución",
+          "text": "Reduzca dependencias que hacen costoso cada cambio y dé a sus equipos claridad para trabajar sobre sistemas compartidos."
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "id": "diagnostico",
+      "bg": "cream",
+      "wide": true,
+      "eyebrow": "Oferta principal",
+      "title": "Antes de cambiar su forma de trabajar, decida dónde intervenir",
+      "paragraphs": [
+        "En dos a cuatro semanas revisamos un dominio de software con sus responsables de negocio, producto e ingeniería. Usted recibe una línea base, las causas prioritarias del problema y una hoja de ruta para decidir qué acción emprender y cómo medirla."
+      ],
+      "actions": [
+        {
+          "label": "Ver qué incluye el diagnóstico",
+          "href": "@diagnostico",
+          "style": "indigo"
+        }
+      ],
+      "image": "assets/img/inicio-dos-personas.jpg",
+      "alt": "Dos personas revisan notas adhesivas en una pared mientras conversan",
+      "imagePosition": "60% 50%"
+    },
+    {
+      "type": "cards",
+      "id": "servicios",
+      "bg": "paper",
+      "variant": "front",
+      "columns": "auto",
+      "eyebrow": "Servicios y métodos",
+      "title": "¿Qué necesita resolver?",
+      "items": [
+        {
+          "kicker": "Arquitectura empresarial",
+          "title": "Alinear inversiones y modernizar tecnología",
+          "text": "Defina qué capacidades necesita, cómo obtenerlas y cómo llevarlas a una arquitectura que pueda evolucionar.",
+          "link": {
+            "label": "Arquitectura empresarial",
+            "href": "@arquitectura"
+          }
+        },
+        {
+          "kicker": "TELAR",
+          "title": "Coordinar cambios entre equipos",
+          "text": "Aplique TELAR para organizar el contexto compartido, los contratos entre componentes y la trazabilidad.",
+          "link": {
+            "label": "Conocer TELAR",
+            "href": "@telar"
+          }
+        },
+        {
+          "kicker": "SPIRAL",
+          "title": "Validar una idea de producto",
+          "text": "Use SPIRAL para delimitar, construir y validar un prototipo o MVP en ciclos cortos.",
+          "link": {
+            "label": "Conocer SPIRAL",
+            "href": "@spiral"
+          }
+        },
+        {
+          "kicker": "CTO fraccional",
+          "title": "Incorporar liderazgo técnico",
+          "text": "Cuente con un CTO fraccional para orientar decisiones o dirigir una iniciativa con un mandato acordado.",
+          "link": {
+            "label": "Explorar CTO fraccional",
+            "href": "@cto"
+          }
+        }
+      ]
+    },
+    {
+      "type": "experience",
+      "id": "experiencia",
+      "eyebrow": "Experiencia y forma de trabajo",
+      "title": "Experiencia directiva aplicada al trabajo de sus equipos",
+      "text": "Rafael Pino, CTO y arquitecto empresarial, cuenta con más de 26 años formando y escalando organizaciones de ingeniería. CreativaLabs combina esa experiencia con especialistas sénior según el alcance. Las intervenciones pueden incluir formación aplicada, mentoría y revisiones técnicas sobre problemas reales del cliente.",
+      "indicators": "company",
+      "link": {
+        "label": "Conocer a CreativaLabs",
+        "href": "@equipo"
+      },
+      "person": "rafael-pino"
+    },
+    {
+      "type": "weave"
+    },
+    {
+      "type": "closing"
+    },
+    {
+      "type": "footer"
     }
-   ],
-   "pillarsLabel": "LO QUE BUSCAMOS CON USTED",
-   "pillars": [
-    {
-     "title": "Economía del software",
-     "text": "Menos costo por entrega y por cambio."
-    },
-    {
-     "title": "Velocidad de respuesta",
-     "text": "De la prioridad del negocio a producción, más corto."
-    },
-    {
-     "title": "Capacidad de evolución",
-     "text": "Sistemas compartidos que se pueden cambiar sin miedo."
-    }
-   ]
-  },
-  {
-   "type": "cards",
-   "id": "problema",
-   "bg": "paper",
-   "variant": "indigo",
-   "columns": "3",
-   "eyebrow": "El problema",
-   "title": "Cuando producir código es más rápido, coordinar los cambios importa más",
-   "text": "Un equipo puede avanzar con rapidez y aun así esperar semanas por una decisión, rehacer trabajo o descubrir tarde que un cambio afecta a otra unidad. Ayudamos a identificar qué está frenando el resultado y qué conviene cambiar primero.",
-   "items": [
-    {
-     "title": "Economía del software",
-     "text": "Identifique qué encarece cada entrega y dónde una inversión puede reducir el costo de operar y evolucionar sus sistemas."
-    },
-    {
-     "title": "Velocidad de respuesta",
-     "text": "Acorte el recorrido entre una prioridad del negocio y una capacidad disponible en producción."
-    },
-    {
-     "title": "Capacidad de evolución",
-     "text": "Reduzca dependencias que hacen costoso cada cambio y dé a sus equipos claridad para trabajar sobre sistemas compartidos."
-    }
-   ]
-  },
-  {
-   "type": "prose",
-   "id": "diagnostico",
-   "bg": "cream",
-   "wide": true,
-   "eyebrow": "Oferta principal",
-   "title": "Antes de cambiar su forma de trabajar, decida dónde intervenir",
-   "paragraphs": [
-    "En dos a cuatro semanas revisamos un dominio de software con sus responsables de negocio, producto e ingeniería. Usted recibe una línea base, las causas prioritarias del problema y una hoja de ruta para decidir qué acción emprender y cómo medirla."
-   ],
-   "actions": [
-    {
-     "label": "Ver qué incluye el diagnóstico",
-     "href": "@diagnostico",
-     "style": "indigo"
-    }
-   ],
-   "image": "assets/img/taller-pared.jpg",
-   "alt": "Participantes de un taller de Event Storming de espaldas, frente a una pared de vidrio con notas adhesivas naranjas",
-   "caption": "Un taller de Event Storming: negocio y tecnología ordenan juntos los eventos del dominio."
-  },
-  {
-   "type": "cards",
-   "id": "servicios",
-   "bg": "paper",
-   "variant": "front",
-   "columns": "auto",
-   "eyebrow": "Servicios y métodos",
-   "title": "¿Qué necesita resolver?",
-   "items": [
-    {
-     "kicker": "Arquitectura empresarial",
-     "title": "Alinear inversiones y modernizar tecnología",
-     "text": "Defina qué capacidades necesita, cómo obtenerlas y cómo llevarlas a una arquitectura que pueda evolucionar.",
-     "link": {
-      "label": "Arquitectura empresarial",
-      "href": "@arquitectura"
-     }
-    },
-    {
-     "kicker": "TELAR",
-     "title": "Coordinar cambios entre equipos",
-     "text": "Aplique TELAR para organizar el contexto compartido, los contratos entre componentes y la trazabilidad.",
-     "link": {
-      "label": "Conocer TELAR",
-      "href": "@telar"
-     }
-    },
-    {
-     "kicker": "SPIRAL",
-     "title": "Validar una idea de producto",
-     "text": "Use SPIRAL para delimitar, construir y validar un prototipo o MVP en ciclos cortos.",
-     "link": {
-      "label": "Conocer SPIRAL",
-      "href": "@spiral"
-     }
-    },
-    {
-     "kicker": "CTO fraccional",
-     "title": "Incorporar liderazgo técnico",
-     "text": "Cuente con un CTO fraccional para orientar decisiones o dirigir una iniciativa con un mandato acordado.",
-     "link": {
-      "label": "Explorar CTO fraccional",
-      "href": "@cto"
-     }
-    }
-   ]
-  },
-  {
-   "type": "experience",
-   "id": "experiencia",
-   "eyebrow": "Experiencia y forma de trabajo",
-   "title": "Experiencia directiva aplicada al trabajo de sus equipos",
-   "text": "Rafael Pino, CTO y arquitecto empresarial, cuenta con más de 26 años formando y escalando organizaciones de ingeniería. CreativaLabs combina esa experiencia con especialistas sénior según el alcance. Las intervenciones pueden incluir formación aplicada, mentoría y revisiones técnicas sobre problemas reales del cliente.",
-   "indicators": "company",
-   "link": {
-    "label": "Conocer a CreativaLabs",
-    "href": "@equipo"
-   },
-   "person": "rafael-pino"
-  },
-  {
-   "type": "weave"
-  },
-  {
-   "type": "closing"
-  },
-  {
-   "type": "footer"
-  }
- ]
+  ]
 }

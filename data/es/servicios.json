@@ -1,144 +1,148 @@
 {
- "sections": [
-  {
-   "type": "header"
-  },
-  {
-   "type": "weave"
-  },
-  {
-   "type": "pagehead",
-   "eyebrow": "Servicios",
-   "title": "Encuentre el punto de partida para su organización",
-   "lead": "La intervención depende de la decisión que tenga por delante. Podemos ayudarle a entender un problema, orientar una inversión, coordinar cambios entre equipos, validar un producto o asumir un mandato de liderazgo técnico.",
-   "actions": [
+  "sections": [
     {
-     "label": "Solicitar una conversación",
-     "href": "@contacto",
-     "style": "primary"
-    }
-   ],
-   "aside": {
-    "label": "CINCO FORMAS DE EMPEZAR",
-    "items": [
-     {
-      "title": "Diagnóstico estratégico",
-      "text": "Puerta de entrada: decida dónde intervenir."
-     },
-     {
-      "title": "Arquitectura empresarial",
-      "text": "Capacidades, inversiones y plataformas."
-     },
-     {
-      "title": "TELAR",
-      "text": "Coordinar equipos y agentes de IA."
-     },
-     {
-      "title": "SPIRAL",
-      "text": "Prototipos y MVP en ciclos cortos."
-     },
-     {
-      "title": "CTO fraccional",
-      "text": "Liderazgo técnico con mandato claro."
-     }
-    ]
-   }
-  },
-  {
-   "type": "cards",
-   "id": "catalogo",
-   "bg": "cream",
-   "variant": "front",
-   "columns": "auto",
-   "items": [
-    {
-     "kicker": "Puerta de entrada",
-     "featured": true,
-     "title": "Diagnóstico estratégico de un dominio de software",
-     "text": "Identifique qué está encareciendo o retrasando el trabajo y salga con una decisión sobre dónde intervenir.",
-     "link": {
-      "label": "Ver el diagnóstico",
-      "href": "@diagnostico"
-     }
+      "type": "header"
     },
     {
-     "kicker": "Arquitectura",
-     "title": "Arquitectura empresarial y transformación del modelo tecnológico",
-     "text": "Alinee capacidades, inversiones y plataformas. Decida qué reutilizar, comprar o construir, cómo modernizar su arquitectura y cómo gobernar la transición.",
-     "link": {
-      "label": "Explorar arquitectura empresarial",
-      "href": "@arquitectura"
-     }
+      "type": "weave"
     },
     {
-     "kicker": "TELAR",
-     "title": "Adopción de ingeniería con IA mediante TELAR",
-     "text": "Coordine el trabajo de varios equipos y agentes sobre sistemas compartidos. Pruebe el método en un dominio real con controles y evidencia desde el inicio.",
-     "link": {
-      "label": "Explorar TELAR",
-      "href": "@telar"
-     }
+      "type": "pagehead",
+      "eyebrow": "Servicios",
+      "title": "Encuentre el punto de partida para su organización",
+      "lead": "La intervención depende de la decisión que tenga por delante. Podemos ayudarle a entender un problema, orientar una inversión, coordinar cambios entre equipos, validar un producto o asumir un mandato de liderazgo técnico.",
+      "actions": [
+        {
+          "label": "Solicitar una conversación",
+          "href": "@contacto",
+          "style": "primary"
+        }
+      ],
+      "aside": {
+        "label": "CINCO FORMAS DE EMPEZAR",
+        "items": [
+          {
+            "title": "Diagnóstico estratégico",
+            "text": "Puerta de entrada: decida dónde intervenir."
+          },
+          {
+            "title": "Arquitectura empresarial",
+            "text": "Capacidades, inversiones y plataformas."
+          },
+          {
+            "title": "TELAR",
+            "text": "Coordinar equipos y agentes de IA."
+          },
+          {
+            "title": "SPIRAL",
+            "text": "Prototipos y MVP en ciclos cortos."
+          },
+          {
+            "title": "CTO fraccional",
+            "text": "Liderazgo técnico con mandato claro."
+          }
+        ]
+      }
     },
     {
-     "kicker": "SPIRAL",
-     "title": "Facilitación de prototipos y MVP con SPIRAL",
-     "text": "Convierta una idea en un prototipo o MVP que su equipo pueda poner a prueba.",
-     "link": {
-      "label": "Explorar SPIRAL",
-      "href": "@spiral"
-     }
+      "type": "cards",
+      "id": "catalogo",
+      "bg": "cream",
+      "variant": "front",
+      "columns": "auto",
+      "items": [
+        {
+          "kicker": "Puerta de entrada",
+          "featured": true,
+          "title": "Diagnóstico estratégico de un dominio de software",
+          "text": "Identifique qué está encareciendo o retrasando el trabajo y salga con una decisión sobre dónde intervenir.",
+          "link": {
+            "label": "Ver el diagnóstico",
+            "href": "@diagnostico"
+          }
+        },
+        {
+          "kicker": "Arquitectura",
+          "title": "Arquitectura empresarial y transformación del modelo tecnológico",
+          "text": "Alinee capacidades, inversiones y plataformas. Decida qué reutilizar, comprar o construir, cómo modernizar su arquitectura y cómo gobernar la transición.",
+          "link": {
+            "label": "Explorar arquitectura empresarial",
+            "href": "@arquitectura"
+          }
+        },
+        {
+          "kicker": "TELAR",
+          "title": "Adopción de ingeniería con IA mediante TELAR",
+          "text": "Coordine el trabajo de varios equipos y agentes sobre sistemas compartidos. Pruebe el método en un dominio real con controles y evidencia desde el inicio.",
+          "link": {
+            "label": "Explorar TELAR",
+            "href": "@telar"
+          }
+        },
+        {
+          "kicker": "SPIRAL",
+          "title": "Facilitación de prototipos y MVP con SPIRAL",
+          "text": "Convierta una idea en un prototipo o MVP que su equipo pueda poner a prueba.",
+          "link": {
+            "label": "Explorar SPIRAL",
+            "href": "@spiral"
+          }
+        },
+        {
+          "kicker": "Liderazgo",
+          "title": "CTO fraccional",
+          "text": "Incorpore criterio técnico sénior para decisiones recurrentes o dirección temporal para una iniciativa concreta.",
+          "link": {
+            "label": "Explorar CTO fraccional",
+            "href": "@cto"
+          }
+        }
+      ]
     },
     {
-     "kicker": "Liderazgo",
-     "title": "CTO fraccional",
-     "text": "Incorpore criterio técnico sénior para decisiones recurrentes o dirección temporal para una iniciativa concreta.",
-     "link": {
-      "label": "Explorar CTO fraccional",
-      "href": "@cto"
-     }
-    }
-   ]
-  },
-  {
-   "type": "prose",
-   "id": "formacion",
-   "bg": "paper",
-   "split": true,
-   "wide": true,
-   "eyebrow": "En todos los servicios",
-   "title": "Formación aplicada y liderazgo técnico",
-   "paragraphs": [
-    "En cualquiera de estos servicios podemos incluir formación por rol, mentoría de líderes y revisiones técnicas sobre problemas reales de su organización. Así, las prácticas que se adoptan se sostienen después de la intervención.",
-    "También ofrecemos un <b>taller aplicado de un día</b> como forma de empezar: trabajamos un problema real con su equipo y decidimos juntos si conviene un diagnóstico."
-   ],
-   "actions": [
+      "type": "prose",
+      "id": "formacion",
+      "bg": "paper",
+      "split": true,
+      "wide": true,
+      "eyebrow": "En todos los servicios",
+      "title": "Formación aplicada y liderazgo técnico",
+      "paragraphs": [
+        "En cualquiera de estos servicios podemos incluir formación por rol, mentoría de líderes y revisiones técnicas sobre problemas reales de su organización. Así, las prácticas que se adoptan se sostienen después de la intervención.",
+        "También ofrecemos un <b>taller aplicado de un día</b> como forma de empezar: trabajamos un problema real con su equipo y decidimos juntos si conviene un diagnóstico."
+      ],
+      "actions": [
+        {
+          "label": "Proponer un taller",
+          "href": "/contacto/?tema=taller",
+          "style": "indigo"
+        }
+      ],
+      "image": "assets/img/servicios-facilitadora.jpg",
+      "alt": "Una facilitadora señala una nota en la pared durante una sesión de trabajo",
+      "imageFirst": true,
+      "imagePosition": "45% 50%"
+    },
     {
-     "label": "Proponer un taller",
-     "href": "/contacto/?tema=taller",
-     "style": "indigo"
-    }
-   ]
-  },
-  {
-   "type": "faq",
-   "title": "Preguntas frecuentes",
-   "items": [
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Desarrollan software por encargo?",
+          "a": "No operamos como fábrica de software ni proveemos personal. Cuando una transformación requiere construir, acordamos el alcance, quién ejecuta y los criterios de aceptación."
+        }
+      ]
+    },
     {
-     "q": "¿Desarrollan software por encargo?",
-     "a": "No operamos como fábrica de software ni proveemos personal. Cuando una transformación requiere construir, acordamos el alcance, quién ejecuta y los criterios de aceptación."
+      "type": "closing",
+      "title": "Empecemos por la decisión que su organización necesita tomar primero",
+      "text": "Si el problema atraviesa varias de estas áreas, en una primera conversación definimos por dónde empezar."
+    },
+    {
+      "type": "weave"
+    },
+    {
+      "type": "footer"
     }
-   ]
-  },
-  {
-   "type": "closing",
-   "title": "Empecemos por la decisión que su organización necesita tomar primero",
-   "text": "Si el problema atraviesa varias de estas áreas, en una primera conversación definimos por dónde empezar."
-  },
-  {
-   "type": "weave"
-  },
-  {
-   "type": "footer"
-  }
- ]
+  ]
 }
