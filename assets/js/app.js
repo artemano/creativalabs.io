@@ -176,7 +176,8 @@
     nav += '<a class="nav__link nav__cta" href="' + esc(href(SITE.cta[LANG].href)) + '">' + esc(SITE.cta[LANG].label) + "</a>";
     return '<header class="site-header"><div class="site-header__in">' +
       '<a class="logo" href="' + esc(pagePath("home")) + '">' + esc(SITE.brand.name) + "<span>" + esc(SITE.brand.tld) + "</span></a>" +
-      '<nav class="nav" aria-label="' + esc(ui.navAria) + '">' + nav + "</nav></div></header>";
+      '<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="' + (LANG === "es" ? "Abrir menú" : "Open menu") + '"><span></span><span></span><span></span></button>' +
+      '<nav class="nav" id="site-nav" aria-label="' + esc(ui.navAria) + '">' + nav + "</nav></div></header>";
   };
 
   R.weave = function () { return weave(); };
@@ -661,6 +662,21 @@
     fill(); render(); route();
   }
 
+  function bindNav() {
+    var h = document.querySelector(".site-header"), b = h && h.querySelector(".nav-toggle");
+    if (!b) return;
+    var es = LANG === "es";
+    function set(open) {
+      h.classList.toggle("is-open", open);
+      b.setAttribute("aria-expanded", open ? "true" : "false");
+      b.setAttribute("aria-label", open ? (es ? "Cerrar menú" : "Close menu") : (es ? "Abrir menú" : "Open menu"));
+    }
+    b.addEventListener("click", function () { set(!h.classList.contains("is-open")); });
+    h.querySelector(".nav").addEventListener("click", function (e) { if (e.target.closest("a")) set(false); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && h.classList.contains("is-open")) { set(false); b.focus(); } });
+    window.matchMedia("(min-width:861px)").addEventListener("change", function (m) { if (m.matches) set(false); });
+  }
+
   function bindForm() {
     var form = document.querySelector("form.form");
     if (!form) return;
@@ -714,6 +730,7 @@
       root.removeAttribute("aria-busy");
       bindTexture();
       bindForm();
+      bindNav();
       bindAssessment();
       if (location.hash) {
         var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
