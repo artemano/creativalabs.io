@@ -470,7 +470,9 @@
       (s.bullets ? bullets(s.bullets) : "") +
       (s.note ? '<p class="note">' + s.note + "</p>" : "") +
       (s.link ? '<p class="mt16">' + a(s.link, "link-strong") + "</p>" : "") + btns(s.actions);
-    var layout = s.split
+    var layout = s.image
+      ? '<div class="pimg' + (s.imageFirst ? " pimg--rev" : "") + '"><div class="pimg__txt">' + eyebrow(s.eyebrow) + '<h2 class="h2 h2--mb24">' + s.title + "</h2>" + body + '</div><figure class="pimg__fig"><img src="' + asset(s.image) + '" alt="' + esc(s.alt || "") + '" loading="lazy" style="object-position:' + (s.imagePosition || "50% 50%") + '">' + (s.caption ? '<figcaption class="figcap">' + s.caption + "</figcaption>" : "") + "</figure></div>"
+      : s.split
       ? '<div class="split"><div class="split__a">' + eyebrow(s.eyebrow) + '<h2 class="h2">' + s.title + '</h2></div><div class="split__b">' + body + "</div></div>"
       : '<div class="prose">' + eyebrow(s.eyebrow) + (s.title ? '<h2 class="h2 h2--mb24">' + s.title + "</h2>" : "") + body + "</div>";
     return '<section class="sec sec--' + bg + (bg === "ink" || bg === "indigo" ? " on-dark" : "") + ' sec--bb"' + idAttr(s) + '><div class="wrap' + (s.wide ? "" : " wrap--narrow") + '">' + layout + "</div></section>";

@@ -150,13 +150,15 @@
    "type": "prose",
    "id": "evidencia",
    "bg": "cream",
-   "split": true,
    "wide": true,
    "eyebrow": "Evidencia",
    "title": "Casos verificables",
    "paragraphs": [
     "Los casos se incorporarán cuando haya autorización y evidencia suficiente. Cada caso explicará el desafío, qué hizo CreativaLabs, cómo se midió el trabajo y qué resultado se observó."
-   ]
+   ],
+   "image": "assets/img/taller-pared.jpg",
+   "alt": "Participantes de un taller de Event Storming frente a una pared de notas adhesivas",
+   "caption": "Talleres sobre problemas reales del cliente."
   },
   {
    "type": "closing",

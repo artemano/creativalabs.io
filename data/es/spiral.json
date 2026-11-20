@@ -53,13 +53,16 @@
    "type": "prose",
    "id": "como",
    "bg": "paper",
-   "split": true,
    "wide": true,
    "eyebrow": "Cómo trabajamos",
    "title": "Primero entender, después construir",
    "paragraphs": [
     "Empezamos con talleres de <b>EventStorming y Envisioning</b> para entender el proceso, delimitar el producto y elegir qué hipótesis debe probar el primer prototipo. Después guiamos ciclos de construcción, validación y ajuste con la metodología SPIRAL."
-   ]
+   ],
+   "image": "assets/img/taller-discusion.jpg",
+   "alt": "Tres participantes de un taller discuten frente a una pared con notas adhesivas; uno señala una nota",
+   "caption": "EventStorming: el equipo delimita el producto antes de construir.",
+   "imageFirst": true
   },
   {
    "type": "cards",

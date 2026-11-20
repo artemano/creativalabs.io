@@ -68,7 +68,6 @@
    "type": "prose",
    "id": "diagnostico",
    "bg": "cream",
-   "split": true,
    "wide": true,
    "eyebrow": "Oferta principal",
    "title": "Antes de cambiar su forma de trabajar, decida dónde intervenir",
@@ -81,7 +80,10 @@
      "href": "@diagnostico",
      "style": "indigo"
     }
-   ]
+   ],
+   "image": "assets/img/taller-pared.jpg",
+   "alt": "Participantes de un taller de Event Storming de espaldas, frente a una pared de vidrio con notas adhesivas naranjas",
+   "caption": "Un taller de Event Storming: negocio y tecnología ordenan juntos los eventos del dominio."
   },
   {
    "type": "cards",
