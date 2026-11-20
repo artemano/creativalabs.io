@@ -78,6 +78,19 @@
    "privacy": "Creativa IT S.A.S. (CreativaLabs), NIT 900357682, tratará sus datos para responder su solicitud y, si lo autoriza, enviarle novedades. Puede conocer, actualizar, rectificar o suprimir sus datos y revocar la autorización escribiendo a hablemos@creativalabs.io. Consulte la <a href=\"/politica-de-datos/\">Política de tratamiento de datos personales</a>."
   },
   {
+   "type": "personShort",
+   "id": "quien",
+   "person": "rafael-pino",
+   "size": "sm",
+   "eyebrow": "Con quién hablará",
+   "role": "Fundador · CTO y arquitecto empresarial",
+   "bio": "La primera conversación la tiene directamente con Rafael Pino. Más de 26 años formando y escalando organizaciones de ingeniería, como proveedor y como cliente.",
+   "link": {
+    "label": "Conocer su trayectoria →",
+    "href": "@equipo"
+   }
+  },
+  {
    "type": "weave"
   },
   {

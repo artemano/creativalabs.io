@@ -246,6 +246,9 @@ h1,.h2,.h3{margin:0;font-family:var(--cond);font-weight:800}
 .exp__a{flex:1 1 420px;min-width:0}
 .exp__b{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:20px;align-items:flex-start}
 .exp__b .metrics{width:100%}
+.exp__who{margin-top:24px;display:flex;gap:14px;align-items:center;font-size:15px;line-height:1.4}
+.exp__who img{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top}
+.exp__who b{font-size:16px}
 
 /* indicadores */
 .metrics{display:grid;border-top:4px solid var(--indigo);background:var(--cream)}

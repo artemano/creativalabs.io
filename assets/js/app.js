@@ -303,7 +303,8 @@
   R.experience = function (s) {
     var list = s.indicators === "company" ? SITE.companyIndicators : person(s.indicators).indicators;
     return '<section class="sec sec--paper sec--bb"' + idAttr(s) + '><div class="wrap exp">' +
-      '<div class="exp__a">' + eyebrow(s.eyebrow) + '<h2 class="h2 h2--mb16">' + s.title + '</h2><p class="serif-19">' + s.text + "</p></div>" +
+      '<div class="exp__a">' + eyebrow(s.eyebrow) + '<h2 class="h2 h2--mb16">' + s.title + '</h2><p class="serif-19">' + s.text + "</p>" +
+      (s.person ? (function (p) { return '<div class="exp__who"><img src="' + asset(p.photo) + '" alt="' + esc(t(p.photoAlt)) + '" width="72" height="72"><p><b>' + p.name + "</b><br>" + t(p.role) + "</p></div>"; })(person(s.person)) : "") + "</div>" +
       '<div class="exp__b">' + metrics(list, "full") + a(s.link, "link-strong") + "</div></div></section>";
   };
 
