@@ -26,8 +26,8 @@
             "text": "Puerta de entrada: decida dónde intervenir."
           },
           {
-            "title": "Arquitectura empresarial",
-            "text": "Capacidades, inversiones y plataformas."
+            "title": "Arquitectura y TI",
+            "text": "Capacidades, gobierno de TI, infraestructura y nube."
           },
           {
             "title": "TELAR",
@@ -62,11 +62,11 @@
           }
         },
         {
-          "kicker": "Arquitectura",
-          "title": "Arquitectura empresarial y transformación del modelo tecnológico",
-          "text": "Alinee capacidades, inversiones y plataformas. Decida qué reutilizar, comprar o construir, cómo modernizar su arquitectura y cómo gobernar la transición.",
+          "kicker": "Arquitectura y TI",
+          "title": "Arquitectura empresarial, gobierno de TI, infraestructura y nube",
+          "text": "Alinee capacidades, inversiones y plataformas. Decida qué reutilizar, comprar o construir, cómo gobernar la TI y sus proveedores, cómo migrar a la nube y cómo sostener una infraestructura crítica.",
           "link": {
-            "label": "Explorar arquitectura empresarial",
+            "label": "Explorar arquitectura y TI",
             "href": "@arquitectura"
           }
         },

@@ -95,11 +95,11 @@
       "title": "¿Qué necesita resolver?",
       "items": [
         {
-          "kicker": "Arquitectura empresarial",
+          "kicker": "Arquitectura y TI",
           "title": "Alinear inversiones y modernizar tecnología",
-          "text": "Defina qué capacidades necesita, cómo obtenerlas y cómo llevarlas a una arquitectura que pueda evolucionar.",
+          "text": "Defina qué capacidades necesita y cómo obtenerlas, gobierne la TI y sus proveedores, y migre a la nube con una arquitectura que pueda evolucionar.",
           "link": {
-            "label": "Arquitectura empresarial",
+            "label": "Arquitectura y TI",
             "href": "@arquitectura"
           }
         },

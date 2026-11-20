@@ -8,9 +8,9 @@
     },
     {
       "type": "pagehead",
-      "eyebrow": "Arquitectura empresarial",
+      "eyebrow": "Arquitectura empresarial y TI",
       "title": "Decida qué capacidades necesita su negocio y cómo obtenerlas",
-      "lead": "Convierta decisiones de inversión, adquisición, construcción y modernización en una arquitectura que su organización pueda operar y evolucionar. CreativaLabs conecta la decisión de negocio con las implicaciones técnicas, económicas y operativas.",
+      "lead": "Convierta decisiones de inversión, adquisición, modernización e infraestructura en una arquitectura que su organización pueda operar y evolucionar. CreativaLabs conecta la decisión de negocio con sus implicaciones técnicas, económicas y operativas, incluidos el gobierno de TI y la migración a la nube.",
       "actions": [
         {
           "label": "Revisar una decisión de arquitectura",
@@ -19,7 +19,7 @@
         }
       ],
       "aside": {
-        "label": "CUATRO FRENTES",
+        "label": "SEIS FRENTES",
         "items": [
           {
             "title": "Adquisición y construcción",
@@ -28,6 +28,14 @@
           {
             "title": "Migración a nube",
             "text": "Qué mover, qué modernizar y en qué orden."
+          },
+          {
+            "title": "Infraestructura de TI",
+            "text": "Disponibilidad, continuidad y costos."
+          },
+          {
+            "title": "Gobierno de TI",
+            "text": "Inversiones, proveedores, riesgo y cumplimiento."
           },
           {
             "title": "Gobierno de arquitectura",
@@ -55,7 +63,17 @@
         {
           "kicker": "Estrategia y dirección de migraciones a nube",
           "title": "Defina qué mover, qué modernizar y en qué orden",
-          "text": "Evaluamos aplicaciones, datos y dependencias, y diseñamos la arquitectura objetivo para Azure, Oracle Cloud Infrastructure o AWS cuando corresponda. La hoja de ruta identifica etapas de migración y criterios de costos, seguridad y continuidad. Si se requiere ejecución técnica, se acuerdan el alcance y los especialistas que participarán."
+          "text": "Evaluamos aplicaciones, datos y dependencias, y diseñamos la arquitectura objetivo en Azure, Oracle Cloud Infrastructure, AWS o Google Cloud, o en un esquema híbrido o multinube. La hoja de ruta define las etapas de migración y los criterios de costos, seguridad y continuidad. Si se requiere ejecución técnica, se acuerdan el alcance y los especialistas que participarán."
+        },
+        {
+          "kicker": "Infraestructura de TI",
+          "title": "Diseñe una infraestructura que soporte la operación crítica",
+          "text": "Revisamos y diseñamos infraestructura de nube, híbrida o propia para operación continua: alta disponibilidad y esquemas activo-activo, continuidad del negocio y recuperación ante desastres, capacidad y optimización de costos (FinOps)."
+        },
+        {
+          "kicker": "Gobierno de TI",
+          "title": "Gobierne la inversión, los proveedores y el riesgo tecnológico",
+          "text": "Definimos cómo se priorizan y controlan las inversiones de TI, cómo se seleccionan y gestionan proveedores (incluidos procesos de RFI y RFP), y cómo se atienden la seguridad y el cumplimiento, por ejemplo frente a ISO 27001 o SOC 2. El modelo se ajusta al tamaño y la regulación de la organización."
         },
         {
           "kicker": "Gobierno de arquitectura empresarial",
@@ -68,6 +86,20 @@
           "text": "Cuando el problema está en cómo se reparte el sistema entre equipos, usamos talleres de diseño guiado por el dominio y Event Storming para delimitar dominios, contratos e integraciones antes de decidir la arquitectura."
         }
       ]
+    },
+    {
+      "type": "personShort",
+      "id": "quien",
+      "person": "mauricio-naranjo",
+      "size": "sm",
+      "eyebrow": "Quién lidera gobierno de TI, infraestructura y nube",
+      "role": "CIO · Arquitecto empresarial",
+      "bio": "Mauricio Naranjo ha dirigido programas de transformación de misión crítica en banca, telecomunicaciones, gobierno e infraestructura en Europa, Estados Unidos y Latinoamérica, incluida la migración de más de 90 sistemas críticos a la nube.",
+      "link": {
+        "label": "Conocer su trayectoria →",
+        "href": "@equipo"
+      },
+      "indicators": "person"
     },
     {
       "type": "prose",
