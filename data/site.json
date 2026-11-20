@@ -124,6 +124,13 @@
         "description": "Brochure de TELAR, libro abierto La segunda industrialización del software y herramientas para tomar decisiones de arquitectura e IA."
       }
     },
+    "autoevaluacion": {
+      "es": {
+        "path": "autoevaluacion/",
+        "title": "Autoevaluación de madurez con agentes de IA | CreativaLabs",
+        "description": "Catorce preguntas para saber en qué nivel opera su equipo con agentes de IA, de Ad-hoc a Optimizado, y qué falta para avanzar."
+      }
+    },
     "contacto": {
       "es": {
         "path": "contacto/",

@@ -1,0 +1,461 @@
+{
+  "sections": [
+    {
+      "type": "header"
+    },
+    {
+      "type": "weave"
+    },
+    {
+      "type": "pagehead",
+      "eyebrow": "Autoevaluación de madurez · TELAR",
+      "title": "¿En qué nivel opera su equipo con agentes de IA?",
+      "lead": "Catorce preguntas sobre prácticas verificables, aplicadas a una zona de su portafolio: un producto, un dominio de negocio o el sistema que mantiene un equipo. Responda con lo que puede demostrar, no con lo que se intenta. El resultado indica su nivel y qué falta para avanzar.",
+      "aside": {
+        "label": "CINCO NIVELES",
+        "numbered": false,
+        "items": [
+          {
+            "n": "0",
+            "title": "Ad-hoc",
+            "text": "Agentes por conversación, sin specs ni gates."
+          },
+          {
+            "n": "1",
+            "title": "Asistido",
+            "text": "Las specs dirigen tareas y después mueren."
+          },
+          {
+            "n": "2",
+            "title": "Anclado",
+            "text": "Mínimo institucional: specs vivas y gates."
+          },
+          {
+            "n": "3",
+            "title": "Gobernado",
+            "text": "Evidencia inmutable y harness con dueño."
+          },
+          {
+            "n": "4",
+            "title": "Optimizado",
+            "text": "Autonomía ampliada con evidencia."
+          }
+        ]
+      }
+    },
+    {
+      "type": "assessment",
+      "id": "autoevaluacion",
+      "labels": {
+        "zone": "Zona evaluada",
+        "zonePh": "Ejemplo: pagos",
+        "tabsAria": "Secciones de la autoevaluación",
+        "tabEval": "Evaluar mi zona",
+        "tabLevels": "Qué significa cada nivel",
+        "tabGlos": "Glosario",
+        "marker": "Su zona",
+        "bannerExample": "Está viendo <b>respuestas de ejemplo</b> de una zona típica en nivel 1.",
+        "bannerLive": "Está evaluando su zona. La etiqueta se actualiza con cada respuesta.",
+        "bannerBlank": "Hoja en blanco. Responda pensando en una sola zona.",
+        "reset": "Empezar en blanco",
+        "ctx": "Organización",
+        "choose": "Elija una opción",
+        "evidence": "Evidencia:",
+        "tag": "Etiqueta de inspección",
+        "level": "Nivel de madurez",
+        "noName": "Sin nombre",
+        "date": "Fecha",
+        "stampOk": "Aprobado<br>nivel {n}",
+        "stampLow": "Bajo mínimo<br>institucional",
+        "nextStep": "Siguiente paso",
+        "lv4": "El nivel 4 es opcional por zona. Lo que sigue es sostenerlo y llevar otras zonas del portafolio al mínimo institucional.",
+        "toReach": "Para llegar al nivel {n} · {name}",
+        "onWay": "En camino.",
+        "fab": "Su organización construye software para clientes: el nivel de madurez también define cómo cotizar, qué activos de especificación entregar y qué cláusulas acordar sobre dominio, acciones irreversibles y evidencia. Podemos revisarlo con usted.",
+        "rule": "Una zona está en el nivel N cuando cumple todos los criterios de ese nivel y de los anteriores. «Parcial» no acredita el nivel.",
+        "ctaTitle": "Revisemos su resultado",
+        "ctaText": "En una conversación de 30 minutos revisamos su nivel, los criterios pendientes y por dónde empezar con TELAR.",
+        "minFlag": "Mínimo institucional",
+        "optFlag": "Opcional por zona",
+        "supervision": "Supervisión:",
+        "levelsIntro": "Cinco niveles, de conversar con agentes sin reglas a ampliar su autonomía con evidencia. Una zona alcanza un nivel cuando cumple todos sus criterios y los de los anteriores.",
+        "glosIntro": "Los términos que usan las preguntas, en lenguaje simple.",
+        "foot": "CreativaLabs.io · Basada en el libro abierto «La segunda industrialización del software» y en el modelo de madurez de TELAR · Sus respuestas no se envían ni se guardan: todo ocurre en su navegador."
+      },
+      "data": {
+        "niveles": [
+          {
+            "n": 0,
+            "nombre": "Ad-hoc",
+            "resumen": "Los agentes se usan por conversación, sin specs ni gates. Rápido al principio; difícil de explicar, auditar o evolucionar.",
+            "significa": "Los agentes se dirigen por conversación, sin specs ni gates.",
+            "reconoce": [
+              "Los requerimientos viven en chats",
+              "Los cambios no se pueden rastrear hasta una intención de negocio",
+              "La verificación es manual y al final"
+            ],
+            "supervision": "Ninguna explícita."
+          },
+          {
+            "n": 1,
+            "nombre": "Asistido",
+            "resumen": "Hay specs y archivos de instrucción, pero las specs dirigen tareas y después mueren. La cadena todavía no existe.",
+            "significa": "Las specs dirigen tareas y después mueren.",
+            "reconoce": [
+              "Se escribe una spec antes de la tarea",
+              "Los agentes leen archivos de instrucción del repositorio",
+              "Hay identificadores sueltos, pero ningún gate los exige"
+            ],
+            "supervision": "Revisión humana ad hoc."
+          },
+          {
+            "n": 2,
+            "nombre": "Anclado",
+            "resumen": "El mínimo institucional: las specs sobreviven a la tarea, la trazabilidad la exigen gates y los roles deciden y verifican.",
+            "significa": "Las specs sobreviven a la tarea y los gates exigen la trazabilidad. Es el mínimo institucional.",
+            "reconoce": [
+              "Cada cambio tiene una spec versionada que traza a su intención",
+              "CI bloquea los cambios sin traza y la deriva se mide",
+              "Está escrito quién decide y quién verifica cada actividad",
+              "La revisión humana de intención queda registrada"
+            ],
+            "supervision": "Débil, con gates bloqueantes; las acciones irreversibles quedan fuera del alcance de los agentes."
+          },
+          {
+            "n": 3,
+            "nombre": "Gobernado",
+            "resumen": "La evidencia es inmutable, el harness tiene dueño y ciclo propio, y lo irreversible está fuera del alcance de los agentes por diseño.",
+            "significa": "La evidencia es inmutable y el harness tiene dueño y ciclo propio.",
+            "reconoce": [
+              "La cobertura de specs se mide y crece; la deriva tiene plazo",
+              "\"¿Por qué existe esta funcionalidad?\" se responde en minutos",
+              "Los cambios al harness se evalúan antes de adoptarse"
+            ],
+            "supervision": "Fuerte y verificada en acciones irreversibles: el agente no tiene la credencial."
+          },
+          {
+            "n": 4,
+            "nombre": "Optimizado",
+            "resumen": "La confianza en los agentes se amplía con evidencia y el harness se protege ante cada cambio de modelo. Opcional por zona.",
+            "significa": "La confianza en los agentes crece con evidencia, nunca por defecto. Es opcional por zona.",
+            "reconoce": [
+              "Hay un piloto donde el código se genera desde la spec, con resultado medido",
+              "Un modelo nuevo no entra si no pasa sus evaluaciones",
+              "Hay un programa activo para formar criterio en las personas"
+            ],
+            "supervision": "Autonomía ampliada solo en lo reversible; fuerte en lo irreversible."
+          }
+        ],
+        "respuestas": [
+          {
+            "id": "si",
+            "texto": "Sí, y puedo mostrar la evidencia",
+            "valor": 1
+          },
+          {
+            "id": "parcial",
+            "texto": "En parte, o no en toda la zona",
+            "valor": 0.5
+          },
+          {
+            "id": "no",
+            "texto": "No",
+            "valor": 0
+          },
+          {
+            "id": "nose",
+            "texto": "No lo sé",
+            "valor": 0
+          }
+        ],
+        "contexto": [
+          {
+            "id": "C1",
+            "texto": "¿Para quién construye software la organización?",
+            "opciones": [
+              "Para sí misma",
+              "Para clientes (fábrica de software, consultora)",
+              "Ambas"
+            ]
+          },
+          {
+            "id": "C2",
+            "texto": "¿Cuántas personas trabajan en desarrollo de software?",
+            "opciones": [
+              "1 a 10",
+              "11 a 50",
+              "51 a 200",
+              "Más de 200"
+            ]
+          },
+          {
+            "id": "C3",
+            "texto": "¿Cuál es su rol?",
+            "opciones": [
+              "Dirección (CEO, CTO, VP)",
+              "Gerencia de entrega u operación",
+              "Tech Lead o arquitectura",
+              "Otro"
+            ]
+          }
+        ],
+        "preguntas": [
+          {
+            "id": "P01",
+            "nivel": 1,
+            "dimension": "Especificación",
+            "criterios": [
+              "N1.1"
+            ],
+            "texto": "Antes de pedirle a un agente que construya algo, ¿el equipo escribe una especificación de lo que debe hacer?",
+            "evidencia": "Un archivo de spec escrito antes de la tarea que dirigió.",
+            "accion": "Escribir la spec antes de generar, aunque sea breve: problema, comportamiento esperado y criterios de aceptación."
+          },
+          {
+            "id": "P02",
+            "nivel": 1,
+            "dimension": "Harness",
+            "criterios": [
+              "N1.2"
+            ],
+            "texto": "¿Los agentes trabajan con archivos de instrucción versionados en el repositorio (convenciones, reglas, contexto del proyecto)?",
+            "evidencia": "Archivos de instrucción en el repositorio, con historial de cambios.",
+            "accion": "Llevar las instrucciones de los agentes al repositorio, versionadas como código."
+          },
+          {
+            "id": "P03",
+            "nivel": 2,
+            "dimension": "Especificación",
+            "criterios": [
+              "N2.1"
+            ],
+            "texto": "¿Todo cambio de comportamiento en la zona tiene una especificación versionada en el repositorio, enlazada a la intención de negocio que lo originó?",
+            "evidencia": "Specs en el repositorio con su referencia a un documento de intención.",
+            "accion": "Adoptar el nivel spec-anchored: la spec vive con el código y traza a su intención (INT)."
+          },
+          {
+            "id": "P04",
+            "nivel": 2,
+            "dimension": "Trazabilidad",
+            "criterios": [
+              "N2.2",
+              "N2.3"
+            ],
+            "texto": "¿Un gate en CI impide integrar cambios sin traza a su spec, y las divergencias entre spec y código se registran y se miden?",
+            "evidencia": "Un PR rechazado por falta de traza; un registro de divergencias con estado.",
+            "accion": "Activar el gate de trazabilidad en CI y la regla de sincronización spec↔código con registro de deriva."
+          },
+          {
+            "id": "P05",
+            "nivel": 2,
+            "dimension": "Roles",
+            "criterios": [
+              "N2.4"
+            ],
+            "texto": "¿Está escrito, para cada actividad del ciclo, quién decide y quién verifica, distinto de quién ejecuta (personas o agentes)?",
+            "evidencia": "Una matriz de decisión, verificación y ejecución adoptada y registrada.",
+            "accion": "Adoptar la matriz DVE y elegir sus puntos de configuración."
+          },
+          {
+            "id": "P06",
+            "nivel": 2,
+            "dimension": "Harness",
+            "criterios": [
+              "N2.5"
+            ],
+            "texto": "¿La constitución (principios y restricciones), las normas y las plantillas del dominio y del equipo están versionadas en un repositorio?",
+            "evidencia": "Constitución, normas y plantillas con historial de cambios.",
+            "accion": "Versionar el harness de dominio y de equipo: constitución breve, normas y plantillas."
+          },
+          {
+            "id": "P07",
+            "nivel": 2,
+            "dimension": "Verificación",
+            "criterios": [
+              "N2.6"
+            ],
+            "texto": "¿Un agente verifica que el código cumple la spec antes de la revisión humana, y la revisión humana de intención queda registrada?",
+            "evidencia": "Un reporte de verificación adjunto al PR y un registro de revisión de intención.",
+            "accion": "Separar verificación (código↔spec, automatizable) de revisión de intención (humana) y registrar ambas."
+          },
+          {
+            "id": "P08",
+            "nivel": 2,
+            "dimension": "Supervisión",
+            "criterios": [
+              "N2.7"
+            ],
+            "texto": "¿Ningún cambio se integra sin gates en verde, y hay una política escrita que deja las acciones irreversibles fuera del alcance de los agentes?",
+            "evidencia": "Gates bloqueantes configurados; una política escrita sobre acciones irreversibles.",
+            "accion": "Hacer bloqueantes los gates y escribir la política de acciones irreversibles."
+          },
+          {
+            "id": "P09",
+            "nivel": 3,
+            "dimension": "Especificación",
+            "criterios": [
+              "N3.1",
+              "N3.2"
+            ],
+            "texto": "¿Se mide qué parte de la zona está cubierta por specs ancladas, crece de un trimestre a otro, y la deriva tiene un plazo de resolución (SLA) que se cumple?",
+            "evidencia": "Un tablero con la cobertura por trimestre y el cumplimiento del SLA de deriva.",
+            "accion": "Medir cobertura spec-anchored y fijar un SLA para la deriva."
+          },
+          {
+            "id": "P10",
+            "nivel": 3,
+            "dimension": "Trazabilidad",
+            "criterios": [
+              "N3.3"
+            ],
+            "texto": "¿La evidencia de gates y revisiones es inmutable, y se puede responder en minutos por qué existe una funcionalidad, recorriendo la cadena hasta su intención?",
+            "evidencia": "Un registro inmutable y una consulta de trazabilidad respondida en minutos.",
+            "accion": "Registrar la evidencia de forma inmutable y hacer consultables las seis consultas canónicas."
+          },
+          {
+            "id": "P11",
+            "nivel": 3,
+            "dimension": "Harness",
+            "criterios": [
+              "N3.4",
+              "N3.5"
+            ],
+            "texto": "¿Hay un dueño nombrado del harness (plataforma), las mejoras se proponen y adoptan versionadas, y se evalúa su efecto antes de cambiar plantillas, normas o modelos?",
+            "evidencia": "Un responsable nombrado, un backlog de mejoras al harness y evaluaciones ejecutadas.",
+            "accion": "Constituir el rol de Plataforma/Harness Engineering y el ciclo de mejoras con evaluaciones."
+          },
+          {
+            "id": "P12",
+            "nivel": 3,
+            "dimension": "Supervisión",
+            "criterios": [
+              "N3.6",
+              "N3.7"
+            ],
+            "texto": "¿Los agentes no tienen credenciales para acciones irreversibles (solo el pipeline las ejecuta tras aprobación humana registrada), y la matriz de roles registra evidencia y reversibilidad por actividad?",
+            "evidencia": "Permisos que niegan la capacidad al agente; registros de aprobación; matriz con evidencia y reversibilidad.",
+            "accion": "Pasar de supervisión débil a fuerte en lo irreversible y completar la matriz DVE con evidencia y reversibilidad."
+          },
+          {
+            "id": "P13",
+            "nivel": 4,
+            "dimension": "Especificación",
+            "criterios": [
+              "N4.1",
+              "N4.5"
+            ],
+            "texto": "¿Hay una zona de contratos estables donde el código se genera desde la spec y no se edita a mano, con resultado medido, y el índice de toda la intención de la organización se consulta como producto interno?",
+            "evidencia": "Un piloto spec-as-source con métricas; el grafo del ecosistema en uso.",
+            "accion": "Pilotear spec-as-source donde los contratos son estables y operar el grafo del ecosistema como producto."
+          },
+          {
+            "id": "P14",
+            "nivel": 4,
+            "dimension": "Supervisión",
+            "criterios": [
+              "N4.2",
+              "N4.3",
+              "N4.4"
+            ],
+            "texto": "¿La autonomía de los agentes se amplía solo sobre acciones reversibles y con evidencia por zona, un cambio de modelo no se adopta si sus evaluaciones no pasan un umbral, y hay un programa activo para formar criterio en las personas?",
+            "evidencia": "Registro de ampliaciones de confianza con su evidencia; umbral de evals; programa de formación.",
+            "accion": "Calibrar la confianza progresiva con evidencia, bloquear cambios de modelo sin evals y formar criterio (paradoja del junior)."
+          }
+        ],
+        "reglas": [
+          "No se salta de 0–1 a 3: los gates sin cultura de specs producen teatro de cumplimiento.",
+          "El nivel 2 es el mínimo institucional: por debajo, lo que hacen los agentes no se puede explicar ni auditar.",
+          "El nivel 4 no es un destino universal: cuanto más se retira el humano, más hay que formar criterio."
+        ],
+        "glosario": [
+          {
+            "t": "Zona",
+            "d": "La parte del portafolio que se gobierna como una unidad: un producto, un dominio de negocio o el sistema que mantiene un equipo. La madurez se mide por zona porque casi nunca es pareja."
+          },
+          {
+            "t": "Agente de IA",
+            "d": "Un sistema de IA que ejecuta tareas de varios pasos —leer código, escribirlo, correr pruebas— con cierta autonomía, no solo responder preguntas."
+          },
+          {
+            "t": "Spec (especificación)",
+            "d": "Un documento de texto estructurado y versionado que describe qué debe hacer el sistema y cómo se verifica que lo hace. Es lo que el agente usa para construir."
+          },
+          {
+            "t": "Spec anclada",
+            "d": "Una spec que no se descarta al terminar la tarea: vive junto al código, se actualiza cuando el comportamiento cambia y sigue diciendo la verdad."
+          },
+          {
+            "t": "Spec como fuente",
+            "d": "El nivel más alto: las personas editan la spec y el código se genera a partir de ella, sin tocarlo a mano. Hoy se pilotea en zonas estables."
+          },
+          {
+            "t": "Intención (INT)",
+            "d": "El documento que dice qué problema de negocio se resuelve, para quién y con qué métrica se sabrá si funcionó. Es el origen de todo lo demás."
+          },
+          {
+            "t": "Trazabilidad",
+            "d": "Poder recorrer el camino de cualquier pieza de software hasta la intención que la originó —y al revés— pasando por specs, tareas, cambios y pruebas."
+          },
+          {
+            "t": "Gate",
+            "d": "Una condición que bloquea el avance si no se cumple: por ejemplo, que el sistema de integración continua rechace un cambio sin spec asociada."
+          },
+          {
+            "t": "CI (integración continua)",
+            "d": "El sistema automático que compila, prueba y verifica cada cambio antes de integrarlo. Es donde viven la mayoría de los gates."
+          },
+          {
+            "t": "Deriva",
+            "d": "Cuando el código y la spec dejan de coincidir sin que nadie lo note. Una spec con deriva miente."
+          },
+          {
+            "t": "Harness",
+            "d": "El sistema de reglas, contexto, plantillas y verificadores bajo el que trabajan las personas y los agentes. Se versiona como código."
+          },
+          {
+            "t": "Constitución",
+            "d": "El documento breve de principios y restricciones que ninguna spec ni ningún agente puede violar: stack, seguridad, datos."
+          },
+          {
+            "t": "Matriz DVE",
+            "d": "La tabla que dice, para cada actividad, quién Decide, quién Verifica y quién Ejecuta. Los agentes pueden ejecutar; decidir y verificar siguen siendo de personas."
+          },
+          {
+            "t": "Revisión de intención",
+            "d": "La revisión humana que ninguna máquina hace: ¿lo que se construyó, y la spec misma, siguen siendo lo que el negocio necesita?"
+          },
+          {
+            "t": "Acción irreversible",
+            "d": "Una acción cuyo efecto no se puede deshacer: borrar datos de producción, mover dinero, comunicar a clientes, publicar un contrato que otros consumen."
+          },
+          {
+            "t": "Supervisión débil y fuerte",
+            "d": "Débil: un gate bloquea lo que el agente ya hizo. Fuerte: el agente ni siquiera tiene el permiso; solo el sistema ejecuta tras aprobación humana. Lo irreversible exige la fuerte."
+          },
+          {
+            "t": "Evals",
+            "d": "Pruebas que miden si los agentes siguen comportándose bien cuando cambia algo: una plantilla, una regla o el modelo de IA."
+          },
+          {
+            "t": "Confianza progresiva",
+            "d": "Ampliar poco a poco lo que un agente puede hacer sin preguntar, solo con evidencia de que lo hace bien y solo en acciones reversibles."
+          }
+        ]
+      },
+      "action": {
+        "label": "Solicitar una conversación",
+        "href": "/contacto/?tema=telar",
+        "style": "primary"
+      }
+    },
+    {
+      "type": "closing"
+    },
+    {
+      "type": "weave"
+    },
+    {
+      "type": "footer"
+    }
+  ]
+}

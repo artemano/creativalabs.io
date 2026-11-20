@@ -555,6 +555,110 @@
       '<button class="btn btn--primary" type="submit">' + s.labels.submit + "</button>" + (s.privacy ? '<p class="form__privacy">' + s.privacy + "</p>" : "") + "</form>" + mail + "</div></section>";
   };
 
+  /* ---------- autoevaluación de madurez (portada del prototipo del libro) ---------- */
+  var AE = null;
+  R.assessment = function (s) {
+    AE = s;
+    var L = s.labels;
+    return '<section class="sec sec--paper sec--bb"' + idAttr(s) + '><div class="wrap ae">' +
+      '<div class="ae__top"><label class="ae__zone" for="ae-zona">' + L.zone + ' <input id="ae-zona" type="text" placeholder="' + esc(L.zonePh) + '"></label><span id="ae-fecha"></span></div>' +
+      '<nav class="ae__tabs" aria-label="' + esc(L.tabsAria) + '"><a href="#evaluar" data-view="evaluar">' + L.tabEval + '</a><a href="#niveles" data-view="niveles">' + L.tabLevels + '</a><a href="#glosario" data-view="glosario">' + L.tabGlos + "</a></nav>" +
+      '<div class="ae__line" aria-hidden="true"><div class="ae__marker" id="ae-marker">' + L.marker + '</div><div class="ae__track" id="ae-track"></div></div>' +
+      '<div class="ae__view" id="ae-view-evaluar"><div class="ae__layout"><div>' +
+      '<div class="ae__reset"><span id="ae-banner">' + L.bannerExample + '</span><button type="button" class="ae__btn ae__btn--ghost" id="ae-reset">' + L.reset + "</button></div>" +
+      '<div class="ae__ctx" id="ae-ctx"><h2 class="ae__h2">' + L.ctx + '</h2></div><div id="ae-levels"></div></div>' +
+      '<aside class="ae__aside"><div class="ae__tag" aria-live="polite"><div class="ae__lbl"><span>' + L.tag + '</span><span id="ae-tagzone"></span></div><div class="ae__stamp" id="ae-stamp"></div>' +
+      '<div class="ae__big"><b id="ae-lvlnum">0</b><div><small>' + L.level + '</small><span id="ae-lvlname"></span></div></div><p class="ae__sum" id="ae-lvlsum"></p>' +
+      '<a class="ae__taglink" href="#niveles">' + L.tabLevels + '</a><div class="ae__dims" id="ae-dims"></div></div>' +
+      '<div class="ae__todo"><h3 id="ae-gapsh"></h3><ul class="ae__gaps" id="ae-gaps"></ul></div>' +
+      '<p class="ae__fab" id="ae-fab" hidden>' + L.fab + "</p>" +
+      '<p class="ae__rule">' + L.rule + "</p>" +
+      '<div class="ae__cta"><h3>' + L.ctaTitle + "</h3><p>" + L.ctaText + "</p>" + btn(s.action) + "</div>" +
+      "</aside></div></div>" +
+      '<div class="ae__view" id="ae-view-niveles" hidden><div class="ae__vh"><h2 class="ae__h2">' + L.tabLevels + "</h2><p>" + L.levelsIntro + '</p></div><div class="ae__lvgrid" id="ae-lvgrid"></div><div class="ae__reglas" id="ae-reglas"></div><a class="btn btn--primary ae__back" href="#evaluar">' + L.tabEval + "</a></div>" +
+      '<div class="ae__view" id="ae-view-glosario" hidden><div class="ae__vh"><h2 class="ae__h2">' + L.tabGlos + "</h2><p>" + L.glosIntro + '</p></div><dl class="ae__glos" id="ae-glos"></dl><a class="btn btn--primary ae__back" href="#evaluar">' + L.tabEval + "</a></div>" +
+      '<p class="ae__foot">' + L.foot + "</p></div></section>";
+  };
+
+  function bindAssessment() {
+    if (!AE) return;
+    var D = AE.data, L = AE.labels, $ = function (id) { return document.getElementById("ae-" + id); };
+    var EXAMPLE = { P01: "si", P02: "si", P03: "parcial", P04: "no", P05: "no", P06: "parcial", P07: "no", P08: "parcial", P09: "no", P10: "no", P11: "no", P12: "no", P13: "no", P14: "no", C1: "1", C2: "1", C3: "0" };
+    var LBL = { si: "Sí", parcial: "Parcial", no: "No", nose: "No sé" };
+    var ans = Object.assign({}, EXAMPLE);
+    var val = function (id) { var r = D.respuestas.filter(function (x) { return x.id === ans[id]; })[0]; return r ? r.valor : 0; };
+    var qsOf = function (n) { return D.preguntas.filter(function (q) { return q.nivel === n; }); };
+
+    $("fecha").textContent = L.date + " " + new Date().toLocaleDateString("es-CO", { year: "numeric", month: "short", day: "2-digit" });
+    $("track").innerHTML = D.niveles.map(function (n) { return '<div class="ae__st" data-n="' + n.n + '"><b>' + n.n + "</b><span>" + n.nombre + "</span><small>" + n.resumen.split(".")[0] + ".</small></div>"; }).join("");
+    D.contexto.forEach(function (c) {
+      var o = c.opciones.map(function (x, i) { return '<option value="' + i + '">' + x + "</option>"; }).join("");
+      $("ctx").insertAdjacentHTML("beforeend", '<label class="ae__f" for="ae-' + c.id + '">' + c.texto + '<select id="ae-' + c.id + '" data-k="' + c.id + '"><option value="">' + L.choose + "</option>" + o + "</select></label>");
+    });
+    D.niveles.filter(function (n) { return n.n > 0; }).forEach(function (n) {
+      var items = qsOf(n.n).map(function (q) {
+        var o = D.respuestas.map(function (r) { return '<input type="radio" name="ae-' + q.id + '" id="ae-' + q.id + "-" + r.id + '" value="' + r.id + '" data-k="' + q.id + '"><label for="ae-' + q.id + "-" + r.id + '" title="' + esc(r.texto) + '">' + LBL[r.id] + "</label>"; }).join("");
+        return '<div class="ae__q" id="ae-row-' + q.id + '" role="radiogroup" aria-labelledby="ae-' + q.id + '-t"><span class="ae__qid">' + q.id + '</span><div><p class="ae__qt" id="ae-' + q.id + '-t">' + q.texto + '</p><p class="ae__ev">' + L.evidence + " " + q.evidencia + '</p></div><div class="ae__opts">' + o + "</div></div>";
+      }).join("");
+      $("levels").insertAdjacentHTML("beforeend", '<div class="ae__sec"><div class="ae__sh"><h2 class="ae__h2"><span class="ae__n">' + n.n + "</span>" + n.nombre + '</h2><span class="ae__count" id="ae-count-' + n.n + '"></span></div><p class="ae__ss">' + n.resumen + "</p>" + items + "</div>");
+    });
+    $("lvgrid").innerHTML = D.niveles.map(function (n) {
+      var flag = n.n === 2 ? '<span class="ae__flag">' + L.minFlag + "</span>" : n.n === 4 ? '<span class="ae__flag ae__flag--opt">' + L.optFlag + "</span>" : "";
+      return '<article class="ae__lv' + (n.n === 2 ? " ae__lv--min" : "") + '"><span class="ae__step">' + n.n + "</span>" + flag + "<h3>" + n.nombre + '</h3><p class="ae__sig">' + n.significa + "</p><ul>" + n.reconoce.map(function (r) { return "<li>" + r + "</li>"; }).join("") + '</ul><p class="ae__sup"><b>' + L.supervision + "</b> " + n.supervision + "</p></article>";
+    }).join("");
+    $("reglas").innerHTML = D.reglas.map(function (r) { var i = r.indexOf(":"); return "<p><b>" + r.slice(0, i) + ".</b> " + r.slice(i + 1).trim() + "</p>"; }).join("");
+    $("glos").innerHTML = D.glosario.map(function (g) { return "<div><dt>" + g.t + "</dt><dd>" + g.d + "</dd></div>"; }).join("");
+
+    function level() { var lv = 0; for (var n = 1; n <= 4; n++) { if (qsOf(n).every(function (q) { return ans[q.id] === "si"; })) lv = n; else break; } return lv; }
+    function marker() { var h = document.querySelector('.ae__st[data-n="' + level() + '"]'); if (h) $("marker").style.left = h.offsetLeft + "px"; }
+    function fill() {
+      D.preguntas.forEach(function (q) { D.respuestas.forEach(function (r) { $(q.id + "-" + r.id).checked = ans[q.id] === r.id; }); });
+      D.contexto.forEach(function (c) { $(c.id).value = ans[c.id] == null ? "" : ans[c.id]; });
+    }
+    function render() {
+      var lv = level(), info = D.niveles[lv];
+      $("lvlnum").textContent = lv; $("lvlname").textContent = info.nombre; $("lvlsum").textContent = info.resumen;
+      $("tagzone").textContent = ($("zona").value || L.noName).slice(0, 26);
+      $("stamp").innerHTML = lv >= 2 ? L.stampOk.replace("{n}", lv) : L.stampLow;
+      $("stamp").className = "ae__stamp" + (lv >= 2 ? " ae__stamp--ok" : "");
+      [].forEach.call(document.querySelectorAll(".ae__st"), function (s) { var n = +s.dataset.n; s.classList.toggle("is-done", n < lv); s.classList.toggle("is-here", n === lv); });
+      marker();
+      D.preguntas.forEach(function (q) { $("row-" + q.id).dataset.a = ans[q.id] || ""; });
+      D.niveles.filter(function (n) { return n.n > 0; }).forEach(function (n) { var qs = qsOf(n.n); $("count-" + n.n).textContent = qs.filter(function (q) { return ans[q.id] === "si"; }).length + " de " + qs.length + " en sí"; });
+      var dims = D.preguntas.map(function (q) { return q.dimension; }).filter(function (d, i, a) { return a.indexOf(d) === i; });
+      $("dims").innerHTML = dims.map(function (d) {
+        var qs = D.preguntas.filter(function (q) { return q.dimension === d; });
+        var pct = Math.round(100 * qs.reduce(function (a, q) { return a + val(q.id); }, 0) / qs.length);
+        return '<div class="ae__dim"><span>' + d + '</span><div class="ae__gauge"><i style="width:' + pct + '%"></i></div><span class="ae__num">' + pct + "%</span></div>";
+      }).join("");
+      if (lv === 4) { $("gapsh").textContent = L.nextStep; $("gaps").innerHTML = '<li class="is-part"><span class="ae__k">—</span><span>' + L.lv4 + "</span></li>"; }
+      else {
+        var nx = lv + 1;
+        $("gapsh").textContent = L.toReach.replace("{n}", nx).replace("{name}", D.niveles[nx].nombre);
+        $("gaps").innerHTML = qsOf(nx).filter(function (q) { return ans[q.id] !== "si"; }).map(function (q) {
+          var p = ans[q.id] === "parcial";
+          return '<li class="' + (p ? "is-part" : "") + '"><span class="ae__k">' + q.id + "</span><span>" + (p ? L.onWay + " " : "") + q.accion + "</span></li>";
+        }).join("");
+      }
+      $("fab").hidden = !(ans.C1 === "1" || ans.C1 === "2");
+    }
+    function route() {
+      var h = location.hash.slice(1), v = h === "niveles" || h === "glosario" ? h : "evaluar";
+      ["evaluar", "niveles", "glosario"].forEach(function (k) { $("view-" + k).hidden = k !== v; });
+      [].forEach.call(document.querySelectorAll(".ae__tabs a"), function (a) { if (a.dataset.view === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+      if (v === "evaluar") marker();
+    }
+    document.querySelector(".ae").addEventListener("change", function (e) {
+      var k = e.target.dataset && e.target.dataset.k; if (!k) return;
+      ans[k] = e.target.value; $("banner").textContent = L.bannerLive; render();
+    });
+    $("zona").addEventListener("input", render);
+    $("reset").addEventListener("click", function () { ans = {}; fill(); $("banner").textContent = L.bannerBlank; render(); });
+    window.addEventListener("hashchange", function () { route(); if (/^#(evaluar|niveles|glosario)$/.test(location.hash)) document.querySelector(".ae__tabs").scrollIntoView({ block: "start" }); });
+    window.addEventListener("resize", marker);
+    fill(); render(); route();
+  }
+
   function bindForm() {
     var form = document.querySelector("form.form");
     if (!form) return;
@@ -608,6 +712,7 @@
       root.removeAttribute("aria-busy");
       bindTexture();
       bindForm();
+      bindAssessment();
       if (location.hash) {
         var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
         if (target) target.scrollIntoView();
