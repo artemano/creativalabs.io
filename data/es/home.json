@@ -90,47 +90,102 @@
       "id": "servicios",
       "bg": "paper",
       "variant": "front",
-      "columns": "auto",
+      "columns": "pairs",
       "eyebrow": "Servicios y métodos",
       "title": "¿Qué necesita resolver?",
       "items": [
         {
-          "kicker": "Arquitectura y TI",
-          "title": "Alinear inversiones y modernizar tecnología",
-          "text": "Defina qué capacidades necesita y cómo obtenerlas, gobierne la TI y sus proveedores, y migre a la nube con una arquitectura que pueda evolucionar.",
+          "icon": "arquitectura",
+          "kicker": "Tecnología · Arquitectura y TI",
+          "title": "Arquitectura, gobierno de TI y nube",
+          "text": "Decisiones de arquitectura que resisten el cambio y una TI gobernada que sostiene la operación.",
+          "bullets": [
+            "Arquitectura empresarial, integración y evolución de plataformas",
+            "Gobierno de TI, infraestructura y migración a la nube",
+            "Talleres de diseño guiado por el dominio y Event Storming"
+          ],
           "link": {
-            "label": "Arquitectura y TI",
+            "label": "Explorar arquitectura y TI",
             "href": "@arquitectura"
           }
         },
         {
-          "kicker": "TELAR",
-          "title": "Coordinar cambios entre equipos",
-          "text": "Aplique TELAR para organizar el contexto compartido, los contratos entre componentes y la trazabilidad.",
+          "icon": "telar",
+          "kicker": "Herramientas y proceso · TELAR",
+          "title": "Modernización del ciclo de vida de software con TELAR",
+          "text": "Un ciclo de vida gobernado para construir software con agentes de IA, adoptado por fases y con evidencia.",
+          "bullets": [
+            "Diagnóstico de madurez y plan de acción",
+            "Paquete de adopción por área o dominio",
+            "Acompañamiento y evolución del entorno de agentes"
+          ],
           "link": {
             "label": "Conocer TELAR",
             "href": "@telar"
           }
         },
         {
-          "kicker": "SPIRAL",
-          "title": "Validar una idea de producto",
-          "text": "Use SPIRAL para delimitar, construir y validar un prototipo o MVP en ciclos cortos.",
+          "icon": "spiral",
+          "kicker": "Producto · SPIRAL",
+          "title": "Prototipos y MVP con SPIRAL",
+          "text": "Delimite, construya y valide una idea de producto en ciclos cortos, con talleres de Event Storming y Envisioning.",
+          "bullets": [
+            "Talleres para entender el proceso y delimitar el producto",
+            "Prototipo o MVP para poner a prueba una hipótesis",
+            "Paso de 0 a 1 con SPIRAL y de 1 a N con TELAR"
+          ],
           "link": {
             "label": "Conocer SPIRAL",
             "href": "@spiral"
           }
         },
         {
-          "kicker": "CTO fraccional",
-          "title": "Incorporar liderazgo técnico",
-          "text": "Cuente con un CTO fraccional para orientar decisiones o dirigir una iniciativa con un mandato acordado.",
+          "icon": "formacion",
+          "kicker": "Personas",
+          "title": "Formación y liderazgo técnico",
+          "text": "Los roles cambian cuando los agentes ejecutan; el criterio humano se vuelve lo valioso.",
+          "bullets": [
+            "Formación por rol: Tech Lead, ingeniero AI-nativo, Product Owner y QA",
+            "Desarrollo de líderes técnicos y gerentes de ingeniería",
+            "Coaching de liderazgo para equipos de tecnología"
+          ],
+          "link": {
+            "label": "Proponer una formación",
+            "href": "/contacto/?tema=taller"
+          }
+        },
+        {
+          "icon": "equipos",
+          "kicker": "Organización",
+          "title": "Diseño de equipos de construcción de software",
+          "text": "Estructuras, responsabilidades y controles a la medida de la nueva forma de construir.",
+          "bullets": [
+            "Diseño de equipos de ingeniería y planes de carrera",
+            "Matriz de responsabilidades y gobierno del ciclo de vida",
+            "Modelo de madurez por área del portafolio"
+          ],
+          "link": {
+            "label": "Conversar sobre su organización",
+            "href": "/contacto/?tema=equipos"
+          }
+        },
+        {
+          "icon": "cto",
+          "kicker": "Liderazgo · CTO fraccional",
+          "title": "Dirección tecnológica a tiempo parcial",
+          "text": "Criterio técnico sénior para decisiones recurrentes o dirección temporal de una iniciativa con un mandato acordado.",
+          "bullets": [
+            "Orientación estratégica y decisiones de arquitectura",
+            "Dirección de una iniciativa con mandato y plazo",
+            "Coaching del equipo técnico"
+          ],
           "link": {
             "label": "Explorar CTO fraccional",
             "href": "@cto"
           }
         }
-      ]
+      ],
+      "text": "Cada servicio se puede contratar por separado. Juntos cubren lo que cambia cuando una organización empieza a construir con agentes de IA."
     },
     {
       "type": "experience",

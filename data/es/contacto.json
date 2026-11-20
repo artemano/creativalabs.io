@@ -58,7 +58,11 @@
         },
         {
           "value": "taller",
-          "label": "Taller aplicado"
+          "label": "Taller aplicado o formación"
+        },
+        {
+          "value": "equipos",
+          "label": "Diseño de equipos de ingeniería"
         },
         {
           "value": "otro",
