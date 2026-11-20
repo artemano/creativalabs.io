@@ -147,6 +147,105 @@
       }
     },
     {
+      "type": "team",
+      "id": "mauricio-naranjo",
+      "person": "mauricio-naranjo",
+      "eyebrow": "Arquitectura empresarial y gobierno de TI",
+      "title": "Mauricio Naranjo Narváez",
+      "text": "Más de 28 años modernizando plataformas críticas de banca, mercados de capitales, gobierno, telecomunicaciones e infraestructura estratégica en Europa, Estados Unidos, el Caribe y Latinoamérica.",
+      "bio": "Asesora a juntas directivas y comités ejecutivos en arquitectura empresarial, gobierno de TI, nube e IA soberana.<br>Miembro de la junta del IASA Chief Architect Forum y laureado de los Computerworld Honors (Washington D.C.).",
+      "education": [
+        {
+          "title": "TOGAF 9",
+          "place": "The Open Group"
+        },
+        {
+          "title": "AWS Certified Solutions Architect",
+          "place": "Amazon Web Services"
+        },
+        {
+          "title": "Oracle ACE Director, 2007–2019",
+          "place": "Oracle"
+        },
+        {
+          "title": "Profesor de posgrado",
+          "place": "Universidad de los Andes"
+        },
+        {
+          "title": "Coautor técnico",
+          "place": "Wrox Press, Reino Unido"
+        }
+      ],
+      "timeline": {
+        "title": "Trayectoria",
+        "subtitle": "Programas de misión crítica en cuatro regiones.",
+        "items": [
+          {
+            "year": "Actual",
+            "accent": true,
+            "org": "ONE IT WORLD",
+            "role": "Director global de Arquitectura Empresarial y Gobierno de TI",
+            "text": "Programas de transformación con varios proveedores, presupuestos de USD 250 a 500 millones, hasta 25 arquitectos y equipos de entrega de más de 500 personas."
+          },
+          {
+            "year": "Actual",
+            "org": "IASA Chief Architect Forum",
+            "role": "Miembro de la junta",
+            "text": "Comunidad internacional de arquitectos jefe."
+          },
+          {
+            "year": "España · Alemania",
+            "org": "Telefónica Global Solutions / Italtel",
+            "role": "Arquitectura de migración",
+            "text": "Migración de más de 90 sistemas de misión crítica a Oracle Cloud Infrastructure en varias regiones."
+          },
+          {
+            "year": "Mallorca",
+            "org": "TUI Travel",
+            "role": "Arquitecto de la plataforma central",
+            "text": "Plataforma de reservas con más de 35 millones de transacciones por hora."
+          },
+          {
+            "year": "Panamá",
+            "org": "Autoridad del Canal de Panamá",
+            "role": "Arquitectura empresarial",
+            "text": "Arquitectura activa-activa 24/7 del portal de servicios marítimos del programa de ampliación."
+          },
+          {
+            "year": "Banca y telecomunicaciones",
+            "org": "BBVA · AT&T · Grupo BVC · SAT/SHCP México",
+            "role": "Modernización de núcleo y nube",
+            "text": "Arquitecturas multinube e híbridas; más de 25.000 transacciones por minuto bajo TM Forum ODA, mercados de capitales e infraestructura nacional de control de hidrocarburos."
+          },
+          {
+            "year": "IA",
+            "org": "IA generativa soberana",
+            "role": "Arquitectura",
+            "text": "Modelos abiertos en infraestructura propia con soberanía de datos e ISO 27001 / SOC 2, incluido un ecosistema de crédito y educación para 5 millones de beneficiarios."
+          },
+          {
+            "year": "Gobierno",
+            "featured": true,
+            "badge": "Computerworld Honors",
+            "org": "Plataformas nacionales",
+            "role": "Arquitecto",
+            "text": "Plataformas de transformación digital nacional con más de 40.000 transacciones por segundo para más de 40 millones de ciudadanos."
+          }
+        ]
+      },
+      "sectors": {
+        "label": "Sectores",
+        "items": [
+          "Banca",
+          "Mercados de capitales",
+          "Telecomunicaciones",
+          "Gobierno",
+          "Logística marítima",
+          "Turismo"
+        ]
+      }
+    },
+    {
       "type": "prose",
       "id": "evidencia",
       "bg": "cream",
