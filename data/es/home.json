@@ -126,9 +126,9 @@
         },
         {
           "icon": "spiral",
-          "kicker": "Producto · SPIRAL",
-          "title": "Prototipos y MVP con SPIRAL",
-          "text": "Delimite, construya y valide una idea de producto en ciclos cortos, con talleres de Event Storming y Envisioning.",
+          "kicker": "Método y herramienta · SPIRAL",
+          "title": "Prototipos y MVP con el método SPIRAL",
+          "text": "Un método y una herramienta que facilitan delimitar, construir y validar una idea de producto en ciclos cortos, con talleres de Event Storming y Envisioning.",
           "bullets": [
             "Talleres para entender el proceso y delimitar el producto",
             "Prototipo o MVP para poner a prueba una hipótesis",
