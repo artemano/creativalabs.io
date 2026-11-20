@@ -61,8 +61,12 @@ h1,.h2,.h3{margin:0;font-family:var(--cond);font-weight:800}
 /* cabecera */
 .site-header{background:var(--ink);border-bottom:1px solid var(--dark-line);position:relative;z-index:5}
 .site-header__in{max-width:1200px;margin:0 auto;padding:20px 32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
-.logo{text-decoration:none;color:var(--cream);font-family:var(--cond);font-weight:800;font-size:28px;letter-spacing:-.01em}
-.logo span{color:var(--orange)}
+.logo{text-decoration:none;color:var(--cream);font-family:var(--cond);font-weight:800;font-size:28px;letter-spacing:-.01em;display:inline-flex;align-items:baseline;gap:.29em;line-height:1}
+.logo__sym{width:.89em;height:.89em;flex:none;color:var(--cream)}
+.logo__tld{color:var(--orange)}
+.logo--sm{font-size:22px}
+.site-footer__brand{display:flex;flex-direction:column;gap:14px}
+.site-footer .logo,.site-footer .logo:hover{color:var(--cream)}
 .nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;font-size:15px;font-weight:500}
 .nav__link{color:var(--cream);text-decoration:none;cursor:pointer}.nav__link:hover{color:var(--peach)}
 .nav__lang{color:var(--muted);font-size:14px}

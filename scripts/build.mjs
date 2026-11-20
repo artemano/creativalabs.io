@@ -39,6 +39,9 @@ ${alternates}
 <meta property="og:image" content="${site.baseUrl + site.ogImage}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="${root}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="${root}favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="${root}assets/img/apple-touch-icon.png">
+<link rel="manifest" href="${root}site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${FONTS}">
