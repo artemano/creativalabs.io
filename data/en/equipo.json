@@ -34,7 +34,7 @@
           { "year": "2015", "org": "Digitalware", "role": "VP of Innovation and Development", "text": "240-person organization across four product lines; agile transformation." },
           { "year": "2014", "org": "Globant", "role": "Technical director", "text": "30-person nearshore teams for Disney Parks and TripAdvisor." },
           { "year": "2009", "featured": true, "badge": "Direct forerunner of TELAR", "org": "eTask, now Hydra Cloud", "role": "CTO and co-founder", "text": "Methodology governance platform built on the SPEM and UMA standards: processes as reusable assets and model-driven development (MDD/MDA). A 65-person organization. Fifteen years before agents, the same idea that underpins TELAR today: intent and process govern construction." },
-          { "year": "2002", "accent": true, "org": "Heinsohn", "role": "Software factory and presales director", "text": "Software factory grown from 3 to more than 165 engineers; about USD 12 million in deals." },
+          { "year": "2002", "accent": true, "org": "Heinsohn", "role": "Software factory and presales director", "text": "Software factory grown from 6 to more than 200 engineers; about USD 12 million in deals." },
           { "year": "1997", "org": "Unisys", "role": "Lead architect", "text": "Architecture of personal, business and branch banking for Banco Santander." }
         ]
       },
