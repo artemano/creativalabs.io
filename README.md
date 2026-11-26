@@ -54,6 +54,14 @@ python3 -m http.server 8000
 - Prueba local con el mismo comportamiento de Cloudflare: `npx wrangler dev`.
 
 
+## Formularios (contacto y autoevaluación)
+
+- `worker/index.js` atiende `POST /api/contacto` y `POST /api/autoevaluacion`; el resto lo sirve `ASSETS` como sitio estático.
+- Cada envío se guarda en la base D1 `creativalabs` (tabla `leads`, ver `schema.sql`) con la versión de la política aceptada.
+- Los correos salen por Resend desde `MAIL_FROM`: aviso a `MAIL_TO` y, en la autoevaluación, el informe a la persona. El informe se arma con el mismo `data/es/autoevaluacion.json` que usa la página.
+- Secretos: `RESEND_API_KEY` y `TURNSTILE_SECRET` (`npx wrangler secret put …`). La clave pública de Turnstile va en `site.json → form.turnstileSiteKey`. Sin secretos, el Worker omite el correo o la verificación y lo deja en el registro (útil en `wrangler dev`).
+- Prueba local: `npx wrangler d1 execute creativalabs --local --file=schema.sql` y luego `npx wrangler dev`.
+
 ## Sitio fusionado (v2, 19 nov 2026)
 
 - Diez páginas en español: inicio, servicios, diagnóstico, arquitectura empresarial, TELAR, SPIRAL, CTO fraccional, acerca de (`equipo/`), recursos y contacto. El inglés queda pendiente: `site.json → languages` solo tiene `es` y los JSON de `data/en/` se conservan para la siguiente entrega.

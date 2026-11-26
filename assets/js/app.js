@@ -588,19 +588,39 @@
       '<div class="ae__todo"><h3 id="ae-gapsh"></h3><ul class="ae__gaps" id="ae-gaps"></ul></div>' +
       '<p class="ae__fab" id="ae-fab" hidden>' + L.fab + "</p>" +
       '<p class="ae__rule">' + L.rule + "</p>" +
-      '<div class="ae__cta"><h3>' + L.ctaTitle + "</h3><p>" + L.ctaText + "</p>" + btn(s.action) + "</div>" +
-      "</aside></div></div>" +
+      (R_ON() ? '<div class="ae__cta"><h3>' + s.report.ctaTitle + "</h3><p>" + s.report.ctaText + "</p>" + btn({ label: s.report.ctaButton, href: "#informe", style: "primary" }) + "</div>"
+        : '<div class="ae__cta"><h3>' + L.ctaTitle + "</h3><p>" + L.ctaText + "</p>" + btn(s.action) + "</div>") +
+      "</aside></div>" + (R_ON() ? reportForm(s) : "") + "</div>" +
       '<div class="ae__view" id="ae-view-niveles" hidden><div class="ae__vh"><h2 class="ae__h2">' + L.tabLevels + "</h2><p>" + L.levelsIntro + '</p></div><div class="ae__lvgrid" id="ae-lvgrid"></div><div class="ae__reglas" id="ae-reglas"></div><a class="btn btn--primary ae__back" href="#evaluar">' + L.tabEval + "</a></div>" +
       '<div class="ae__view" id="ae-view-glosario" hidden><div class="ae__vh"><h2 class="ae__h2">' + L.tabGlos + "</h2><p>" + L.glosIntro + '</p></div><dl class="ae__glos" id="ae-glos"></dl><a class="btn btn--primary ae__back" href="#evaluar">' + L.tabEval + "</a></div>" +
       '<p class="ae__foot">' + L.foot + "</p></div></section>";
   };
+
+  function R_ON() { return !!(SITE.form && SITE.form.enabled && AE && AE.report); }
+  function reportForm(s) {
+    var r = s.report, f = SITE.form;
+    return '<div class="ae__report" id="informe"><div class="ae__rhead"><p class="ae__rk">' + r.eyebrow + '</p><h2 class="ae__h2">' + r.title + '</h2><p>' + r.text + "</p></div>" +
+      '<form class="form ae__form" action="' + esc(r.endpoint) + '" method="post" novalidate>' +
+      '<div class="ae__fgrid">' +
+      '<div class="form__row"><label for="r-nombre">' + r.labels.name + '</label><input id="r-nombre" name="nombre" autocomplete="name" required></div>' +
+      '<div class="form__row"><label for="r-correo">' + r.labels.email + '</label><input id="r-correo" name="correo" type="email" autocomplete="email" required></div>' +
+      '<div class="form__row"><label for="r-org">' + r.labels.org + '</label><input id="r-org" name="organizacion" autocomplete="organization" required></div>' +
+      '<div class="form__row"><label for="r-cargo">' + r.labels.role + '</label><input id="r-cargo" name="cargo" autocomplete="organization-title"></div></div>' +
+      '<div class="ae__hp" aria-hidden="true"><label for="r-web">Web</label><input id="r-web" name="web" tabindex="-1" autocomplete="off"></div>' +
+      '<div class="form__row form__check"><input id="r-ok" name="consentimiento" type="checkbox" required><label for="r-ok">' + r.labels.consent + "</label></div>" +
+      '<div class="form__row form__check"><input id="r-news" name="novedades" type="checkbox"><label for="r-news">' + r.labels.news + "</label></div>" +
+      (f.turnstileSiteKey ? '<div class="cf-turnstile" data-sitekey="' + esc(f.turnstileSiteKey) + '"></div>' : "") +
+      '<p class="form__msg" role="status" aria-live="polite"></p>' +
+      '<div class="ae__fact"><button class="btn btn--primary" type="submit">' + r.labels.submit + '</button><span class="ae__alt">' + r.alt + " " + a({ label: r.altLink, href: "/contacto/?tema=telar" }, "link-strong") + "</span></div>" +
+      '<p class="form__privacy">' + r.privacy + "</p></form></div>";
+  }
 
   function bindAssessment() {
     if (!AE) return;
     var D = AE.data, L = AE.labels, $ = function (id) { return document.getElementById("ae-" + id); };
     var EXAMPLE = { P01: "si", P02: "si", P03: "parcial", P04: "no", P05: "no", P06: "parcial", P07: "no", P08: "parcial", P09: "no", P10: "no", P11: "no", P12: "no", P13: "no", P14: "no", C1: "1", C2: "1", C3: "0" };
     var LBL = { si: "Sí", parcial: "Parcial", no: "No", nose: "No sé" };
-    var ans = Object.assign({}, EXAMPLE);
+    var ans = Object.assign({}, EXAMPLE), touched = false;
     var val = function (id) { var r = D.respuestas.filter(function (x) { return x.id === ans[id]; })[0]; return r ? r.valor : 0; };
     var qsOf = function (n) { return D.preguntas.filter(function (q) { return q.nivel === n; }); };
 
@@ -665,12 +685,27 @@
     }
     document.querySelector(".ae").addEventListener("change", function (e) {
       var k = e.target.dataset && e.target.dataset.k; if (!k) return;
-      ans[k] = e.target.value; $("banner").textContent = L.bannerLive; render();
+      ans[k] = e.target.value; touched = true; $("banner").textContent = L.bannerLive; render();
     });
     $("zona").addEventListener("input", render);
-    $("reset").addEventListener("click", function () { ans = {}; fill(); $("banner").textContent = L.bannerBlank; render(); });
+    $("reset").addEventListener("click", function () { ans = {}; touched = true; fill(); $("banner").textContent = L.bannerBlank; render(); });
     window.addEventListener("hashchange", function () { route(); if (/^#(evaluar|niveles|glosario)$/.test(location.hash)) document.querySelector(".ae__tabs").scrollIntoView({ block: "start" }); });
     window.addEventListener("resize", marker);
+    var rf = document.querySelector("form.ae__form");
+    if (rf) rf.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var R0 = AE.report, msg = rf.querySelector(".form__msg"), m = (SITE.form.messages || {})[LANG] || {};
+      if (!touched || !D.preguntas.some(function (q) { return ans[q.id]; })) { msg.textContent = R0.needAnswers; return; }
+      if (!rf.checkValidity()) { msg.textContent = m.invalid || ""; rf.reportValidity(); return; }
+      var fd = new FormData(rf);
+      fd.append("zona", $("zona").value || ""); fd.append("respuestas", JSON.stringify(ans));
+      fd.append("idioma", LANG); fd.append("origen", document.referrer || "");
+      var b = rf.querySelector("button[type=submit]"); b.disabled = true; msg.textContent = R0.sending;
+      fetch(rf.action, { method: "POST", body: fd })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); msg.textContent = R0.ok.replace("{correo}", fd.get("correo")); rf.reset(); })
+        .catch(function () { msg.textContent = m.error || ""; if (window.turnstile) window.turnstile.reset(); })
+        .then(function () { b.disabled = false; });
+    });
     fill(); render(); route();
   }
 
@@ -690,7 +725,11 @@
   }
 
   function bindForm() {
-    var form = document.querySelector("form.form");
+    if (document.querySelector(".cf-turnstile") && !document.getElementById("cf-ts")) {
+      var t = document.createElement("script"); t.id = "cf-ts"; t.async = true; t.defer = true;
+      t.src = "https://challenges.cloudflare.com/turnstile/v0/api.js"; document.head.appendChild(t);
+    }
+    var form = document.querySelector("form.form:not(.ae__form)");
     if (!form) return;
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -701,7 +740,7 @@
       btn.disabled = true;
       fetch(form.action, { method: "POST", body: new FormData(form) })
         .then(function (r) { if (!r.ok) throw new Error(r.status); form.reset(); msg.textContent = m.ok || ""; })
-        .catch(function () { msg.textContent = m.error || ""; })
+        .catch(function () { msg.textContent = m.error || ""; if (window.turnstile) window.turnstile.reset(); })
         .then(function () { btn.disabled = false; });
     });
   }
