@@ -381,6 +381,10 @@ h1,.h2,.h3{margin:0;font-family:var(--cond);font-weight:800}
 .phead__in{padding:80px 32px 88px}
 .phead h1{font-size:clamp(40px,5.2vw,64px);line-height:1;color:var(--paper)}
 .phead .lead{max-width:700px}
+.phead--compact .phead__in{padding:40px 32px 44px}
+.phead--compact .hero2__copy{max-width:900px;flex-basis:100%}
+.phead--compact h1{font-size:clamp(30px,3.6vw,44px);line-height:1.08}
+.phead--compact .lead{margin-top:14px;font-size:18px;max-width:820px}
 
 /* v2: texto y tarjetas */
 .prose{max-width:820px}
@@ -468,7 +472,7 @@ h1,.h2,.h3{margin:0;font-family:var(--cond);font-weight:800}
 @media (max-width:640px){
   .wrap{padding:64px 20px}.wrap--flush-b{padding-bottom:32px}.wrap--flush-t{padding-top:0;padding-bottom:64px}
   .site-header__in{padding:16px 20px}.nav{gap:10px 18px}
-  .hero2__in,.phead__in{padding:64px 20px 72px}.hero2__panel{padding:20px 20px 4px}
+  .hero2__in,.phead__in{padding:64px 20px 72px}.phead--compact .phead__in{padding:28px 20px 32px}.hero2__panel{padding:20px 20px 4px}
   .nav__sub{position:static;border:0;padding:4px 0 0;min-width:0}.nav__sublink{padding:6px 0 6px 12px}
   .site-footer__legal{align-items:flex-start;text-align:left}
   .coll__gs{grid-template-columns:1fr 1fr}

@@ -469,7 +469,7 @@
   }
 
   R.pagehead = function (s) {
-    return '<section class="phead hero2 on-dark"' + idAttr(s) + ">" + texture() + '<div class="hero2__in phead__in"><div class="hero2__copy">' + eyebrow(s.eyebrow) + "<h1>" + s.title + "</h1>" +
+    return '<section class="phead hero2 on-dark' + (s.compact ? " phead--compact" : "") + '"' + idAttr(s) + ">" + texture() + '<div class="hero2__in phead__in"><div class="hero2__copy">' + eyebrow(s.eyebrow) + "<h1>" + s.title + "</h1>" +
       (s.lead ? '<p class="lead">' + s.lead + "</p>" : "") + btns(s.actions) + "</div>" +
       (s.aside ? pillsPanel(s.aside.label, s.aside.items, s.aside.numbered) : "") + "</div></section>";
   };

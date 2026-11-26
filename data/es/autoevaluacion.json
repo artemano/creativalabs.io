@@ -10,38 +10,8 @@
       "type": "pagehead",
       "eyebrow": "Autoevaluación de madurez · TELAR",
       "title": "¿En qué nivel opera su equipo con agentes de IA?",
-      "lead": "Catorce preguntas sobre prácticas verificables, aplicadas a una zona de su portafolio: un producto, un dominio de negocio o el sistema que mantiene un equipo. Responda con lo que puede demostrar, no con lo que se intenta. El resultado indica su nivel y qué falta para avanzar.",
-      "aside": {
-        "label": "CINCO NIVELES",
-        "numbered": false,
-        "items": [
-          {
-            "n": "0",
-            "title": "Ad-hoc",
-            "text": "Agentes por conversación, sin specs ni gates."
-          },
-          {
-            "n": "1",
-            "title": "Asistido",
-            "text": "Las specs dirigen tareas y después mueren."
-          },
-          {
-            "n": "2",
-            "title": "Anclado",
-            "text": "Mínimo institucional: specs vivas y gates."
-          },
-          {
-            "n": "3",
-            "title": "Gobernado",
-            "text": "Evidencia inmutable y harness con dueño."
-          },
-          {
-            "n": "4",
-            "title": "Optimizado",
-            "text": "Autonomía ampliada con evidencia."
-          }
-        ]
-      }
+      "lead": "Catorce preguntas sobre prácticas verificables en una zona de su portafolio. Responda con lo que puede demostrar; el resultado indica su nivel y qué falta para avanzar.",
+      "compact": true
     },
     {
       "type": "assessment",
