@@ -19,7 +19,7 @@
   // Base de datos de solicitudes y autoevaluaciones (ver schema.sql).
   // database_id sale de: npx wrangler d1 create creativalabs
   "d1_databases": [
-    { "binding": "DB", "database_name": "creativalabs", "database_id": "REEMPLAZAR_CON_EL_ID_DE_D1" }
+    { "binding": "DB", "database_name": "creativalabs", "database_id": "69afb5d2-b4cd-409a-b565-de40f1d47b7b" }
   ],
   // Secretos (no van aquí): RESEND_API_KEY y TURNSTILE_SECRET, con `npx wrangler secret put`.
   "vars": {
