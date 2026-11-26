@@ -10,7 +10,7 @@
       "type": "pagehead",
       "eyebrow": "Servicios",
       "title": "Encuentre el punto de partida para su organización",
-      "lead": "La intervención depende de la decisión que tenga por delante. Podemos ayudarle a entender un problema, orientar una inversión, coordinar cambios entre equipos, validar un producto o asumir un mandato de liderazgo técnico.",
+      "lead": "La intervención depende de la decisión que tenga por delante. Podemos ayudarle a entender un problema, ordenar su arquitectura, coordinar equipos y agentes de IA, validar un producto, formar a sus líderes, diseñar sus equipos o asumir un mandato de liderazgo técnico.",
       "actions": [
         {
           "label": "Solicitar una conversación",
@@ -19,7 +19,7 @@
         }
       ],
       "aside": {
-        "label": "CINCO FORMAS DE EMPEZAR",
+        "label": "SIETE FORMAS DE EMPEZAR",
         "items": [
           {
             "title": "Diagnóstico estratégico",
@@ -27,15 +27,23 @@
           },
           {
             "title": "Arquitectura y TI",
-            "text": "Capacidades, gobierno de TI, infraestructura y nube."
+            "text": "Arquitectura, gobierno de TI y nube."
           },
           {
             "title": "TELAR",
-            "text": "Coordinar equipos y agentes de IA."
+            "text": "Ciclo de vida de software con agentes de IA."
           },
           {
             "title": "SPIRAL",
-            "text": "Método para prototipos y MVP."
+            "text": "Prototipos y MVP en ciclos cortos."
+          },
+          {
+            "title": "Formación",
+            "text": "Formación por rol y liderazgo técnico."
+          },
+          {
+            "title": "Diseño de equipos",
+            "text": "Estructuras y responsabilidades para construir con IA."
           },
           {
             "title": "CTO fraccional",
@@ -63,9 +71,9 @@
           "icon": "diagnostico"
         },
         {
-          "kicker": "Arquitectura y TI",
-          "title": "Arquitectura empresarial, gobierno de TI, infraestructura y nube",
-          "text": "Alinee capacidades, inversiones y plataformas. Decida qué reutilizar, comprar o construir, cómo gobernar la TI y sus proveedores, cómo migrar a la nube y cómo sostener una infraestructura crítica.",
+          "kicker": "Tecnología · Arquitectura y TI",
+          "title": "Arquitectura, gobierno de TI y nube",
+          "text": "Alinee capacidades, inversiones y plataformas. Decida qué reutilizar, comprar o construir, cómo gobernar la TI y sus proveedores, cómo migrar a la nube y cómo sostener una infraestructura crítica, con talleres de diseño guiado por el dominio y Event Storming.",
           "link": {
             "label": "Explorar arquitectura y TI",
             "href": "@arquitectura"
@@ -73,28 +81,48 @@
           "icon": "arquitectura"
         },
         {
-          "kicker": "TELAR",
-          "title": "Adopción de ingeniería con IA mediante TELAR",
-          "text": "Coordine el trabajo de varios equipos y agentes sobre sistemas compartidos. Pruebe el método en un dominio real con controles y evidencia desde el inicio.",
+          "kicker": "Herramientas y proceso · TELAR",
+          "title": "Modernización del ciclo de vida de software con TELAR",
+          "text": "Un ciclo de vida gobernado para que varios equipos y agentes de IA trabajen sobre sistemas compartidos. Se adopta por fases, en un dominio real, con controles y evidencia desde el inicio.",
           "link": {
-            "label": "Explorar TELAR",
+            "label": "Conocer TELAR",
             "href": "@telar"
           },
           "icon": "telar"
         },
         {
           "kicker": "Método · SPIRAL",
-          "title": "Facilitación de prototipos y MVP con SPIRAL",
-          "text": "Convierta una idea en un prototipo o MVP que su equipo pueda poner a prueba, con un método que facilita cada paso.",
+          "title": "Prototipos y MVP con el método SPIRAL",
+          "text": "Convierta una idea en un prototipo o MVP que su equipo pueda poner a prueba, con talleres de Event Storming y Envisioning y un método que facilita cada paso.",
           "link": {
-            "label": "Explorar SPIRAL",
+            "label": "Conocer SPIRAL",
             "href": "@spiral"
           },
           "icon": "spiral"
         },
         {
-          "kicker": "Liderazgo",
-          "title": "CTO fraccional",
+          "kicker": "Personas",
+          "title": "Formación y liderazgo técnico",
+          "text": "Prepare a cada rol para trabajar con agentes de IA: formación para Tech Lead, ingeniero AI-nativo, Product Owner y QA, desarrollo de líderes técnicos y coaching de liderazgo.",
+          "link": {
+            "label": "Proponer una formación",
+            "href": "/contacto/?tema=taller"
+          },
+          "icon": "formacion"
+        },
+        {
+          "kicker": "Organización",
+          "title": "Diseño de equipos de construcción de software",
+          "text": "Defina estructuras, responsabilidades y controles a la medida de la nueva forma de construir: equipos, planes de carrera, matriz de responsabilidades y madurez por área.",
+          "link": {
+            "label": "Conversar sobre su organización",
+            "href": "/contacto/?tema=equipos"
+          },
+          "icon": "equipos"
+        },
+        {
+          "kicker": "Liderazgo · CTO fraccional",
+          "title": "Dirección tecnológica a tiempo parcial",
           "text": "Incorpore criterio técnico sénior para decisiones recurrentes o dirección temporal para una iniciativa concreta.",
           "link": {
             "label": "Explorar CTO fraccional",
@@ -106,15 +134,15 @@
     },
     {
       "type": "prose",
-      "id": "formacion",
+      "id": "taller",
       "bg": "paper",
       "split": true,
       "wide": true,
-      "eyebrow": "En todos los servicios",
-      "title": "Formación aplicada y liderazgo técnico",
+      "eyebrow": "Para empezar",
+      "title": "Taller aplicado de un día",
       "paragraphs": [
-        "En cualquiera de estos servicios podemos incluir formación por rol, mentoría de líderes y revisiones técnicas sobre problemas reales de su organización. Así, las prácticas que se adoptan se sostienen después de la intervención.",
-        "También ofrecemos un <b>taller aplicado de un día</b> como forma de empezar: trabajamos un problema real con su equipo y decidimos juntos si conviene un diagnóstico."
+        "Trabajamos un problema real con su equipo durante un día y decidimos juntos si conviene un diagnóstico o alguno de los servicios.",
+        "Además, cualquier servicio puede incluir formación por rol, mentoría de líderes y revisiones técnicas sobre problemas reales de su organización, para que las prácticas adoptadas se sostengan después de la intervención."
       ],
       "actions": [
         {
