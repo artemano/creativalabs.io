@@ -50,7 +50,7 @@
         "supervision": "Supervisión:",
         "levelsIntro": "Cinco niveles, de conversar con agentes sin reglas a ampliar su autonomía con evidencia. Una zona alcanza un nivel cuando cumple todos sus criterios y los de los anteriores.",
         "glosIntro": "Los términos que usan las preguntas, en lenguaje simple.",
-        "foot": "CreativaLabs.io · Basada en el libro abierto «La segunda industrialización del software» y en el modelo de madurez de TELAR · Sus respuestas no se envían ni se guardan: todo ocurre en su navegador."
+        "foot": "CreativaLabs.io · Basada en el libro abierto «La segunda industrialización del software» y en el modelo de madurez de TELAR · El resultado se calcula en su navegador; sus respuestas solo se envían si solicita el informe."
       },
       "data": {
         "niveles": [
@@ -416,6 +416,30 @@
         "label": "Solicitar una conversación",
         "href": "/contacto/?tema=telar",
         "style": "primary"
+      },
+      "report": {
+        "endpoint": "/api/autoevaluacion",
+        "ctaTitle": "Reciba su informe completo",
+        "ctaText": "Le enviamos a su correo cada criterio pendiente, con la acción que lo resuelve y la evidencia que lo demuestra.",
+        "ctaButton": "Quiero el informe",
+        "eyebrow": "Informe de madurez",
+        "title": "Reciba el informe completo de su zona",
+        "text": "Además del nivel, el informe detalla el avance por dimensión, cada criterio pendiente de los niveles siguientes con la acción que lo resuelve y la evidencia que lo demuestra, y sus respuestas para compartirlas con su equipo. Llega en unos minutos.",
+        "labels": {
+          "name": "Nombre",
+          "email": "Correo de trabajo",
+          "org": "Organización",
+          "role": "Cargo (opcional)",
+          "consent": "Autorizo a Creativa IT S.A.S. a tratar mis datos personales para enviarme este informe y contactarme sobre su resultado, conforme a la <a href=\"/politica-de-datos/\">Política de tratamiento de datos personales</a>.",
+          "news": "Quiero recibir avisos de nuevas versiones del libro, de la guía práctica y de contenidos relacionados. Puedo darme de baja en cualquier momento.",
+          "submit": "Enviar el informe"
+        },
+        "alt": "¿Prefiere conversarlo?",
+        "altLink": "Solicite una conversación",
+        "privacy": "Creativa IT S.A.S. (CreativaLabs), NIT 900357682, tratará sus datos para enviarle el informe, contactarle sobre su resultado y, si lo autoriza, enviarle novedades. Puede conocer, actualizar, rectificar o suprimir sus datos y revocar la autorización escribiendo a hablemos@creativalabs.io.",
+        "needAnswers": "Responda las preguntas pensando en su zona para recibir el informe: ahora está viendo respuestas de ejemplo.",
+        "sending": "Enviando…",
+        "ok": "Listo. Le enviamos el informe a {correo}. Si no lo ve en unos minutos, revise la carpeta de correo no deseado."
       }
     },
     {

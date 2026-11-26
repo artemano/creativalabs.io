@@ -11,3 +11,5 @@ package-lock.json
 CNAME
 .wrangler
 .gitignore
+worker
+schema.sql

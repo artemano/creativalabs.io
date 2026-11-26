@@ -1,16 +1,31 @@
-// Despliegue en Cloudflare Workers como sitio estático (sin código de servidor por ahora).
-// La función del formulario se agregará aquí más adelante ("main" + binding D1).
+// Sitio estático + función de formularios (worker/index.js) en Cloudflare Workers.
+// Las rutas /api/* pasan por el Worker; todo lo demás se sirve como archivo estático.
 {
   "name": "creativalabs-io",
+  "main": "worker/index.js",
   "compatibility_date": "2026-11-19",
   "workers_dev": true,
   "assets": {
     "directory": "./",
+    "binding": "ASSETS",
     "not_found_handling": "404-page",
-    "html_handling": "auto-trailing-slash"
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": ["/api/*"]
   },
   "routes": [
     { "pattern": "creativalabs.io", "custom_domain": true },
     { "pattern": "www.creativalabs.io", "custom_domain": true }
-  ]
+  ],
+  // Base de datos de solicitudes y autoevaluaciones (ver schema.sql).
+  // database_id sale de: npx wrangler d1 create creativalabs
+  "d1_databases": [
+    { "binding": "DB", "database_name": "creativalabs", "database_id": "REEMPLAZAR_CON_EL_ID_DE_D1" }
+  ],
+  // Secretos (no van aquí): RESEND_API_KEY y TURNSTILE_SECRET, con `npx wrangler secret put`.
+  "vars": {
+    "MAIL_FROM": "CreativaLabs <hablemos@creativalabs.io>",
+    "MAIL_TO": "hablemos@creativalabs.io",
+    "SITE_URL": "https://creativalabs.io"
+  },
+  "observability": { "enabled": true }
 }

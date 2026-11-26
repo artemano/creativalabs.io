@@ -390,7 +390,7 @@
     "brochure": "assets/docs/TELAR-brochure-CreativaLabs.pdf"
   },
   "form": {
-    "enabled": false,
+    "enabled": true,
     "endpoint": "/api/contacto",
     "turnstileSiteKey": "",
     "messages": {
