@@ -697,6 +697,7 @@
       var R0 = AE.report, msg = rf.querySelector(".form__msg"), m = (SITE.form.messages || {})[LANG] || {};
       if (!touched || !D.preguntas.some(function (q) { return ans[q.id]; })) { msg.textContent = R0.needAnswers; return; }
       if (!rf.checkValidity()) { msg.textContent = m.invalid || ""; rf.reportValidity(); return; }
+      if (needsCaptcha(rf, msg)) return;
       var fd = new FormData(rf);
       fd.append("zona", $("zona").value || ""); fd.append("respuestas", JSON.stringify(ans));
       fd.append("idioma", LANG); fd.append("origen", document.referrer || "");
@@ -724,6 +725,15 @@
     window.matchMedia("(min-width:861px)").addEventListener("change", function (m) { if (m.matches) set(false); });
   }
 
+  function needsCaptcha(f, msg) {
+    var t = f.querySelector('input[name="cf-turnstile-response"]');
+    if (f.querySelector(".cf-turnstile") && !(t && t.value)) {
+      msg.textContent = ((SITE.form.messages || {})[LANG] || {}).captcha || "Marque «Verifique que es un ser humano» antes de enviar.";
+      return true;
+    }
+    return false;
+  }
+
   function bindForm() {
     if (document.querySelector(".cf-turnstile") && !document.getElementById("cf-ts")) {
       var t = document.createElement("script"); t.id = "cf-ts"; t.async = true; t.defer = true;
@@ -736,6 +746,7 @@
       var msg = form.querySelector(".form__msg");
       var m = (SITE.form.messages || {})[LANG] || {};
       if (!form.checkValidity()) { msg.textContent = m.invalid || ""; form.reportValidity(); return; }
+      if (needsCaptcha(form, msg)) return;
       var btn = form.querySelector("button[type=submit]");
       btn.disabled = true;
       fetch(form.action, { method: "POST", body: new FormData(form) })
