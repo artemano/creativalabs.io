@@ -42,7 +42,8 @@ async function contacto(request, env, ctx) {
   };
   const bad = missing(d, ["nombre", "correo", "organizacion", "descripcion"]) || (!isEmail(d.correo) && "correo") || (!d.consentimiento && "consentimiento");
   if (bad) return json({ ok: false, error: "invalid", field: bad }, 400);
-  if (!(await human(f["cf-turnstile-response"], request, env))) return json({ ok: false, error: "captcha" }, 403);
+  const hv = await human(f["cf-turnstile-response"], request, env);
+  if (!hv.ok) return json({ ok: false, error: "captcha", codes: hv.codes }, 403);
 
   await save(env, request, { tipo: "contacto", ...d });
   ctx.waitUntil(send(env, {
@@ -66,7 +67,8 @@ async function autoevaluacion(request, env, ctx) {
   };
   const bad = missing(d, ["nombre", "correo", "organizacion"]) || (!isEmail(d.correo) && "correo") || (!d.consentimiento && "consentimiento");
   if (bad) return json({ ok: false, error: "invalid", field: bad }, 400);
-  if (!(await human(f["cf-turnstile-response"], request, env))) return json({ ok: false, error: "captcha" }, 403);
+  const hv = await human(f["cf-turnstile-response"], request, env);
+  if (!hv.ok) return json({ ok: false, error: "captcha", codes: hv.codes }, 403);
 
   // El modelo se lee del propio sitio: el informe usa las mismas preguntas y niveles que la página.
   const page = await env.ASSETS.fetch(new URL("/data/es/autoevaluacion.json", request.url)).then((r) => r.json());
@@ -214,15 +216,16 @@ async function save(env, request, d) {
 }
 
 async function human(token, request, env) {
-  if (!env.TURNSTILE_SECRET) return true;
-  if (!token) return false;
+  if (!env.TURNSTILE_SECRET) return { ok: true, codes: ["sin-secreto"] };
+  if (!token) return { ok: false, codes: ["missing-input-response"] };
   const body = new FormData();
   body.append("secret", env.TURNSTILE_SECRET);
   body.append("response", token);
   const ip = request.headers.get("CF-Connecting-IP");
   if (ip) body.append("remoteip", ip);
   const r = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", { method: "POST", body }).then((x) => x.json());
-  return !!r.success;
+  if (!r.success) console.log("Turnstile rechazó el token", r["error-codes"]);
+  return { ok: !!r.success, codes: r["error-codes"] || [] };
 }
 
 async function readBody(request) {
