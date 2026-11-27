@@ -565,7 +565,7 @@
       '<input type="hidden" name="origen" value="' + esc(document.referrer) + '"><input type="hidden" name="idioma" value="' + LANG + '">' +
       '<div class="form__row form__check"><input id="f-ok" name="consentimiento" type="checkbox" required><label for="f-ok">' + s.labels.consent + "</label></div>" +
       (s.labels.news ? '<div class="form__row form__check"><input id="f-news" name="novedades" type="checkbox"><label for="f-news">' + s.labels.news + "</label></div>" : "") +
-      (f.turnstileSiteKey ? '<div class="cf-turnstile" data-sitekey="' + esc(f.turnstileSiteKey) + '"></div>' : "") +
+      (f.turnstileSiteKey ? '<div class="cf-turnstile" data-theme="light" data-sitekey="' + esc(f.turnstileSiteKey) + '"></div>' : "") +
       '<p class="form__msg" role="status" aria-live="polite"></p>' +
       '<button class="btn btn--primary" type="submit">' + s.labels.submit + "</button>" + (s.privacy ? '<p class="form__privacy">' + s.privacy + "</p>" : "") + "</form>" + mail + "</div></section>";
   };
@@ -609,7 +609,7 @@
       '<div class="ae__hp" aria-hidden="true"><label for="r-web">Web</label><input id="r-web" name="web" tabindex="-1" autocomplete="off"></div>' +
       '<div class="form__row form__check"><input id="r-ok" name="consentimiento" type="checkbox" required><label for="r-ok">' + r.labels.consent + "</label></div>" +
       '<div class="form__row form__check"><input id="r-news" name="novedades" type="checkbox"><label for="r-news">' + r.labels.news + "</label></div>" +
-      (f.turnstileSiteKey ? '<div class="cf-turnstile" data-sitekey="' + esc(f.turnstileSiteKey) + '"></div>' : "") +
+      (f.turnstileSiteKey ? '<div class="cf-turnstile" data-theme="light" data-sitekey="' + esc(f.turnstileSiteKey) + '"></div>' : "") +
       '<p class="form__msg" role="status" aria-live="polite"></p>' +
       '<div class="ae__fact"><button class="btn btn--primary" type="submit">' + r.labels.submit + '</button><span class="ae__alt">' + r.alt + " " + a({ label: r.altLink, href: "/contacto/?tema=telar" }, "link-strong") + "</span></div>" +
       '<p class="form__privacy">' + r.privacy + "</p></form></div>";
