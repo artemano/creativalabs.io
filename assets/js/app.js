@@ -702,7 +702,7 @@
       fd.append("idioma", LANG); fd.append("origen", document.referrer || "");
       var b = rf.querySelector("button[type=submit]"); b.disabled = true; msg.textContent = R0.sending;
       fetch(rf.action, { method: "POST", body: fd })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); msg.textContent = R0.ok.replace("{correo}", fd.get("correo")); rf.reset(); })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); msg.textContent = R0.ok.replace("{correo}", fd.get("correo")); rf.reset(); if (window.turnstile) window.turnstile.reset(); })
         .catch(function () { msg.textContent = m.error || ""; if (window.turnstile) window.turnstile.reset(); })
         .then(function () { b.disabled = false; });
     });
@@ -739,7 +739,7 @@
       var btn = form.querySelector("button[type=submit]");
       btn.disabled = true;
       fetch(form.action, { method: "POST", body: new FormData(form) })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); form.reset(); msg.textContent = m.ok || ""; })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); form.reset(); msg.textContent = m.ok || ""; if (window.turnstile) window.turnstile.reset(); })
         .catch(function () { msg.textContent = m.error || ""; if (window.turnstile) window.turnstile.reset(); })
         .then(function () { btn.disabled = false; });
     });

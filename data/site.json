@@ -392,7 +392,7 @@
   "form": {
     "enabled": true,
     "endpoint": "/api/contacto",
-    "turnstileSiteKey": "",
+    "turnstileSiteKey": "0x4AAAAAAGVGwRhtMgwCXqQN",
     "messages": {
       "es": {
         "ok": "Recibimos su solicitud. Le escribiremos al correo indicado para acordar el siguiente paso.",
